@@ -1,0 +1,113 @@
+.top {
+    width: 100%;
+    height: 40px;
+}
+.topIn {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.topIn>p {
+    float: left;
+    cursor: pointer;
+}
+
+.topIn .tx_logo {
+    width: 220px;
+    height: 40px;
+    background: url('../img/cat-image/tx_logo.jpg') no-repeat;
+}
+
+.topIn .lol_logo {
+    width: 220px;
+    height: 40px;
+    background: url('../img/cat-image/lol_logo.png') no-repeat;
+}
+
+.topIn .goblack {
+    margin-right: 40px;
+    float: right;
+    height: 40px;
+    line-height: 40px;
+    cursor: pointer;
+
+}
+
+.topIn .goblack a {
+    color: #464646;
+    font-size: 13px;
+}
+
+.topIn .goblack a:hover {
+    color: rgb(0, 255, 191);
+    font-size: 13px;
+    background-color: 0.5px solid rgb(0, 255, 191);
+    border-bottom: 0.5px solid rgb(0, 255, 191);
+}
+
+.topIn .goblack .lastgoblack {
+    display: inline-block;
+    width: 100px;
+    height: 29px;
+    background: url('../img/cat-image/goblack.png');
+    text-indent: 1.2em;
+}
+/* 
+ body
+*/
+.body {
+    width: 100%;
+    
+    background: url('../img/cat-image/bg.jpg') no-repeat top;
+}
+
+.main {
+    width: 1000px;
+    height: 793px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.main a img {
+    position: absolute;
+    top: 30px;
+}
+
+.main .main-btn {
+    display: inline-block;
+    width: 305px;
+    height: 88px;
+    background-image:url('../img/cat-image/main-btn-new.png');
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    line-height: 88px;
+}
+.main .main-btn:hover{
+  background-image: url(../img/cat-image/main-btn-new-y.png);
+}
+
+.main-tips {
+    width: 800px;
+    height: 137px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.main-tips .p0{
+
+    color: #2e2e2e;
+    font-size: 14px;
+}
+.main-tips .p1{
+    font-size: 16px;
+    font-weight: 700;
+    color:#9f6c35;
+    margin: 23px 0 27px;
+
+}
