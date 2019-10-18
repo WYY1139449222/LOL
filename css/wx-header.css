@@ -110,13 +110,14 @@ header {
 }
 .TX {
   color: #fff;
-  float: right;
+  float: left;
   height: 80px;
   line-height: 80px;
   text-align: center;
   margin-right: 50px;
 }
 .TX l {
+
   float: right;
   color: #fff;
   text-align: center;
@@ -230,3 +231,37 @@ header {
   color: #cea04a;
   font-size: 14px;
 }
+.md{
+  width: 1360px;
+  margin: auto;
+}
+.sjImg_box{
+  width: 100%;
+  height: 110px;
+  margin-top: 20px;
+}
+.dingwei{
+  position: relative;
+}
+.sjimg{
+  width: 1240px;
+  height:110px;
+}
+.djs {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  line-height: 16px;
+  border-radius: 8px;
+  color: #fff;
+  margin: 15px 0 0 0;
+  text-align: center;
+  font-style: normal;
+  font-size: 10px;
+  position: absolute;
+  top: 20px;
+  right: 150px;
+  margin-left: 15px;
+  background: #ccc;
+}
+

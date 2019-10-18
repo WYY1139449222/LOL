@@ -1,4 +1,5 @@
-var LPL = document.querySelector('.inp_box .LPL'),
+(function(){
+    var LPL = document.querySelector('.inp_box .LPL'),
     TJ = document.querySelector('.inp_box .TJ')
 
 
@@ -12,4 +13,20 @@ LPL.onblur = function () {
         TJ.style.display = 'block'
     }
 }
+
+
+var sjimg = document.querySelector('.sjImg_box')
+var djs = document.querySelector('.djs')
+let sjimg_n = 15;
+var timer1 = setInterval(()=>{
+    if(sjimg_n === 0 ){
+        clearInterval(timer1)
+        sjimg.style.display ='none'
+        djs.style.display='none'
+        return
+    }
+    djs.innerText = --sjimg_n
+},1000)
+})()
+
 
