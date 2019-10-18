@@ -5,7 +5,13 @@ let imgs = document.querySelectorAll('.imgBox>img');
 let p = document.querySelectorAll('.imgBox>p')[0];
 let descLOL = document.getElementsByClassName('descLOL')[0];
 let imgBox = document.getElementsByClassName('imgBox')[0];
-console.log(p);
+let wrap = document.getElementsByClassName('wrap')[0];
+let $swperLis = $('.swper>ul>li');
+let $swperFoots = $('.sp');
+let $swperFoot = $('.swperFoot').eq(0);
+let $swper = $('.swper');
+let n = 0,timer = null;
+
 
 navL.onmouseenter = function(){
     deve.style.opacity = 1;
@@ -36,5 +42,37 @@ window.onscroll = function(){
     descLOL.style.transition=' all 0.3s linear';
     descLOL.style.top = '300px';
     // imgBox.style.transition=' all 0.3s linear';
-    imgBox.style.height = '450px';
+    imgBox.style.transition=' all 0.3s linear';
+    imgBox.style.height = '410px';
+    wrap.style.transition=' all 0.3s linear';
+    wrap.style.top = '400px';
+
 }
+
+function move(){
+    n++;
+    if(n>$swperLis.length-1){
+        n=0
+    }
+    $swperLis.eq(n).css({opacity:0}).show().animate({opacity:1},300).siblings().animate({opacity:0},300,function(){
+        $swperLis.eq(n).siblings().hide()
+    })
+    $swperFoots.eq(n).addClass('swperp').siblings().removeClass('swperp')
+}
+function autoMove(){
+    timer = setInterval(()=>{
+        move()
+    },2000)
+}
+autoMove()
+$swper.on('mouseenter',function(){
+    clearInterval(timer);
+})
+$swper.on('mouseleave',function(){
+    autoMove();
+})
+$swperFoots.on('mouseover',function(){
+    n=$(this).index();
+    n--;
+    move()
+})
