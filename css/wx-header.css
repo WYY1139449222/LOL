@@ -1,0 +1,232 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+header {
+  width: 100%;
+  overflow: hidden;
+}
+.TOP {
+  height: 42px;
+  overflow: hidden;
+}
+.pic_0 {
+  overflow: visition;
+}
+.pic_0 li a {
+  float: left;
+  margin-left: 200px;
+  height: 42px;
+}
+.pic_0 li > a:nth-child(2) {
+  display: inline-block;
+  margin-left: 50px;
+  height: 41px;
+  width: 220px;
+  background: url("../img/wx-img/top20190929.jpg") no-repeat;
+  background-position: 0 -84px;
+}
+.pic_0 li > a:nth-child(1) {
+  display: inline-block;
+  height: 41px;
+  width: 230px;
+  background: url("../img/wx-img/top20190929.jpg") no-repeat;
+  background-position: 0 -42px;
+}
+.wz_0 {
+  margin-left: 150px;
+  float: left;
+  height: 42px;
+  line-height: 42px;
+  text-align: center;
+  width: 500px;
+}
+.wz_0 a {
+  font-size: 11px;
+  color: black;
+}
+.bk {
+  display: inline-block;
+  height: 40px;
+  width: 100px;
+  background: url("../img/cat-image/goblack.png") left center no-repeat;
+}
+.TOP_2 {
+  height: 80px;
+  width: 100%;
+  background: black;
+  position: relative;
+  line-height: 80px;
+}
+.TOP_2 .nr {
+  height: 80px;
+  width: 1360px;
+  margin: auto;
+  box-sizing: border-box;
+}
+.nr {
+  overflow: hidden;
+}
+
+.LOGO {
+  height: 58px;
+  width: 250px;
+  float: left;
+  margin: 11px 0 0 0px;
+  background: url("../img/wx-img/logo.jpg") center center no-repeat;
+}
+
+.LOGO .a_left {
+  float: left;
+  width: 155px;
+  height: 58px;
+}
+.LOGO .a_right {
+  float: right;
+  height: 58px;
+  width: 80px;
+}
+
+.inp_box {
+  height: 80px;
+  width: 250px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 330px;
+}
+.LPL {
+  border-radius: 25px;
+  height: 25px;
+  width: 220px;
+  display: inline-block;
+  outline: none;
+}
+.nr p {
+  display: inline-block;
+  float: right;
+}
+.TX {
+  color: #fff;
+  float: right;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  margin-right: 50px;
+}
+.TX l {
+  float: right;
+  color: #fff;
+  text-align: center;
+}
+.TX l a {
+  color: lemonchiffon;
+}
+.TX img {
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  margin-top: 15px;
+}
+.TJ {
+  display: inline-block;
+  height: 30px;
+  width: 50px;
+  position: absolute;
+  left: 20px;
+  top: 3px;
+  text-decoration: underline;
+  font-size: 10px;
+}
+.TJ u {
+  color: #c49f58;
+}
+.bkg {
+  position: absolute;
+  left: 170px;
+  top: 26px;
+  height: 30px;
+  width: 50px;
+  background: url("../img/wx-img/fangdajing.png") center center no-repeat;
+  /* cursor: pointer; */
+}
+
+.nav {
+  width: 100%;
+  height: 470px;
+  background: url("../img/wx-img/高470.jpg") center center no-repeat;
+  position: relative;
+}
+.nav .memu {
+  width: 100%;
+  height: 55px;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+}
+.nav .memu .memu_box {
+  width: 1360px;
+  height: 55px;
+  overflow: hidden;
+  margin: auto;
+}
+.memu_box .memu_left {
+  float: left;
+  display: inline-block;
+  height: 55px;
+  line-height: 55px;
+  position: relative;
+}
+.memu_box .memu_left a,
+.memu_box .memu_right a {
+  display: inline;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  padding-left: 10px;
+}
+.memu_box .memu_left i,
+.memu_box .memu_right i {
+  display: inline-block;
+  background: #eb3200;
+  width: 16px;
+  height: 16px;
+  line-height: 16px;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 12px;
+  margin: 15px 0 0 0;
+  text-align: center;
+  font-style: normal;
+}
+
+.memu_box .memu_right {
+  float: right;
+  display: inline-block;
+  height: 55px;
+  line-height: 55px;
+}
+.memu_box .memu_right a {
+  font-weight: 400;
+}
+.memu_box a:hover {
+  color: #cea04a;
+}
+.nav .ck_btn {
+  width: 144px;
+  height: 44px;
+  border: 2px solid #cea04a;
+  line-height: 44px;
+  text-align: center;
+  position: absolute;
+  bottom: 30px;
+  left: 45%;
+  background: rgba(0, 0, 0, 0.65);
+
+}
+.nav .ck_btn a{
+  color: #cea04a;
+  font-size: 14px;
+}
