@@ -329,7 +329,6 @@ body{
     height: 340px;
 }
 .swper ul>li{
-    /* display: inline-block; */
     width: 710px;
     height: 340px;
     position: absolute;
@@ -358,7 +357,6 @@ body{
 .wrapRight{
     width: 490px;
     height: 380px;
-    /* background:blue; */
     position: absolute;
     top: 0;
     right: 0;
@@ -376,29 +374,30 @@ body{
     line-height: 24px;
     color:#676767;
     float: left;
-    /* background: gold; */
     text-align: center;
-
 }
-.wrapTop>li:hover{
+.wrapTop>li.wrapToplis{
     background: url(../img/tab-title-selected.png) center bottom no-repeat;
     color:#1da6ba;
 }
 .wrapbody{
     width: 490px;
     height: 305px;
-    /* background: chartreuse; */
     position: relative;
 }
 .wrapbody>.wrap1{
     width: 490px;
     height: 305px;
-    /* background: chartreuse; */
     position: absolute;
     top: 0;
     left: 0;
     font-size: 14px;
 }
+
+.wrapbody>.wrap1:nth-child(4),.wrapbody>.wrap1:nth-child(2),.wrapbody>.wrap1:nth-child(3),.wrapbody>.wrap1:nth-child(5){
+    display: none;
+}
+
 .wrap1>li:nth-child(1){
     height: 59px;
     line-height: 59px;
@@ -410,6 +409,7 @@ body{
 .wrap1>li:nth-child(1) a{
     font-size: 22px;
     color:#1da6ba;
+    text-align: center;
 }
 .wrap1>li>a{
     font-size: 14px;
@@ -417,9 +417,165 @@ body{
 }
 .wrap1>li>span:nth-child(1){
     font-size: 12px;
-    display: inline-block;
     margin-right: 20px;
-    border:1px solid red;
+    float: left;
     padding:1px 5px;
+    margin-top: 10px;
+}
+.wrap1>li>span:nth-child(3){
+    float: right;
+}
+.wrapLi{
+    height: 39px;
+    border-top: 1px #e0e2e2 solid;
+    line-height: 39px;
+}
+.wrapfoot{
+    height: 40px;
+    background: #e3e2e2;
+    width: 100%;
+    position: absolute;
+   bottom: 0;
+   font-size: 14px;
+   color:#323232;
+   line-height: 40px;
+   text-align: center;
+   cursor: pointer;
+   user-select: none;
+}
+.wrapfoot:hover{
+    background: #ddd;
+}
+.wrapfoot>span:nth-child(2){
+    color:#7ea1a6;
+}
+.wrapfoot>.wrapfootimg{
+    display: inline-block;
+    width: 15px;
+    height: 9px;
+    line-height: 9px;
+    margin-left: 5px;
+    background: url(../img/comm-spr.png) center center no-repeat;
+    background-position-x: -213px;
+    background-position-y:-126px ;
+    /* background-color: chartreuse; */
+}
+.wrap1>li:nth-child(2n)>span:nth-child(1){
+    height: 18px;
+    line-height: 18px;
+    border:1px solid #bb9a6c;
+    color:#bb9a6c;
+}
+.wrap1>li:nth-child(2n+1)>span:nth-child(1){
+    height: 18px;
+    line-height: 18px;
+    border:1px solid #e9852d;
+    color:#e9852d;
+}
+.wrap1>li:nth-child(2n):hover a{
+    color:#bb9a6c;
+}
+.wrap1>li:nth-child(2n+1):hover a{
+    color:#e9852d;
+}
+
+.wrap2>li>span:nth-child(1){
+    height: 18px;
+    line-height: 18px;
+    border:1px solid #bb9a6c !important;
+    color:#bb9a6c !important;
+}
+.wrap2>li:hover a{
+    color:#bb9a6c !important;
+}
+
+
+.wrap4>li>span:nth-child(1){
+    height: 18px;
+    line-height: 18px;
+    border:1px solid #4ba36a !important;
+    color:#4ba36a !important;
+}
+
+.wrap4>li:hover a{
+    color:#4ba36a !important;
+}
+.wrap5>li:nth-child(1){
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.active{
+    width: 710px;
+    height: 335px;
+    position: absolute;
+    top: 420px;
+}
+.actNavh2{
     
+    width: auto;
+    height: 37px;
+    float: left;
+    box-sizing: border-box;
+    color: #0b0b0b;
+    font-size: 24px;
+    line-height: 37px;
+    font-weight: 400;
+}
+.actNavul{
+    width: 600px;
+    height: 37px;
+    line-height: 37px;
+    float: right;
+    text-align: center;
+}
+.actNavul>li{
+    font-size: 16px;
+    float: left;
+    margin-left: 20px;
+    color:#676767;
+}
+.lod{
+    width: 490px;
+    height: 335px;
+    background: chartreuse;
+    position: absolute;
+    top: 420px;
+    right: 0;
+}
+
+.actNavul>li.wrapToplis{
+    background: url(../img/tab-title-selected.png) center bottom no-repeat;
+    color:#1da6ba;
+}
+.actNavright{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50px;
+    height: 30px;
+    color: #7ea1a6;
+    font-size: 12px;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+}
+.actNavright>i{
+    width: 16px;
+    height: 9px;
+    display: inline-block;
+    background: url(../img/comm-spr.png) center center no-repeat;
+    background-position-x: -213px;
+    background-position-y:-126px ;
+}
+.actNavh2:before {
+    content: '\0020';
+    display: inline-block;
+    vertical-align: middle;
+    *zoom: 1;
+    *display: inline;
+    width: 4px;
+    height: 28px;
+    background-color: #1da6ba;
+    margin-right: 10px;
 }
