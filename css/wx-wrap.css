@@ -1,6 +1,7 @@
 .wrap {
   width: 1230px;
   margin: 20px auto 0;
+  overflow: visible;
 }
 
 .Slt {
@@ -12,7 +13,7 @@
   height: 205px;
 }
 .Top {
-  width: 100%;
+  width: 1230px;
   height: 285px;
   border: 1px solid red;
 }
@@ -28,7 +29,7 @@
   margin-right: 0;
 }
 .Btop {
-  width: 100%;
+  width: 240px;
   height: 28px;
   box-sizing: border-box;
   font-size: 16px;
@@ -50,6 +51,7 @@
 }
 .mode1 {
   position: relative;
+  width: 1230px;
 }
 .btn_right,
 .btn_left {
@@ -200,7 +202,6 @@
 }
 
 /* ---------------------------------------------- */
-.mode2{
-  margin-top:10px;
-  
+.mode2 {
+  margin-top: 10px;
 }
