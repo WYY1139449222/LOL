@@ -10,6 +10,9 @@ let $swperLis = $('.swper>ul>li');
 let $swperFoots = $('.sp');
 let $swperFoot = $('.swperFoot').eq(0);
 let $swper = $('.swper');
+let $wrapToplis = $('.wrapTop>li');
+let $wrapbodyul = $('.wrapbody>ul');
+let $actNavullis = $('.actNavul>li');
 let n = 0,timer = null;
 
 
@@ -75,4 +78,14 @@ $swperFoots.on('mouseover',function(){
     n=$(this).index();
     n--;
     move()
+})
+
+$wrapToplis.on('mouseenter',function(){
+    let n = $(this).index();
+    $(this).addClass('wrapToplis').siblings().removeClass('wrapToplis');
+    $wrapbodyul.eq(n).css({display:'block'}).siblings().css({display:'none'})
+})
+$actNavullis.on('mouseenter',function(){
+    let n = $(this).index();
+    $(this).addClass('wrapToplis').siblings().removeClass('wrapToplis');
 })
