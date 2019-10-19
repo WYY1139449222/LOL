@@ -1,42 +1,206 @@
-.wrap{
-    width: 1230px;
-    margin: 20px auto 0 ;
-  }
+.wrap {
+  width: 1230px;
+  margin: 20px auto 0;
+}
+
+.Slt {
+  width: 200px;
+  height: 30px;
+}
+.matchBox {
+  margin-top: 10px;
+  height: 205px;
+}
+.Top {
+  width: 100%;
+  height: 285px;
+  border: 1px solid red;
+}
+.Atop {
+  width: 240px;
+  height: 185px;
+  float: left;
+  position: relative;
+  margin-right: 7px;
+  background: linen;
+}
+.Atop:nth-child(5n) {
+  margin-right: 0;
+}
+.Btop {
+  width: 100%;
+  height: 28px;
+  box-sizing: border-box;
+  font-size: 16px;
+  line-height: 28px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+}
+.Ctop {
+  display: inline-block;
+
+  width: 240px;
+  height: 28px;
+  line-height: 28px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.mode1 {
+  position: relative;
+}
+.btn_right,
+.btn_left {
+  display: inline-block;
+  background: #ccc;
+  height: 50px;
+  width: 20px;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 5px;
+  user-select: none;
+}
+.btn_left {
+  position: absolute;
+  left: -30px;
+  top: 50%;
+  transform: scaleY(-25px);
+}
+.btn_right {
+  position: absolute;
+  right: -30px;
+  top: 50%;
+  transform: scaleY(-25px);
+}
+
+.Dspan1 {
+  float: left;
+  color: #171717;
+}
+.Dspan2 {
+  float: right;
+  margin-right: 12px;
+}
+.Dspan3 {
+  float: right;
+  margin-right: 12px;
+}
+
+.Bleft {
+  width: 55px;
+  height: 70px;
+  position: absolute;
+  top: 40%;
+  left: 7%;
+}
+.Bleft > a {
+  display: block;
+  padding-left: 15px;
+}
+
+.Bleft > span > a > img {
+  width: 50px;
+  height: 50px;
+}
+.Bcenter {
+  position: absolute;
+  top: 45%;
+  left: 32%;
+}
+.zero {
+  display: inline-block;
+  font-size: 34px;
+  color: #fff;
+  width: 34px;
+  height: 44px;
+  line-height: 42px;
+  background-color: #3b3b3b;
+  border-radius: 5px;
+  position: relative;
+  text-align: center;
+}
+.one {
+  display: inline-block;
+  font-size: 34px;
+  color: #fff;
+  width: 34px;
+  height: 44px;
+  line-height: 42px;
+  background-color: #3b3b3b;
+  border-radius: 5px;
+  position: relative;
+  text-align: center;
+}
+.mh {
+  color: #171717;
+  font-weight: 700;
+  text-align: center;
+}
+.Bright {
+  width: 55px;
+  height: 70px;
+  position: absolute;
+  top: 40%;
+  right: 7%;
+}
+.Bright > a {
+  display: block;
+  padding-left: 15px;
+}
+
+.Bright > span > a > img {
+  width: 50px;
+  height: 50px;
+}
+.Bdown {
+  width: 84px;
+  height: 22px;
+  position: absolute;
+  top: 70%;
+  left: 32%;
+}
+.Bdata {
+  width: 35px;
+  color: #1da6ba;
+  display: inline-block;
+  font-size: 12px;
+  border: 1px solid #1da6ba;
+  padding-left: 5px;
+  transition: background-color 0.2s;
+  box-sizing: border-box;
+}
+.Bvideo {
+  width: 35px;
+  color: #1da6ba;
+  display: inline-block;
+  font-size: 12px;
+  border: 1px solid #1da6ba;
+  padding-left: 5px;
+  transition: background-color 0.2s;
+  box-sizing: border-box;
+  margin-left: 7px;
+}
+
+.Bbottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.Bbottom > span {
+  font-size: 14px;
+  margin-left: 5px;
+  overflow: hidden;
+}
+.Bbottom > a {
+  font-size: 12px;
+  color: #bbb;
+  margin-left: 10px;
+}
+
+/* ---------------------------------------------- */
+.mode2{
+  margin-top:10px;
   
-  .Slt{
-    width: 150px;
-    height: 30px;
-  }
-  .matchBox{
-      margin-top: 10px;
-      height: 205px;
-  }
-  .Top{
-      width: 100%;
-      height: 285px;
-  }
-  .Atop{
-    width: 259px;
-    height: 185px;
-    float: left;
-    position: relative;
-  }
-  .Btop{
-    width: 100%;
-    height: 28px;
-    box-sizing: border-box;
-    font-size: 16px;
-    line-height: 28px;
-    position: absolute;
-    left: 0;
-    top: 0;
-  }
-  .Btop .Ctop{
-    display: block;
-    background: url('../img/wx-img/warp-xunhuan.png') repeat-x 0 0;
-    width: 285px;
-    height: 28px;
-    position: absolute;
-    left: 0;
-    top: 0;
-  }
+}
