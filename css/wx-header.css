@@ -95,7 +95,7 @@ header {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  right: 400px;
+  right: 200px;
 }
 .LPL {
   border-radius: 25px;
@@ -105,9 +105,9 @@ header {
   outline: none;
 }
 .nr p {
-  display: inline-block;
-  float: right;
-  /* margin-right: 50px; */
+  position: absolute;
+  top: 50%;
+  right: 10px;
 }
 .TX {
   color: #fff;
