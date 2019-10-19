@@ -68,6 +68,7 @@ header {
 }
 .nr {
   overflow: hidden;
+  width: 1230px;
 }
 
 .LOGO {
@@ -91,11 +92,11 @@ header {
 
 .inp_box {
   height: 80px;
-  width: 250px;
+  width: 200px;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  right: 200px;
+  right: 300px;
 }
 .LPL {
   border-radius: 25px;
@@ -105,27 +106,30 @@ header {
   outline: none;
 }
 .nr p {
-  position: absolute;
-  top: 50%;
-  right: 10px;
+  float: right;
+  /* width: 240px; */
 }
+.TX l {
+  display: inline;
+  color: #fff;
+  text-align: center;
+  float:right;
+}
+
+.TX l a {
+  display: inline;
+  color: lemonchiffon;
+  float:right;
+}
+
 .TX {
   color: #fff;
   float: left;
   height: 80px;
   line-height: 80px;
   text-align: center;
-  margin-right: 50px;
 }
-.TX l {
 
-  float: right;
-  color: #fff;
-  text-align: center;
-}
-.TX l a {
-  color: lemonchiffon;
-}
 .TX img {
   display: inline-block;
   height: 50px;
