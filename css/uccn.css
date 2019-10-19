@@ -534,6 +534,7 @@ body{
     float: left;
     margin-left: 20px;
     color:#676767;
+    cursor: pointer;
 }
 .lod{
     width: 490px;
@@ -560,6 +561,9 @@ body{
     line-height: 30px;
     cursor: pointer;
 }
+.actNavright:hover{
+    color:#1da6ba;
+}
 .actNavright>i{
     width: 16px;
     height: 9px;
@@ -579,3 +583,166 @@ body{
     background-color: #1da6ba;
     margin-right: 10px;
 }
+.actbody{
+    width: 100%;
+    height: 278px;
+    position: absolute;
+    top: 60px;
+    display: none;
+}
+.actbody.actbodycur{
+    display: block;
+}
+.actbody>li{
+    width: 170px;
+    height: 250px;
+    float: left;
+    font-size: 14px;
+    background: #fff;
+    margin-right: 10px;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+.actbody>li:last-child{
+    margin-right: 0;
+}
+.actbody img{
+    width: 100%;
+    height: 182px;
+}
+.actbody p{
+    height: 28px;
+    line-height: 28px;
+    text-indent: 10px;
+}
+.actbodyFoot{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    font-size: 12px;
+    color:#1da6ba;
+}
+.actbodyFoot>span{
+    float: left;
+    margin:0 0 5px 10px;
+    font-weight: 200;
+}
+.actbodyFoot>i{
+    float: right;
+    width: 30px;
+    height: 20px;
+    margin:0 10px 5px 0;
+    background: url(../img/comm-spr.png)center center no-repeat;
+    background-position-x: -300px;
+    background-position-y: -43px;
+}
+.imgup{
+    width: 100%;
+    height: 182px;
+    background: rgba(0,0,0,0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+.imgupin{
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border:1px solid rgba(255, 219, 76, 1);
+    font-size: 16px;
+   
+}
+.imgupin>h4{
+    font-size: 16px;
+    font-weight: 400;
+    color: #cdbe91;
+    text-align: center;
+    margin-top: 50px;
+}
+.imgupin>p{
+    font-size: 12px;
+    color: #9d9c9c;
+    overflow: hidden;
+}
+.actbody>li:hover .imgup{
+    display: block;
+}
+.actbody>li:hover{
+    transform: translateY(-10px);
+}
+.download{
+    width: 490px;
+    height: 310px;
+    position: absolute;
+    top: 420px;
+    right: 0;
+    font-size: 14px;
+}
+.downloadIn{
+    width: 360px;
+    height: 150px;
+    float: left;
+    margin-bottom: 15px;
+}
+.novice{
+    width: 118px;
+    height: 75px;
+    float: right;
+    margin-bottom: 15px;
+    background: url(../img/index-spr.png) center center no-repeat;
+    background-size: 638px 572px;
+    background-position: -193px -316px;
+    color:#fff;
+    
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 75px;
+    overflow: hidden;
+}
+.gain{
+    width: 118px;
+    height: 75px;
+    float: right;
+    background: url(../img/index-spr.png) center center no-repeat;
+    background-size: 638px 572px;
+    background-position: -193px -316px;
+    color:#fff;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 76px;
+    overflow: hidden;
+}
+.dowLod{
+    width: 490px;
+    height: 150px;
+    float: left;
+    margin-top: 5px;
+   
+    /* display: flex; */
+    
+}
+.dowLod li{
+    width: 115px;
+    height: 60px;
+    float: left;
+    background: #fff;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+.dowLod li:nth-child(4),.dowLod li:nth-child(8){
+    margin-right: 0;
+}
+.downloadIn>video{
+    width: 360px;
+    height: 165px;
+    float: left;
+}
+

@@ -13,6 +13,8 @@ let $swper = $('.swper');
 let $wrapToplis = $('.wrapTop>li');
 let $wrapbodyul = $('.wrapbody>ul');
 let $actNavullis = $('.actNavul>li');
+let $actbody = $('.actbody');
+
 let n = 0,timer = null;
 
 
@@ -88,4 +90,5 @@ $wrapToplis.on('mouseenter',function(){
 $actNavullis.on('mouseenter',function(){
     let n = $(this).index();
     $(this).addClass('wrapToplis').siblings().removeClass('wrapToplis');
+    $actbody.eq(n).addClass('actbodycur').siblings().removeClass('actbodycur')
 })
