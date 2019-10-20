@@ -14,6 +14,10 @@ let $wrapToplis = $('.wrapTop>li');
 let $wrapbodyul = $('.wrapbody>ul');
 let $actNavullis = $('.actNavul>li');
 let $actbody = $('.actbody');
+let $dowlodlast = $('.dowlodlast');
+let $dowlodlastI = $('.dowlodlast i');
+let $lodBox = $('.lodBox');
+console.log($lodBox);
 
 let n = 0,timer = null;
 
@@ -91,4 +95,23 @@ $actNavullis.on('mouseenter',function(){
     let n = $(this).index();
     $(this).addClass('wrapToplis').siblings().removeClass('wrapToplis');
     $actbody.eq(n).addClass('actbodycur').siblings().removeClass('actbodycur')
+})
+
+$dowlodlast.on('mouseenter',function(){
+    $dowlodlastI.eq(0).animate({left:'-17px'},300);
+  
+   setTimeout(()=>{
+    $dowlodlastI.eq(0).css({display:'none'});
+    $lodBox.eq(0).css({display:'block'})
+   },300)
+    
+});
+$dowlodlast.on('mouseleave',function(){
+    $dowlodlastI.eq(0).css({display:'block'}).animate({left:'15px'},300);
+    $lodBox.eq(0).css({display:'none'})
+    setTimeout(()=>{
+        $dowlodlastI.eq(0).css({display:'block'}).animate({left:'15px'},300);
+        $lodBox.eq(0).css({display:'none'})
+    },300)
+    
 })
