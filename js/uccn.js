@@ -103,7 +103,7 @@ $dowlodlast.on('mouseenter',function(){
    setTimeout(()=>{
     $dowlodlastI.eq(0).css({display:'none'});
     $lodBox.eq(0).css({display:'block'})
-   },300)
+   },400)
     
 });
 $dowlodlast.on('mouseleave',function(){
@@ -112,6 +112,6 @@ $dowlodlast.on('mouseleave',function(){
     setTimeout(()=>{
         $dowlodlastI.eq(0).css({display:'block'}).animate({left:'15px'},300);
         $lodBox.eq(0).css({display:'none'})
-    },300)
+    },400)
     
 })
