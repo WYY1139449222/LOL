@@ -17,7 +17,6 @@ let $actbody = $('.actbody');
 let $dowlodlast = $('.dowlodlast');
 let $dowlodlastI = $('.dowlodlast i');
 let $lodBox = $('.lodBox');
-console.log($lodBox);
 
 let n = 0,timer = null;
 
@@ -114,4 +113,18 @@ $dowlodlast.on('mouseleave',function(){
         $lodBox.eq(0).css({display:'none'})
     },400)
     
+})
+$('.championR').on('mouseenter',function(){
+   $('.championR video').get(0).play();
+   $('.vid').animate({top:'1740px'},200)
+})
+$('.championR').on('mouseleave',function(){
+    $('.championR video').get(0).pause();
+    $('.vid').animate({top:'1480px'},200)
+})
+$('.versonvideo').on('mouseenter',function(){
+    $('.versonvideo video').get(0).play();
+})
+$('.versonvideo').on('mouseleave',function(){
+    $('.versonvideo video').get(0).pause();
 })
