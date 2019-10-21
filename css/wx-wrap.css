@@ -13,12 +13,11 @@
   height: 205px;
 }
 .Top {
-  width: 1230px;
-  height: 285px;
-  border: 1px solid red;
+  width: 1170px;
+  height: 195px;
 }
 .Atop {
-  width: 240px;
+  width: 228px;
   height: 185px;
   float: left;
   position: relative;
@@ -29,7 +28,7 @@
   margin-right: 0;
 }
 .Btop {
-  width: 240px;
+  width: 228px;
   height: 28px;
   box-sizing: border-box;
   font-size: 16px;
@@ -42,7 +41,7 @@
 .Ctop {
   display: inline-block;
 
-  width: 240px;
+  width: 228px;
   height: 28px;
   line-height: 28px;
   position: absolute;
@@ -51,7 +50,8 @@
 }
 .mode1 {
   position: relative;
-  width: 1230px;
+  width: 1170px;
+  margin: auto;
 }
 .btn_right,
 .btn_left {
@@ -203,5 +203,95 @@
 
 /* ---------------------------------------------- */
 .mode2 {
+  margin: 10px auto 0;
+  overflow: visible;
+}
+.Eleft {
+  overflow: hidden;
+}
+.Eleft_f1 {
+  width: 400px;
+  height: 35px;
+  border-bottom: 1px solid #ccc;
+  box-sizing: border-box;
+}
+.Eleft_f2 {
+  width: 400px;
+  overflow: hidden;
+}
+
+.tit,
+.tot,
+.ttt {
+  display: block;
+  float: left;
+}
+.tit li:nth-child(1) {
+  display: inline-block;
+  height: 32px;
+  width: 400px;
+  text-align: center;
+  font-size: 20px;
+}
+.tit li:nth-child(1) a {
+  color: #1da6ba;
+}
+.tit li:nth-child(2) a {
+  color: black;
+  float: left;
+}
+.tit li:nth-child(3) a {
+  color: black;
+  float: right;
+}
+.tot li {
+  display: inline-block;
   margin-top: 10px;
+  height: 32px;
+  width: 400px;
+  float: left;
+  width: 200px;
+}
+.tot li:nth-child(1) {
+  height: 32px;
+  text-align: center;
+  font-size: 20px;
+  width: 400px;
+}
+.tot li:nth-child(1) a {
+  color: #1da6ba;
+}
+.tot li:nth-child(2) a {
+  color: black;
+  float: left;
+  font-size: 14px;
+}
+.tot li:nth-child(3) a {
+  color: black;
+  float: right;
+  font-size: 14px;
+}
+.tot li:nth-child(4) a {
+  color: black;
+  float: left;
+  font-size: 14px;
+}
+.tot li:nth-child(5) a {
+  color: black;
+  float: right;
+  font-size: 14px;
+}
+
+.ttt li {
+  width: 400px;
+  height: 30px;
+  display: block;
+  border-bottom: 1px solid #ccc;
+  line-height: 40px;
+  font-size: 12px;
+}
+.ttt span {
+  height: 30px;
+  float: right;
+  font-size: 12px;
 }
