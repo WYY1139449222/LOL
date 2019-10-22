@@ -1507,7 +1507,7 @@ body {
     width: 350px;
     height: 24px;
     line-height: 24px;
-    text-align: center;
+    text-indent: 10px;
     position: absolute;
     bottom: 30px;
     left: 0;
@@ -1836,16 +1836,26 @@ body {
     background: #fff;
     position: absolute;
     right: 0;
-    top: 60px;
+    top: 50px;
     display: none;
     transition: all 0.2s linear;
-    
+    border-radius: 10px;
+    margin-top: 10px;
 }
 .versonper:hover .verperB{
     display: block;
     z-index: 20;
     transform: translateY(10px);
     box-shadow: 0 0 10px 10px #aaa;
+}
+
+.verBBG{
+    width: 240px;
+    height: 15px;
+    background: transparent;
+    position: absolute;
+    top: -15px;
+    right: 0;
 }
 .sanjiao {
     width: 0px;
@@ -1881,6 +1891,11 @@ body {
     border: 2px solid #cdbe61;
     border-radius: 50%;
     cursor: pointer;
+    transition: all 0.2s linear;
+
+}
+.verperB img:hover{
+    transform: scale(1.1);
 }
 
 .vid{
@@ -1888,7 +1903,26 @@ body {
     width: 100%;
     position: absolute;
     top: 1480px;
+    padding-top: 50px;
 }
 .vidIn{
     height: 500px;
+    background: turquoise;
+    position: relative;
+}
+.vidL{
+    width: 710px;
+    height: 400px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: red;
+}
+.vidR{
+    width: 490px;
+    height: 400px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: violet;
 }

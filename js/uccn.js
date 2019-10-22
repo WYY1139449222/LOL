@@ -128,3 +128,10 @@ $('.versonvideo').on('mouseenter',function(){
 $('.versonvideo').on('mouseleave',function(){
     $('.versonvideo video').get(0).pause();
 })
+$('.versonper').on('mouseenter',function(){
+    $('.vid').animate({top:'1660px'},200)
+})
+$('.versonper').on('mouseleave',function(){
+    $('.vid').animate({top:'1480px'},200)
+    $('.sanjiao').css({display:'block'})
+})
