@@ -135,3 +135,26 @@ $('.versonper').on('mouseleave',function(){
     $('.vid').animate({top:'1480px'},200)
     $('.sanjiao').css({display:'block'})
 })
+let $vidlis = $('.vidbody>li>ul>li');
+
+
+let $vidliTOuts = $('.vidbody>li>ul>li>.vidliTOut');
+let $vidliImgs = $('.vidbody>li>ul>li>img');
+console.log($vidlis);
+console.log($vidliTOuts);
+console.log($vidliImgs);
+
+
+
+
+$vidlis.on('mousemove',function(e){
+    let n = $(this).index();
+    console.log(n);
+    
+    let l = e.pageX - $(this).offset().left;
+    $vidliTOuts.eq(n).css({width:l+'px'});
+    $vidliImgs.eq(n).attr({'scr':'../img/vid4.jpg'})
+    console.log($vidliImgs.eq(n).attr('src'));
+    
+    
+})

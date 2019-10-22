@@ -7,7 +7,6 @@
 }
 .vidIn{
     height: 500px;
-    background: turquoise;
     position: relative;
 }
 .vidL{
@@ -16,11 +15,223 @@
     position: absolute;
     left: 0;
     top: 0;
-    background: red;
     .vidLNav{
-        
+        h2{
+            position: absolute;
+            width: auto;
+            height: 28px;
+            top: 5px;
+            left: 0px;
+            box-sizing: border-box;
+            color: #0b0b0b;
+            font-size: 24px;
+            line-height: 24px;
+            font-weight: 400;
+            &::before{
+                content: '\0020';
+                display: inline-block;
+                vertical-align: middle;
+                width: 4px;
+                height: 28px;
+                line-height: 28px;
+                background-color: #1da6ba;
+                margin-right: 5px;
+            }
+        }
+        ul{
+            height: 40px;
+            width: 580px;
+            position: absolute;
+            right: 0;
+            top: 0;
+            font-size: 16px;
+            color:#676767;
+            line-height: 40px;
+            border-bottom: 1px solid #ddd;
+            li{
+                display: inline-block;
+                margin-right: 25px;
+                &:hover{
+                    background: url(../img/tab-title-selected.png) center bottom no-repeat;
+                    color: #1da6ba;
+                    cursor: pointer;
+                }
+            }
+            li:nth-child(5){
+                position: relative;
+                margin-right: 45px;
+                i{
+                    position: absolute;
+                    top: 8px;
+                    width: 30px;
+                    height: 20px;
+                    margin: 0 10px 5px 0;
+                    background: url(../img/comm-spr.png)center center no-repeat;
+                    background-position-x: -300px;
+                    background-position-y: -43px;
+                    transition: all 0.2s cubic-bezier(0.84, -0.77, 0, 3.5);
+                }
+            }
+        }
+        .vidLNavMor{
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 140px;
+            height: 40px;
+            color:#ccc;
+            font-size: 12px;
+            text-align: center;
+            line-height: 40px;
+
+            .vdChange{
+                width: 70px;
+                height: 40px;
+                position: absolute;
+                left: 0;
+                top: 0;
+                color: #7ea1a6;
+                box-sizing: border-box;
+                padding-right: 10px;
+                cursor: pointer;
+                &:hover{
+                    color: #1da6ba;
+                }
+                b{
+                    color: #7ea1a6;
+                    width: 15px;
+                    height: 15px;
+                    background-position: -369px -46px;
+                    background-image: url(../img/comm-spr.png);
+                    background-repeat: no-repeat;
+                    position: absolute;
+                    right: 5px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    margin-top:2px;
+                }
+
+            }
+            .vidMore{
+                &:hover i{
+                    right: -2px;
+                }
+                &:hover{
+                    color: #1da6ba;
+                }
+                width: 70px;
+                height: 40px;
+                position: absolute;
+                right: 0;
+                top: 0;
+                color: #7ea1a6;
+                cursor: pointer;
+                i{
+                    color: #7ea1a6;
+                    width: 15px;
+                    height: 9px;
+                    background-position-x: -213px;
+                    background-position-y: -126px;
+                    background-image: url(../img/comm-spr.png);
+                    background-repeat: no-repeat;
+                    position: absolute;
+                    right: 0;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    transition: all 0.2s cubic-bezier(0.84, -0.77, 0, 3.5)
+                }
+            }
+        }
     }
 }
+.vidbody{
+    width: 710px;
+    height: 340px;
+    position: absolute;
+    left: 0;
+    top: 60px;
+    >li{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        ul{
+            width: 100%;
+            height: 100%;
+            li{
+                width: 170px;
+                height: 163px;
+                float: left;
+                margin-right: 10px;
+                margin-bottom: 10px;
+                position: relative;
+                cursor: pointer;
+                img{
+                    width: 100%;
+                }
+                .vidliTIn{
+                    width: 170px;
+                    height: 5px;
+                    position: absolute;
+                    top: 5px;
+                    left: 0;
+                    background: rgba(255, 255, 255, 0.5);
+                }
+                .vidliTOut{
+                    width: 150px;
+                    height: 5px;
+                    position: absolute;
+                    top: 5px;
+                    left: 0;
+                    background: rgba(255, 255, 255, 0.8);
+                }
+                &:nth-child(4n){
+                    margin-right: 0;
+                }
+                .vidlib{
+                    width: 100%;
+                    height: 67px;
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    
+                    p{
+                        width: 160px;
+                        margin-top: 5px;
+                        font-size: 14px;
+                        margin:0 auto;
+                    }
+                    div{
+                        width: 100%;
+                        height: 20px;
+                        line-height: 20px;
+                        position: absolute;
+                        
+                        bottom: 5px;
+                        margin:0 auto;
+                        font-size: 10px;
+                        color:#bbb;
+                        span{
+                            float: left;
+                            margin-left: 5px;
+                        }
+                        b{
+                            font-weight: 400;
+                            float: right;
+                            margin-right: 5px;
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+   
+}
+
+
+
 .vidR{
     width: 490px;
     height: 400px;
