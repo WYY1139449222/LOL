@@ -10,11 +10,12 @@ class Banner {
         this.$actionLeft = this.$pageId.find('.action-left')
         this.$actionRight = this.$pageId.find('.action-right');
         this.$iconPlay = this.$vido.find('.icon-play');
-        this.onBind();
         this.init();
-        
+        this.onBind();
+       
+
     }
-    
+
     move() {
         this.n++;
         if (this.n > this.$vidoP.length - 1) {
@@ -36,9 +37,11 @@ class Banner {
         $(this.$vidoSpan).eq(this.n).addClass('current').siblings().removeClass('current');
         $(this.$vidoDesc).eq(this.n).show().siblings().hide();
     }
-    
-    init(){
-            $(this.$vidoP).eq(0).siblings().hide();   
+
+    init() {
+        $(this.$vidoP).eq(0).siblings().hide();
+        $(this.$vidoDesc).eq(this.n).show().siblings().hide();
+        
     }
     //左右点击事件
     onBind() {
@@ -68,6 +71,6 @@ class Banner {
         })
     }
 }
- new Banner('page1');
- new Banner('page2');
- new Banner('page4');
+new Banner('page1');
+new Banner('page2');
+new Banner('page4');
