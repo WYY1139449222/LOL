@@ -65,6 +65,14 @@
     user-select: none;
 }
 
+.body .title {
+    width: 459px;
+    height: 41px;
+    line-height: 41px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
 .main {
     width: 1000px;
     height: 793px;
@@ -126,23 +134,18 @@
 }
 
 /* 游戏操作 */
-.main-action {
-    width: 1000px;
+.page1 {
+   
     margin: 0 auto;
     /* height: 459px; */
     position: relative;
 }
 
-.main-action .title01 {
-    width: 459px;
-    height: 41px;
-    line-height: 41px;
-    background: url(//game.gtimg.cn/images/lol/act/a20190702loltftwf/title01.png);
-    margin: 0 auto;
-    margin-bottom: 30px;
+.page .title01 {
+    background: url('../img/cat-image/title01.png');
 }
 
-.main-action .vido {
+.page .vido {
     width: 762px;
     height: 439px;
     border: 3px solid #9e6c37;
@@ -150,21 +153,69 @@
     position: relative;
 }
 
-.main-action .vido .vido-p {
+.page .vido {
+    width: 762px;
+    height: 439px;
+    border: 3px solid #9e6c37;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+.page .vido .vido-p {
     width: 762px;
     height: 439px;
     position: absolute;
     top: 0;
-    background: salmon;
-}
-
-.main-action .vido .vido-p img {
-    width: 762px;
-    height: 439px;
+    overflow: hidden;
 
 }
 
-.main-action .vido-span {
+.page .vido .vido-p video {
+    height: 100%;
+
+}
+
+.page .icon-play {
+    position: absolute;
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    background: url(../img/cat-image/sprite-img.png);
+    background-position: -2303px -652px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.page .icon-play::after {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    background: url(../img/cat-image/sprite-img.png);
+    background-position: -2218px -737px;
+    top: 50%;
+    left: 50%;
+    margin-top: -40px;
+    margin-left: -40px;
+    animation: rotate 3s linear infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+
+
+}
+
+.page .vido-span {
     width: 133px;
     height: 18px;
     /* position: absolute;
@@ -178,7 +229,7 @@
 
 }
 
-.main-action .vido-span .switch {
+.page .vido-span .switch {
     box-sizing: border-box;
     display: inline-block;
     width: 13px;
@@ -186,6 +237,7 @@
     border: 1px solid #9e6c37;
     border-radius: 50%;
     margin-left: 5px;
+    cursor: pointer;
 }
 
 
@@ -193,49 +245,57 @@
     background: #9e6c37;
 }
 
-.main-action .vido-desc {
-    width: 514px;
-    height: 90px;
-    border: 1px solid #9e6c37;
+.page .vido-desc {
 
-    margin: 60px auto 20px;
+    width: 3084px;
+    height: 94px;
+    margin: 60px auto 0px;
     text-align: center;
-
+    position: relative;
+    margin-left: 257px;
+    overflow: hidden;
 }
 
-.main-action .vido-desc .desc {
-    display: none;
+.page .vido-desc .desc {
+
+    width: 514px;
     font-size: 16px;
     color: #2e2e2e;
-
-    line-height: 90px;
+    line-height: 92px;
+    float: left;
+    border: 1px solid #9e6c37;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
-.main-action .vido-desc .mouse {
+.page1 .vido-desc .mouse {
     display: inline-block;
     width: 17px;
     height: 25px;
-    line-height: 90px;
-    background: url('../img/cat-image/mouse.png');
+    line-height: 94px;
+    background: url(../img/cat-image/mouse.png);
     vertical-align: middle;
     margin-right: 16px;
 }
-.main-action .vido-desc .keyboard {
+
+.page .vido-desc .keyboard {
     display: inline-block;
     width: 41px;
     height: 21px;
-    line-height: 90px;
-    background: url('../img/cat-image/keyboard.png');
+    line-height: 94px;
+    background: url(../img/cat-image/keyboard.png);
     vertical-align: middle;
     margin-right: 16px;
 }
 
-.main-action .vido-desc .show {
+.page .vido-desc .show {
     display: inline-block;
 }
 
 
-.main-action .vido-btn a {
+.page .vido-btn a {
     display: inline-block;
     width: 68px;
     height: 88px;
@@ -243,7 +303,7 @@
 
 }
 
-.main-action .vido-btn .action-left {
+.page .vido-btn .action-left {
     background: url(../img/cat-image/action-left.png);
     position: absolute;
     top: 35%;
@@ -251,9 +311,112 @@
 
 }
 
-.main-action .vido-btn .action-right {
+.page .vido-btn .action-right {
     background: url(../img/cat-image/action-right.png);
     position: absolute;
     top: 35%;
     right: -68px;
+}
+
+.page {
+    width: 1000px;
+}
+
+/* <!--  你的竞技场--> */
+.page2 {
+
+    height: 892px;
+
+    margin: 175px auto 0px;
+
+}
+
+.page2 .title02 {
+    background: url(../img/cat-image/title02.png);
+}
+.page2 .vido .vido-p img {
+    width: 100%;
+    height: 100%;
+
+}
+.page2 .vido-desc .desc{
+    width:769px;
+    padding: 0 20px 40px ;
+    margin: 0 auto;
+    background-color: #fff;
+    border:  1px solid #9e6c37;
+    box-sizing:border-box;
+}
+.page2 .vido-desc .desc .p0{
+    color: #9f6c35;
+    font-weight:700;
+    font-size:24px;
+    text-align: center;
+    margin: 22px 0;
+}
+.page2 .vido-desc .desc .p1{
+    color: #2f2f31;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: justify;
+}
+
+/* <!--玩家机制--> */
+.page3 {
+    height: 963px;
+    background: salmon;
+    margin: 100px auto 0px;
+}
+
+/* <!--游戏结构--> */
+.page4 {
+   
+    height: 940px;
+  
+    margin: 100px auto 0px;
+}
+.page4 .title04{
+    background: url(../img/cat-image/title04.png);
+}
+
+/* <!--游戏资料--> */
+.page5 {
+    width: 1060px;
+    height: 1160px;
+    background: green;
+    margin: 0 auto;
+}
+
+/* <!--官方公告--> */
+.page6 {
+    height: 940px;
+    background: sandybrown;
+    margin: 0 auto;
+}
+
+.page7 {
+    height: 2660px;
+    background: hotpink;
+    margin: 0 auto;
+}
+
+/*   <!--官方战绩查询--> */
+.page8 {
+    height: 1108px;
+    background: gray;
+    margin: 0 auto;
+}
+
+/* <!--广告图--> */
+.page9 {
+    height: 900px;
+    background: gray;
+    margin: 0 auto;
+}
+
+/*  <!--小小英雄 新增--> */
+.page10 {
+    height: 1210px;
+    background: gray;
+    margin: 0 auto;
 }
