@@ -458,14 +458,23 @@
   cursor: pointer;
 }
 
+
+
+
+
 .tab_context .tc_1{
   overflow: hidden;
   padding:0;
   width:78px;
   height: 82px;
   margin-left: 4px;
-  display:none;
+  display: none;
 }
+
+
+
+
+
 .tab_tit li:hover{
   color:#1da6ba;
 }
@@ -487,7 +496,12 @@
   width:78px;
   height: 82px;
   margin-left: 4px;
+
 }
+
+
+
+
 .tab_context .tc_2 img{
   width:70px;
   height: 43px;
@@ -498,27 +512,4 @@
   font-size: 10px;
   color: #424242;
   margin-top: -10px;
-}
-.tab_context>ul{
-  position: relative;
-}
-.left_btn_one{
-  font-size: 10px;
-  display: inline-block;
-  position: absolute;
-  left:0;
-  top:40%
-}
-.right_btn_one{
-  font-size: 10px;
-  display: inline;
-  position: absolute;
-  right:0;
-  top:40%
-}
-.tab_tit .YS{
-  color: #1da6ba;
-}
-.DJ{
-  display:inline-block;
 }
