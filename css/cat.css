@@ -1,438 +1,103 @@
-.top {
+.page3 .title03 {
+  background: url("../img/cat-image/title03.png") no-repeat;
+}
+.page3 .content {
   width: 100%;
-  height: 40px;
-  user-select: none;
+  height: 892px;
+  margin-top: 30px;
+  position: relative;
 }
-
-.topIn {
-  width: 1000px;
-  margin: 0 auto;
-}
-
-.topIn>p {
-  float: left;
-  cursor: pointer;
-}
-
-.topIn .tx_logo {
-  width: 220px;
-  height: 40px;
-  background: url('../img/cat-image/tx_logo.jpg') no-repeat;
-}
-
-.topIn .lol_logo {
-  width: 220px;
-  height: 40px;
-  background: url('../img/cat-image/lol_logo.png') no-repeat;
-}
-
-.topIn .goblack {
-  margin-right: 40px;
-  float: right;
-  height: 40px;
-  line-height: 40px;
-  cursor: pointer;
-
-}
-
-.topIn .goblack a {
-  color: #464646;
-  font-size: 13px;
-}
-
-.topIn .goblack a:hover {
-  color: rgb(0, 255, 191);
-  font-size: 13px;
-  background-color: 0.5px solid rgb(0, 255, 191);
-  border-bottom: 0.5px solid rgb(0, 255, 191);
-}
-
-.topIn .goblack .lastgoblack {
-  display: inline-block;
-  width: 100px;
-  height: 29px;
-  background: url('../img/cat-image/goblack.png');
-  text-indent: 1.2em;
-}
-
-/* 
- body
-*/
-.body {
-  width: 100%;
+.page3 .content .player {
+  width: 860px;
+  height: 200px;
   overflow: hidden;
-  background: url('../img/cat-image/bg.jpg') no-repeat top;
-  user-select: none;
-}
-
-.body .title {
-  width: 459px;
-  height: 41px;
-  line-height: 41px;
+  background-color: #fff;
+  border: 1px solid #9e6c37;
   margin: 0 auto;
-  margin-bottom: 30px;
-}
-
-.main {
-  width: 1000px;
-  height: 793px;
-  margin: 0 auto;
-  position: relative;
-}
-
-.main a img {
-  position: absolute;
-  top: 30px;
-}
-
-.main .main-btn {
-  display: inline-block;
-  width: 305px;
-  height: 88px;
-  background-image: url('../img/cat-image/main-btn-new.png');
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: 0;
-  color: #fff;
-  font-size: 30px;
-  text-align: center;
-  line-height: 88px;
-}
-
-.main .main-btn:hover {
-  background-image: url(../img/cat-image/main-btn-new-y.png);
-}
-
-.main-tips {
-  width: 800px;
-  height: 137px;
-  text-align: center;
-  margin: 50px auto;
-
-}
-
-.main-tips .p0 {
-
-  color: #2e2e2e;
-  font-size: 14px;
-}
-
-.main-tips .p1 {
-  font-size: 16px;
-  font-weight: 700;
-  color: #9f6c35;
-  margin: 23px 0 27px;
-}
-
-.main-tips .icon-dec {
-  display: inline-block;
-  width: 109px;
-  height: 17px;
-  background-image: url(../img/cat-image/sprite-img.png);
-  background-position: -2271px -822px;
-}
-
-/* 游戏操作 */
-.page1 {
-
-  margin: 0 auto;
-  /* height: 459px; */
-  position: relative;
-}
-
-.page .title01 {
-  background: url('../img/cat-image/title01.png');
-}
-
-.page .vido {
-  width: 762px;
-  height: 439px;
-  border: 3px solid #9e6c37;
-  margin: 0 auto;
-  position: relative;
-}
-
-.page .vido {
-  width: 762px;
-  height: 439px;
-  border: 3px solid #9e6c37;
-  margin: 0 auto;
-  position: relative;
-}
-
-
-.page .vido .vido-p {
-  width: 762px;
-  height: 439px;
-  position: absolute;
-  top: 0;
-  overflow: hidden;
-
-}
-
-.page .vido .vido-p video {
-  height: 100%;
-
-}
-
-.page .icon-play {
-  position: absolute;
-  display: inline-block;
-  width: 80px;
-  height: 80px;
-  background: url(../img/cat-image/sprite-img.png);
-  background-position: -2303px -652px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.page .icon-play::after {
-  content: '';
-  position: absolute;
-  display: inline-block;
-  width: 80px;
-  height: 80px;
-  background: url(../img/cat-image/sprite-img.png);
-  background-position: -2218px -737px;
-  top: 50%;
-  left: 50%;
-  margin-top: -40px;
-  margin-left: -40px;
-  animation: rotate 3s linear infinite;
-}
-
-@keyframes rotate {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
-
-
-}
-
-.page .vido-span {
-  width: 133px;
-  height: 18px;
-  /* position: absolute;
-    bottom: 10px;
-    left: 100px; */
-  margin: 20px auto;
-  position: absolute;
-  bottom: -50px;
-  left: 50%;
-  transform: translateX(-50%);
-
-}
-
-.page .vido-span .switch {
   box-sizing: border-box;
-  display: inline-block;
-  width: 13px;
-  height: 13px;
-  border: 1px solid #9e6c37;
-  border-radius: 50%;
-  margin-left: 5px;
-  cursor: pointer;
-}
-
-
-.current {
-  background: #9e6c37;
-}
-
-.page1 .vido-desc {
-
-  width: 3084px;
-  height: 94px;
-  margin: 60px auto 0px;
-  text-align: center;
   position: relative;
-  margin-left: 257px;
+  text-align: center;
+}
+.page3 .content .player .players {
+  width: 2582px;
+  height: 200px;
+}
+.page3 .content .player .players .playIn {
+  width: 860px;
+  height: 200px;
   overflow: hidden;
-}
-
-.page1 .vido-desc .desc {
-
-  width: 514px;
-  font-size: 16px;
-  color: #2e2e2e;
-  line-height: 92px;
   float: left;
-  border: 1px solid #9e6c37;
-  display: none;
-  position: absolute;
-  top: 0;
-  left: 0;
 }
-
-.page1 .vido-desc .mouse {
-  display: inline-block;
-  width: 17px;
-  height: 25px;
-  line-height: 94px;
-  background: url(../img/cat-image/mouse.png);
-  vertical-align: middle;
-  margin-right: 16px;
-}
-
-.page .vido-desc .keyboard {
-  display: inline-block;
-  width: 41px;
-  height: 21px;
-  line-height: 94px;
-  background: url(../img/cat-image/keyboard.png);
-  vertical-align: middle;
-  margin-right: 16px;
-}
-
-.page .vido-desc .show {
+.page3 .content .player .players .show {
   display: inline-block;
 }
-
-
-.page .vido-btn a {
+.page3 .content .img-btn a {
   display: inline-block;
   width: 68px;
   height: 88px;
-
-
 }
-
-.page .vido-btn .action-left {
+.page3 .content .img-btn .left {
   background: url(../img/cat-image/action-left.png);
   position: absolute;
-  top: 35%;
-  left: -68px;
-
+  top: 56px;
 }
-
-.page .vido-btn .action-right {
+.page3 .content .img-btn .right {
   background: url(../img/cat-image/action-right.png);
   position: absolute;
-  top: 35%;
-  right: -68px;
+  top: 56px;
+  right: 0;
 }
-
-.page {
-  width: 1000px;
-}
-
-/* <!--  你的竞技场--> */
-.page2 {
-
-  height: 892px;
-
-  margin: 175px auto 0px;
-
-}
-
-.page2 .title02 {
-  background: url(../img/cat-image/title02.png);
-}
-
-.page .vido .vido-p img {
-  width: 100%;
-  height: 100%;
-
-}
-
-.page2 .vido-desc {
-  margin-top: 50px;
-  position: relative;
-}
-
-.page2 .vido-desc .desc {
-  width: 769px;
-  padding: 0 20px 40px;
-  margin: 0 auto;
-  background-color: #fff;
-  border: 1px solid #9e6c37;
-  box-sizing: border-box;
-  position: absolute;
-  left: 116px;
-  
-}
-
-.page2 .vido-desc .desc .p0 {
-  display: block;
-  color: #9f6c35;
-  font-weight: 700;
+.page3 .content .title-sub {
+  margin-top: 40px;
   font-size: 24px;
+  font-weight: 700;
   text-align: center;
-  margin: 22px 0;
+  color: #9f6c35;
 }
-
-.page2 .vido-desc .desc .p1 {
+.page3 .content .core-warp {
+  width: 100%;
+  height: 576px;
+  margin: 40px -80px 0 0;
+  overflow: hidden;
+}
+.page3 .content .core-warp .core-tit {
+  text-align: center;
+  font-size: 18px;
+  color: #9e6c36;
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+.page3 .content .core-warp .core-item {
+  float: left;
+  width: 281px;
+  margin-right: 75px;
+}
+.page3 .content .core-warp .core-item .pic {
+  border: 2px solid #9e6c36;
+  border-bottom: none;
+}
+.page3 .content .core-warp .core-item .pic .picimg {
+  width: 100%;
+}
+.page3 .content .core-warp .core-item .pic .picspan {
+  display: inline-block;
+  margin-left: 68px;
+  font-size: 18px;
+  color: #9e6c36;
+  margin-bottom: 8px;
+}
+.page3 .content .core-warp .core-item .pic .spanimg1 {
+  margin-left: 52px;
+}
+.page3 .content .core-warp .core-item .pic .spanimg2 {
+  margin-left: 40px;
+}
+.page3 .content .core-warp .core-item .pic .tips {
+  font-size: 14px;
   color: #2f2f31;
-  font-size: 16px;
-  line-height: 24px;
-  text-align: justify;
+  width: 196px;
+  margin: 30px auto 0;
 }
-
-/* <!--玩家机制--> */
-.page3 {
-  height: 963px;
-  background: salmon;
-  margin: 100px auto 0px;
-}
-
-
-
-/* <!--游戏结构--> */
-.page4 {
-
-  height: 940px;
-
-  margin: 100px auto 0px;
-}
-
-.page4 .title04 {
-  background: url(../img/cat-image/title04.png);
-}
-
-/* <!--游戏资料--> */
-.page5 {
-  width: 1060px;
-  height: 1160px;
-  background: green;
-  margin: 0 auto;
-}
-
-/* <!--官方公告--> */
-.page6 {
-  height: 940px;
-  background: sandybrown;
-  margin: 0 auto;
-}
-
-.page7 {
-  height: 2660px;
-  background: hotpink;
-  margin: 0 auto;
-}
-
-/*   <!--官方战绩查询--> */
-.page8 {
-  height: 1108px;
-  background: gray;
-  margin: 0 auto;
-}
-
-/* <!--广告图--> */
-.page9 {
-  height: 900px;
-  background: gray;
-  margin: 0 auto;
-}
-
-/*  <!--小小英雄 新增--> */
-.page10 {
-  height: 1210px;
-  background: gray;
-  margin: 0 auto;
+.page3 .content .core-warp .core-item:last-child {
+  margin-right: 0px;
 }
