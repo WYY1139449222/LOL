@@ -208,12 +208,17 @@
 }
 .Eleft {
   overflow: hidden;
+  float: left;
 }
 .Eleft_f1 {
   width: 400px;
   height: 35px;
   border-bottom: 1px solid #ccc;
   box-sizing: border-box;
+}
+.Eleft_f1 span:nth-child(2) {
+  float: right;
+  color: black;
 }
 .Eleft_f2 {
   width: 400px;
@@ -294,4 +299,226 @@
   height: 30px;
   float: right;
   font-size: 12px;
+}
+
+.Ecenter {
+  float: left;
+  margin-left: 20px;
+}
+
+.Ecenter_video {
+  position: relative;
+  overflow: hidden;
+}
+.Ecenter_video > a {
+  position: absolute;
+  top: 45%;
+  left: 40%;
+  width: 120px;
+  height: 50px;
+  border: 2px solid yellow;
+  line-height: 50px;
+  text-align: center;
+  box-sizing: border-box;
+  /* display :none; */
+  background: url('../img/wx-img/jrzbj.png')center center no-repeat;
+}
+.Evideo img {
+  display: inline-block;
+  margin-top: 20px;
+  width: 550px;
+  height: 300px;
+  background: skyblue;
+}
+
+/* -------------------------------- */
+
+.Eright {
+  width: 260px;
+  height: 352px;
+  float: right;
+}
+.Eright_tit span {
+  display: inline-block;
+  background: url("../img/wx-img/sprite-img.png") no-repeat;
+  background-position: 0 -56px;
+  width: 28px;
+  height: 20px;
+}
+.Eright_tit h2 {
+  display: block;
+  height: 28px;
+  line-height: 28px;
+  color: #0b0b0b;
+  font-size: 24px;
+  border-left: 4px solid #1da6ba;
+  padding-left: 8px;
+}
+.Eright_content {
+  margin-top: 24px;
+}
+.Eright_content .Eright_zero {
+  height: 23px;
+  font-size: 13px;
+  color: #fff;
+  padding-left: 10px;
+  box-sizing: border-box;
+  background: #aaa;
+}
+.Eright_zero span {
+  padding-left: 20px;
+  font-size: 14px;
+  color: #3b3b3b;
+}
+.Eright_one {
+  height: 56px;
+  background: #ccc;
+  position: relative;
+  box-sizing: border-box;
+  border-bottom: 1px solid #bbb;
+}
+
+.Eright_one .p1 {
+  display: inline-block;
+  height:20px;
+  line-height: 40px;
+  margin-left:10px;
+}
+.p1 span:nth-child(1) {
+  display: block;
+  width: 50px;
+  height:20px;
+  text-align: center;
+  font-size: 16px;
+}
+.p1 span:nth-child(2) {
+  display: block;
+  width: 50px;
+  height:20px;
+  text-align: center;
+  font-size: 14px;
+
+}
+.p2 {
+  display: inline-block;
+  width:200px;
+  height:40px;
+  text-align: center;
+  position: absolute;
+  top:10%;
+}
+.p2 .team_log img {
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  vertical-align: middle;
+  border: 0;
+}
+.team_name {
+  font-size: 14px;
+}
+.team_score {
+  font-size: 16px;
+}
+.team_score b:nth-child(4) {
+  position: absolute;
+  top: 70%;
+  left: 40%;
+  width: 56px;
+  height: 16px;
+  box-sizing: border-box;
+  border: 1px silver solid;
+  text-align: center;
+  line-height: 14px;
+  font-size: 12px;
+}
+.Eright_two {
+  height: 56px;
+  position: relative;
+  box-sizing: border-box;
+
+}
+.Eright_two .p1 {
+  display: inline-block;
+  height:20px;
+  line-height: 40px;
+  margin-left:10px;
+}
+
+.tab_tit{
+  height:108px;
+}
+
+.tab_tit ul li{
+  display: inline-block;
+  height: 26px;
+  line-height: 26px;
+  text-align: center;
+  padding:0 30px;
+  cursor: pointer;
+}
+
+.tab_context .tc_1{
+  overflow: hidden;
+  padding:0;
+  width:78px;
+  height: 82px;
+  margin-left: 4px;
+  display:none;
+}
+.tab_tit li:hover{
+  color:#1da6ba;
+}
+.tab_context .tc_1 img{
+  width:75px;
+  height: 43px;
+}
+.tab_context .tc_1 h4{
+  display: inline-block;
+  height: 38px;
+  font-size: 10px;
+  color: #424242;
+  margin-top: -10px;
+}
+
+.tab_context .tc_2{
+  overflow: hidden;
+  padding:0;
+  width:78px;
+  height: 82px;
+  margin-left: 4px;
+}
+.tab_context .tc_2 img{
+  width:70px;
+  height: 43px;
+}
+.tab_context .tc_2 h4{
+  display: inline-block;
+  height: 38px;
+  font-size: 10px;
+  color: #424242;
+  margin-top: -10px;
+}
+.tab_context>ul{
+  position: relative;
+}
+.left_btn_one{
+  font-size: 10px;
+  display: inline-block;
+  position: absolute;
+  left:0;
+  top:40%
+}
+.right_btn_one{
+  font-size: 10px;
+  display: inline;
+  position: absolute;
+  right:0;
+  top:40%
+}
+.tab_tit .YS{
+  color: #1da6ba;
+}
+.DJ{
+  display:inline-block;
 }
