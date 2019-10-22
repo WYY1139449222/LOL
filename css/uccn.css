@@ -1,28 +1,33 @@
-.md{
+.md {
     width: 1230px;
-    margin:0 auto;
+    margin: 0 auto;
 }
-body{
+
+body {
     position: relative;
     background: #eee;
     font-size: 0;
 }
-.box{
+
+.box {
     position: absolute;
     top: 0;
     width: 100%;
 }
-.navigation{
+
+.navigation {
     position: absolute;
     top: 0;
     width: 100%;
     height: 80px;
-    background: -webkit-linear-gradient(rgba(0,0,0,1),rgba(0,0,0,0.2));
+    background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2));
 }
-.navIn{
+
+.navIn {
     height: 80px;
 }
-.box>.imgBox{
+
+.box>.imgBox {
     height: 720px;
     width: 100%;
     overflow: hidden;
@@ -31,7 +36,8 @@ body{
     top: 0;
     background: center top no-repeat;
 }
-.box>.imgBox>img:first-child{
+
+.box>.imgBox>img:first-child {
     width: 1920px;
     height: 100%;
     display: block;
@@ -42,7 +48,8 @@ body{
     pointer-events: none;
     overflow: hidden;
 }
-.box>.imgBox>img:nth-child(2){
+
+.box>.imgBox>img:nth-child(2) {
     position: absolute;
     left: 50%;
     top: 0;
@@ -52,132 +59,155 @@ body{
     margin-left: -960px;
     transition: all 1 linear;
 }
-.box>.imgBox>p{
+
+.box>.imgBox>p {
     width: 160px;
     height: 40px;
-    background: rgba(0,0,0,0.7);
-   position: absolute;
-   top:590px;
-   left: 50%;
-   margin-left: -80px;
-   text-align: center;
-   line-height: 40px;
-   font-size: 16px;
-   cursor: pointer;
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 590px;
+    left: 50%;
+    margin-left: -80px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 16px;
+    cursor: pointer;
 }
-.box>.imgBox>p>a{
-    color:#caaa61;
+
+.box>.imgBox>p>a {
+    color: #caaa61;
 }
-.descLOL{
+
+.descLOL {
     position: absolute;
     top: 630px;
-    right: 0 ;
+    right: 0;
     font-size: 12px;
 }
-.descLOL>span{
+
+.descLOL>span {
     display: inline-block;
 }
-.descLOL>span:nth-child(2){
-    color:#caaa61;
+
+.descLOL>span:nth-child(2) {
+    color: #caaa61;
 }
-.descLOL>span:nth-child(1){
-    color:#b0a0a9;
+
+.descLOL>span:nth-child(1) {
+    color: #b0a0a9;
 }
-.descLOL>span:nth-child(3){
+
+.descLOL>span:nth-child(3) {
     width: 80px;
     height: 20px;
-    background:rgba(0,0,0,0.5) ;
+    background: rgba(0, 0, 0, 0.5);
     line-height: 20px;
     text-align: center;
-    color:#caaa61;
-    border:2px solid #caaa61;
+    color: #caaa61;
+    border: 2px solid #caaa61;
     margin-left: 5px;
     cursor: pointer;
 }
-.descLOL>span:nth-child(3):hover{
-    background:rgba(0,0,0,0.8) ;
+
+.descLOL>span:nth-child(3):hover {
+    background: rgba(0, 0, 0, 0.8);
 }
-.logo{
+
+.logo {
     float: left;
     height: 80px;
     line-height: 80px;
     width: 166px;
 }
-.logo p{
+
+.logo p {
     display: none;
 }
-.logo img{
+
+.logo img {
     width: 100%;
     height: 60px;
     margin-top: 10px;
 }
-.navL{
+
+.navL {
     float: left;
     height: 80px;
     position: relative;
 }
-.navLeft{
+
+.navLeft {
     float: left;
 }
-.navLeft>li{
+
+.navLeft>li {
     margin-top: 20px;
     float: left;
     width: 135px;
     text-align: center;
 }
-.navLeft>li>a>h3{
-    color:#fff;
+
+.navLeft>li>a>h3 {
+    color: #fff;
     height: 26px;
-    line-height:26px;
+    line-height: 26px;
     font-size: 18px;
     font-weight: 400;
 }
-.navLeft>li>a>p{
-    color:#fff;
+
+.navLeft>li>a>p {
+    color: #fff;
     height: 16px;
-    line-height:16px;
+    line-height: 16px;
     font-size: 11px;
     font-weight: 200;
 }
-.navRight{
+
+.navRight {
     float: right;
     /* background: red; */
     height: 80px;
     line-height: 80px;
 }
-.search{
+
+.search {
     float: left;
     width: 40px;
     margin-right: 10px;
 }
-.search span{
+
+.search span {
     font-size: 25px;
     font-weight: 800;
-    color:#cdbe91;
+    color: #cdbe91;
 }
 
-.phone{
+.phone {
     float: left;
     width: 40px;
     margin-right: 10px;
     position: relative;
 }
-.phone span{
+
+.phone span {
     font-size: 25px;
-    color:#cdbe91;
+    color: #cdbe91;
 }
-.logIn{
+
+.logIn {
     float: left;
     height: 80px;
     line-height: 80px;
     font-size: 16px;
     position: relative;
 }
-.logIn>span{
-    color:#fff;
+
+.logIn>span {
+    color: #fff;
     float: left;
 }
-.logIn>img{
+
+.logIn>img {
     float: left;
     border-radius: 50%;
     width: 40px;
@@ -185,17 +215,19 @@ body{
     margin-top: 20px;
     margin-right: 10px;
 }
-.logIn>a{
-    color:#cdbe91;
+
+.logIn>a {
+    color: #cdbe91;
     float: left;
 }
-.phoneLOL{
-    background: rgba(0,0,0,0.7);
+
+.phoneLOL {
+    background: rgba(0, 0, 0, 0.7);
     position: absolute;
     top: 80px;
     left: -70px;
     width: 200px;
-    height:160px;
+    height: 160px;
     /* right: 180px;
     top: 80px; */
     padding: 20px 50px;
@@ -205,29 +237,34 @@ body{
     transition: all 0.5s linear;
     display: none;
 }
-.phoneLOL>img:first-child{
+
+.phoneLOL>img:first-child {
     width: 100px;
     height: 100px;
     border-radius: 10px;
 }
-.phone:hover .phoneLOL{
+
+.phone:hover .phoneLOL {
     display: block;
     opacity: 1;
 }
-.phoneLOL>p{
+
+.phoneLOL>p {
     font-size: 12px;
     width: 120px;
-    color:#cdbe91;
+    color: #cdbe91;
     position: absolute;
-    top:100px;
+    top: 100px;
     left: 35px;
 }
-.phoneLOL>img:last-child{
+
+.phoneLOL>img:last-child {
     position: absolute;
     right: -5px;
     bottom: 0;
 }
-.logInBox{
+
+.logInBox {
     width: 300px;
     height: 160px;
     z-index: 2;
@@ -235,111 +272,127 @@ body{
     position: absolute;
     right: -15px;
     top: 80px;
-    color:#cdbe91;
+    color: #cdbe91;
     display: none;
     text-align: center;
-    background: rgba(0,0,0,0.5);
+    background: rgba(0, 0, 0, 0.5);
     font-size: 12px;
     transition: all 0.5s linear;
 }
-.logIn:hover .logInBox{
+
+.logIn:hover .logInBox {
     display: block;
     opacity: 1;
 }
-.logInBox>p:last-child{
+
+.logInBox>p:last-child {
     height: 50px;
     line-height: 50px;
-    background: rgba(0,0,0,0.7);
+    background: rgba(0, 0, 0, 0.7);
     position: absolute;
     bottom: 0;
     width: 100%;
     cursor: pointer;
 }
-.logInBox>p:first-child{
+
+.logInBox>p:first-child {
     height: 25px;
     left: 25px;
 }
-.logInBox>p:nth-child(3){
-    height: 25px;
-    left: 25px;
-    margin-bottom: 10px;
-}
-.logInBox>p:nth-child(2){
+
+.logInBox>p:nth-child(3) {
     height: 25px;
     left: 25px;
     margin-bottom: 10px;
 }
-.deve{
+
+.logInBox>p:nth-child(2) {
+    height: 25px;
+    left: 25px;
+    margin-bottom: 10px;
+}
+
+.deve {
     width: 100%;
     height: 280px;
     z-index: 4;
-    background: rgba(0,0,0,0.2);
+    background: rgba(0, 0, 0, 0.2);
     transition: all 0.5s linear;
     display: none;
     opacity: 0;
     position: absolute;
     top: 80px;
 }
-.develop{
+
+.develop {
     position: absolute;
     top: 80px;
     left: 0px;
-    width:800px;
+    width: 800px;
     height: 260px;
     padding: 20px 0;
     z-index: 5;
     display: none;
 }
-.develop>li{
+
+.develop>li {
     float: left;
     width: 135px;
     text-align: center;
 }
-.develop>li>a{
+
+.develop>li>a {
     display: block;
     height: 30px;
     line-height: 30px;
     font-size: 14px;
     color: #fff;
 }
-.develop>li>a:hover{
-    color:#cdbe91;
+
+.develop>li>a:hover {
+    color: rgb(255, 208, 0);
     text-decoration: underline;
 }
-.wrap{
-    
+
+.wrap {
     position: absolute;
     top: 680px;
     left: 50%;
     transform: translateX(-50%);
 }
-.wrapIn{
+
+.wrapIn {
     width: 1230px;
-    height: 600px;
-    margin:0 auto;
+    height: 1060px;
+    margin: 0 auto;
 }
-.swper{
+
+.swper {
     float: left;
     width: 710px;
     height: 380px;
     overflow: hidden;
 }
-.swper ul{
+
+.swper ul {
     width: 710px;
     height: 340px;
 }
-.swper ul>li{
+
+.swper ul>li {
     width: 710px;
     height: 340px;
     position: absolute;
     top: 0;
     left: 0;
 }
-.swper ul>li>img{
+
+.swper ul>li>img {
     width: 100%;
     height: 100%;
 }
-.sp{
+
+.sp {
     display: inline-block;
     width: 142px;
     height: 40px;
@@ -347,45 +400,52 @@ body{
     font-size: 16px;
     text-align: center;
     line-height: 40px;
-   cursor: pointer;
+    cursor: pointer;
 }
-.swperp{
+
+.swperp {
     box-sizing: border-box;
     background: #fff;
-    border-bottom: 2px solid#cea861 ;
+    border-bottom: 2px solid#cea861;
 }
-.wrapRight{
+
+.wrapRight {
     width: 490px;
     height: 380px;
     position: absolute;
     top: 0;
     right: 0;
 }
-.wrapTop{
+
+.wrapTop {
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
 }
-.wrapTop>li{
+
+.wrapTop>li {
     width: 50px;
     font-size: 18px;
-   cursor: pointer;
+    cursor: pointer;
     font-weight: 700;
     height: 34px;
     line-height: 24px;
-    color:#676767;
+    color: #676767;
     float: left;
     text-align: center;
 }
-.wrapTop>li.wrapToplis{
+
+.wrapTop>li.wrapToplis {
     background: url(../img/tab-title-selected.png) center bottom no-repeat;
-    color:#1da6ba;
+    color: #1da6ba;
 }
-.wrapbody{
+
+.wrapbody {
     width: 490px;
     height: 305px;
     position: relative;
 }
-.wrapbody>.wrap1{
+
+.wrapbody>.wrap1 {
     width: 490px;
     height: 305px;
     position: absolute;
@@ -394,62 +454,71 @@ body{
     font-size: 14px;
 }
 
-.wrapbody>.wrap1:nth-child(4),.wrapbody>.wrap1:nth-child(2),.wrapbody>.wrap1:nth-child(3),.wrapbody>.wrap1:nth-child(5){
+.wrapbody>.wrap1:nth-child(4), .wrapbody>.wrap1:nth-child(2), .wrapbody>.wrap1:nth-child(3), .wrapbody>.wrap1:nth-child(5) {
     display: none;
 }
 
-.wrap1>li:nth-child(1){
+.wrap1>li:nth-child(1) {
     height: 59px;
     line-height: 59px;
     text-align: center;
     background: url(../img/index-spr.png) center center no-repeat;
-    background-position:left -458px;
+    background-position: left -458px;
     border-top: 1px #e0e2e2 solid;
 }
-.wrap1>li:nth-child(1) a{
+
+.wrap1>li:nth-child(1) a {
     font-size: 22px;
-    color:#1da6ba;
+    color: #1da6ba;
     text-align: center;
 }
-.wrap1>li>a{
+
+.wrap1>li>a {
     font-size: 14px;
-    color:#424242;
+    color: #424242;
 }
-.wrap1>li>span:nth-child(1){
+
+.wrap1>li>span:nth-child(1) {
     font-size: 12px;
     margin-right: 20px;
     float: left;
-    padding:1px 5px;
+    padding: 1px 5px;
     margin-top: 10px;
 }
-.wrap1>li>span:nth-child(3){
+
+.wrap1>li>span:nth-child(3) {
     float: right;
 }
-.wrapLi{
+
+.wrapLi {
     height: 39px;
     border-top: 1px #e0e2e2 solid;
     line-height: 39px;
 }
-.wrapfoot{
+
+.wrapfoot {
     height: 40px;
     background: #e3e2e2;
     width: 100%;
     position: absolute;
-   bottom: 0;
-   font-size: 14px;
-   color:#323232;
-   line-height: 40px;
-   text-align: center;
-   cursor: pointer;
-   user-select: none;
+    bottom: 0;
+    font-size: 14px;
+    color: #323232;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
 }
-.wrapfoot:hover{
+
+.wrapfoot:hover {
     background: #ddd;
 }
-.wrapfoot>span:nth-child(2){
-    color:#7ea1a6;
+
+.wrapfoot>span:nth-child(2) {
+    color: #7ea1a6;
 }
-.wrapfoot>.wrapfootimg{
+
+.wrapfoot>.wrapfootimg {
     display: inline-block;
     width: 15px;
     height: 9px;
@@ -457,62 +526,67 @@ body{
     margin-left: 5px;
     background: url(../img/comm-spr.png) center center no-repeat;
     background-position-x: -213px;
-    background-position-y:-126px ;
+    background-position-y: -126px;
     /* background-color: chartreuse; */
 }
-.wrap1>li:nth-child(2n)>span:nth-child(1){
+
+.wrap1>li:nth-child(2n)>span:nth-child(1) {
     height: 18px;
     line-height: 18px;
-    border:1px solid #bb9a6c;
-    color:#bb9a6c;
+    border: 1px solid #bb9a6c;
+    color: #bb9a6c;
 }
-.wrap1>li:nth-child(2n+1)>span:nth-child(1){
+
+.wrap1>li:nth-child(2n+1)>span:nth-child(1) {
     height: 18px;
     line-height: 18px;
-    border:1px solid #e9852d;
-    color:#e9852d;
-}
-.wrap1>li:nth-child(2n):hover a{
-    color:#bb9a6c;
-}
-.wrap1>li:nth-child(2n+1):hover a{
-    color:#e9852d;
+    border: 1px solid #e9852d;
+    color: #e9852d;
 }
 
-.wrap2>li>span:nth-child(1){
+.wrap1>li:nth-child(2n):hover a {
+    color: #bb9a6c;
+}
+
+.wrap1>li:nth-child(2n+1):hover a {
+    color: #e9852d;
+}
+
+.wrap2>li>span:nth-child(1) {
     height: 18px;
     line-height: 18px;
-    border:1px solid #bb9a6c !important;
-    color:#bb9a6c !important;
-}
-.wrap2>li:hover a{
-    color:#bb9a6c !important;
+    border: 1px solid #bb9a6c !important;
+    color: #bb9a6c !important;
 }
 
+.wrap2>li:hover a {
+    color: #bb9a6c !important;
+}
 
-.wrap4>li>span:nth-child(1){
+.wrap4>li>span:nth-child(1) {
     height: 18px;
     line-height: 18px;
-    border:1px solid #4ba36a !important;
-    color:#4ba36a !important;
+    border: 1px solid #4ba36a !important;
+    color: #4ba36a !important;
 }
 
-.wrap4>li:hover a{
-    color:#4ba36a !important;
+.wrap4>li:hover a {
+    color: #4ba36a !important;
 }
-.wrap5>li:nth-child(1){
+
+.wrap5>li:nth-child(1) {
     white-space: nowrap;
     text-overflow: ellipsis;
 }
 
-.active{
+.active {
     width: 710px;
     height: 335px;
     position: absolute;
     top: 420px;
 }
-.actNavh2{
-    
+
+.actNavh2 {
     width: auto;
     height: 37px;
     float: left;
@@ -522,20 +596,24 @@ body{
     line-height: 37px;
     font-weight: 400;
 }
-.actNavul{
+
+.actNavul {
     width: 600px;
     height: 37px;
     line-height: 37px;
     float: right;
     text-align: center;
 }
-.actNavul>li{
+
+.actNavul>li {
     font-size: 16px;
     float: left;
     margin-left: 20px;
-    color:#676767;
+    color: #676767;
+    cursor: pointer;
 }
-.lod{
+
+.lod {
     width: 490px;
     height: 335px;
     background: chartreuse;
@@ -544,11 +622,12 @@ body{
     right: 0;
 }
 
-.actNavul>li.wrapToplis{
+.actNavul>li.wrapToplis {
     background: url(../img/tab-title-selected.png) center bottom no-repeat;
-    color:#1da6ba;
+    color: #1da6ba;
 }
-.actNavright{
+
+.actNavright {
     position: absolute;
     right: 0;
     top: 0;
@@ -560,14 +639,21 @@ body{
     line-height: 30px;
     cursor: pointer;
 }
-.actNavright>i{
+
+.actNavright:hover {
+    color: #1da6ba;
+}
+
+.actNavright>i {
     width: 16px;
     height: 9px;
     display: inline-block;
     background: url(../img/comm-spr.png) center center no-repeat;
     background-position-x: -213px;
-    background-position-y:-126px ;
+    background-position-y: -126px;
+    transition: all 0.2s cubic-bezier(0.84, -0.77, 0, 3.5);
 }
+
 .actNavh2:before {
     content: '\0020';
     display: inline-block;
@@ -578,4 +664,1231 @@ body{
     height: 28px;
     background-color: #1da6ba;
     margin-right: 10px;
+}
+
+.actbody {
+    width: 100%;
+    height: 278px;
+    position: absolute;
+    top: 60px;
+    display: none;
+}
+
+.actbody.actbodycur {
+    display: block;
+}
+
+.actbody>li {
+    width: 170px;
+    height: 250px;
+    float: left;
+    font-size: 14px;
+    background: #fff;
+    margin-right: 10px;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+
+.actbody>li:last-child {
+    margin-right: 0;
+}
+
+.actbody img {
+    width: 100%;
+    height: 182px;
+}
+
+.actbody p {
+    height: 28px;
+    line-height: 28px;
+    text-indent: 10px;
+}
+
+.actbodyFoot {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    font-size: 12px;
+    color: #1da6ba;
+}
+
+.actbodyFoot>span {
+    float: left;
+    margin: 0 0 5px 10px;
+    font-weight: 200;
+}
+
+.actbodyFoot>i {
+    float: right;
+    width: 30px;
+    height: 20px;
+    margin: 0 10px 5px 0;
+    background: url(../img/comm-spr.png)center center no-repeat;
+    background-position-x: -300px;
+    background-position-y: -43px;
+    transition: all 0.2s cubic-bezier(0.84, -0.77, 0, 3.5);
+}
+
+.imgup {
+    width: 100%;
+    height: 182px;
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.imgupin {
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid rgba(255, 219, 76, 1);
+    font-size: 16px;
+}
+
+.imgupin>h4 {
+    font-size: 16px;
+    font-weight: 400;
+    color: #cdbe91;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.imgupin>p {
+    font-size: 12px;
+    color: #9d9c9c;
+    overflow: hidden;
+}
+
+.actbody>li:hover .imgup {
+    display: block;
+}
+
+.actbody>li:hover {
+    transform: translateY(-10px);
+}
+
+.download {
+    width: 490px;
+    height: 310px;
+    position: absolute;
+    top: 420px;
+    right: 0;
+    font-size: 14px;
+}
+
+.downloadIn {
+    width: 360px;
+    height: 150px;
+    float: left;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.novice {
+    width: 118px;
+    float: right;
+    margin-bottom: 15px;
+    background: url(../img/index-spr.png) center center no-repeat;
+    background-size: 638px 572px;
+    background-position: -193px -316px;
+    color: #fff;
+    position: relative;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 75px;
+    overflow: hidden;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.gain {
+    width: 118px;
+    height: 75px;
+    float: right;
+    background: url(../img/index-spr.png) center center no-repeat rgba(0, 0, 0, 1);
+    background-size: 638px 572px;
+    background-position: -193px -316px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 76px;
+    overflow: hidden;
+    box-sizing: border-box;
+    position: relative;
+    cursor: pointer;
+}
+
+.gain:hover {
+    background-color: rgba(0, 0, 0, 1);
+}
+
+.dowLod {
+    width: 490px;
+    height: 150px;
+    float: left;
+    margin-top: 5px;
+    position: relative;
+}
+
+.dowLod li {
+    width: 115px;
+    height: 60px;
+    float: left;
+    background: #fff;
+    margin-right: 10px;
+    margin-top: 10px;
+    position: relative;
+}
+
+.dowLod li:nth-child(4), .dowLod li:nth-child(8) {
+    margin-right: 0;
+}
+
+.downloadIn>video {
+    width: 360px;
+    height: 165px;
+    float: left;
+}
+
+.noviceIn {
+    width: 118px;
+    height: 75px;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 12px;
+    display: none;
+}
+
+.novice:hover .noviceIn {
+    display: block;
+}
+
+.noviceInLeft {
+    width: 59px;
+    height: 75px;
+    border-right: 1px solid #eee;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.noviceInRight {
+    width: 59px;
+    height: 75px;
+    border-right: 1px solid #eee;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.noviceInLeft>i {
+    display: block;
+    width: 22px;
+    height: 22px;
+    margin: 18px auto 0 auto;
+    background: url(../img/comm-spr.png)center center no-repeat;
+    background-position: -242px -72px;
+    background-size: 392px 200px;
+    transition: all 0.2s cubic-bezier(0.84, -0.77, 0, 3.5);
+}
+
+.noviceInRight>i {
+    display: block;
+    width: 22px;
+    height: 22px;
+    margin: 18px auto 0 auto;
+    background: url(../img/comm-spr.png)center center no-repeat;
+    background-position: -285px -99px;
+    background-size: 394px 200px;
+    transition: all 0.2s cubic-bezier(0.84, -0.77, 0, 3.5);
+}
+
+.noviceInLeft>span, .noviceInRight>span {
+    font-size: 12px;
+    color: #424242;
+    text-align: center;
+    font-weight: 300;
+    height: 24px;
+    line-height: 24px;
+    position: absolute;
+    top: 40px;
+    left: 18px;
+}
+
+.noviceInLeft:hover span, .noviceInRight:hover span {
+    color: #1da6ba;
+}
+
+.noviceInLeft:hover i {
+    width: 30px;
+    height: 30px;
+    background-size: 423px 230px;
+    background-position: -258px -84px;
+}
+
+.noviceInRight:hover i {
+    width: 30px;
+    height: 30px;
+    background-size: 423px 230px;
+    background-position: -301px -115px;
+}
+
+.dowLod>li i {
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    top: 20px;
+    left: 15px;
+    background: url(../img/comm-spr.png)center center no-repeat;
+    background-size: 394px 200px;
+}
+
+.dowLod>li {
+    transition: all 0.2s;
+}
+
+.dowLod>li>a {
+    height: 60px;
+    width: 115px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    line-height: 60px;
+    font-size: 12px;
+    color: #424242;
+}
+
+.dowLod>li>a>span {
+    margin-left: 45px;
+}
+
+.dowLod>li>a>b {
+    position: absolute;
+    left: -2px;
+    top: -5px;
+    width: 30px;
+    height: 20px;
+    background: url(../img/comm-spr.png)center center no-repeat;
+    background-position-x: -300px;
+    background-position-y: -43px;
+}
+
+.dowLod>li:hover a {
+    color: #1da6ba;
+}
+
+.dowLod>li:hover {
+    box-shadow: 0 0 2px 2px #ccc;
+    border-radius: 5px;
+}
+
+.dowLod>li:nth-child(1) i {
+    transition: all 0.2s ease-in;
+    background-position: -317px -12px;
+}
+
+.dowLod>li:nth-child(2) i {
+    transition: all 0.2s ease-in;
+    background-position: -220px -72px;
+}
+
+.dowLod>li:nth-child(3) i {
+    transition: all 0.2s ease-in;
+    background-position: -289px -12px;
+}
+
+.dowLod>li:nth-child(4) i {
+    transition: all 0.2s ease-in;
+    background-position: -193px -72px;
+}
+
+.dowLod>li:nth-child(5) i {
+    transition: all 0.2s ease-in;
+    background-position: -193px -46px;
+}
+
+.dowLod>li:nth-child(6) i {
+    transition: all 0.2s ease-in;
+    background-position: -372px -12px;
+}
+
+.dowLod>li:nth-child(7) i {
+    transition: all 0.2s cubic-bezier(0.84, -0.77, 0, 3.5);
+    background-position: -275px -46px;
+}
+
+.dowLod>li:nth-child(8) i {
+    background-position: -232px -12px;
+}
+
+.dowLod>li:nth-child(1):hover a>i {
+    width: 30px;
+    height: 30px;
+    left: 10px;
+    top: 15px;
+    background-size: 422px 230px;
+    background-position: -336px -12px;
+}
+
+.dowLod>li:nth-child(2):hover i {
+    width: 30px;
+    height: 30px;
+    left: 10px;
+    top: 15px;
+    background-size: 422px 230px;
+    background-position: -232px -82px;
+}
+
+.dowLod>li:nth-child(3):hover i {
+    width: 30px;
+    height: 30px;
+    left: 10px;
+    top: 15px;
+    background-size: 422px 230px;
+    background-position: -305px -12px;
+}
+
+.dowLod>li:nth-child(4):hover i {
+    width: 30px;
+    height: 30px;
+    left: 10px;
+    top: 15px;
+    background-size: 422px 230px;
+    background-position: -203px -79px;
+}
+
+.dowLod>li:nth-child(5):hover i {
+    width: 30px;
+    height: 30px;
+    left: 10px;
+    top: 15px;
+    background-size: 422px 230px;
+    background-position: -203px -50px;
+}
+
+.dowLod>li:nth-child(6):hover i {
+    width: 30px;
+    height: 30px;
+    left: 10px;
+    top: 15px;
+    background-size: 422px 230px;
+    background-position: -395px -12px;
+}
+
+.dowLod>li:nth-child(7):hover i {
+    width: 30px;
+    height: 30px;
+    left: 10px;
+    top: 15px;
+    background-size: 422px 230px;
+    background-position: -291px -49px;
+}
+
+.lodBox {
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    position: absolute;
+    left: -130px;
+    top: -83px;
+    background: rgba(255, 255, 255, 0.9);
+    display: none;
+    transition: all 0.2s linear;
+    z-index: 2;
+}
+
+.lodBox>div {
+    width: 40px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.lodBox>div>em {
+    width: 40px;
+    height: 40px;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.lodBox>div>span {
+    width: 40px;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    font-size: 12px;
+}
+
+.lodBox1 {
+    position: absolute;
+    top: 17px;
+    left: 95px;
+}
+
+.lodBox>.lodBox1>em {
+    background: url(../img/index-spr.png) center center no-repeat;
+    background-position: -541px -253px;
+}
+
+.lodBox2 {
+    position: absolute;
+    top: 68px;
+    left: 19px;
+}
+
+.lodBox>.lodBox2>em {
+    background: url(../img/index-spr.png) center center no-repeat;
+    background-position: -361px -316px;
+}
+
+.lodBox3 {
+    position: absolute;
+    left: 54px;
+    top: 148px;
+}
+
+.lodBox>.lodBox3>em {
+    background: url(../img/index-spr.png) center center no-repeat;
+    background-position: -496px -253px;
+}
+
+.lodBox4 {
+    position: absolute;
+    right: 54px;
+    top: 148px;
+}
+
+.lodBox>.lodBox4>em {
+    background: url(../img/index-spr.png) center center no-repeat;
+    background-position: -560px -179px;
+}
+
+.lodBox5 {
+    position: absolute;
+    top: 68px;
+    right: 19px;
+}
+
+.lodBox>.lodBox5>em {
+    background: url(../img/index-spr.png) center center no-repeat;
+    background-position: -586px -253px;
+}
+
+.lodBox>b {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background: chartreuse;
+    transform: translate(-45%, -50%);
+    background: url(../img/index-spr.png) center center no-repeat;
+    background-position: -602px -175px;
+}
+
+.champion {
+    width: 710px;
+    height: 250px;
+    position: absolute;
+    left: 0;
+    top: 780px;
+}
+
+.championL {
+    width: 350px;
+    height: 250px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    cursor: pointer;
+}
+
+.championL:hover .chamLIn {
+    display: block;
+}
+
+.championR {
+    width: 350px;
+    height: 250px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: all 0.2s cubic-bezier(0.84, -0.77, 0, 3.5);
+}
+
+.verson {
+    width: 490px;
+    height: 250px;
+    position: absolute;
+    right: 0;
+    top: 780px;
+}
+
+.versonvideo {
+    width: 240px;
+    height: 120px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.versonimg {
+    height: 175px;
+    width: 238px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+}
+
+.versonimg>img {
+    width: 100%;
+    height: 100%;
+}
+
+.versonstar {
+    height: 120px;
+    width: 240px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.versonper {
+    height: 60px;
+    width: 240px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+}
+
+.championL>img {
+    width: 100%;
+    height: 100%;
+}
+
+.chamLout {
+    width: 350px;
+    height: 250px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.chamLIn {
+    width: 350px;
+    height: 250px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+    transition: all 0.2s cubic-bezier(0.84, -0.77, 0, 3.5);
+}
+
+.chamLout>b {
+    display: block;
+    width: 60px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    font-size: 12px;
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    color: #cdbe91;
+    font-weight: 400;
+}
+
+.chamLout>div {
+    height: 70px;
+    width: 350px;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.chamLout>div>p {
+    width: 350px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    font-size: 16px;
+    color: #cdbe91;
+}
+
+.chamLout>div>span {
+    color: #cfcfcf;
+    font-size: 14px;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+
+.chamLIn {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.chamLInIn {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 95%;
+    height: 92%;
+    border: 1px solid #cdbe91;
+}
+
+.chamLInIn>p {
+    font-size: 18px;
+    color: #cdbe91;
+    position: absolute;
+    left: 20px;
+    top: 15px;
+}
+
+.chamLInIn>.nandu {
+    height: 24px;
+    line-height: 24px;
+    font-size: 14px;
+    color: #fff;
+    position: absolute;
+    left: 15px;
+    top: 55px;
+}
+
+.chamLInIn>.nandu i:nth-of-type(1) {
+    display: inline-block;
+    width: 30px;
+    height: 4px;
+    font-size: 12px;
+    background: #fff;
+}
+
+.chamLInIn>.nandu i:nth-of-type(2), .chamLInIn>.nandu i:nth-of-type(3) {
+    display: inline-block;
+    width: 30px;
+    height: 4px;
+    font-size: 12px;
+    background: rgba(255, 255, 255, 0.5)
+}
+
+.chamLInIn>.nandu b:nth-of-type(1) {
+    display: inline-block;
+    background: #fff;
+    width: 60px;
+    height: 4px;
+}
+
+.chamLInIn>.nandu b:nth-of-type(2) {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.5);
+    width: 10px;
+    height: 4px;
+    margin-left: -5px;
+}
+
+.chamLInIn>.fangyu {
+    height: 24px;
+    line-height: 24px;
+    font-size: 14px;
+    color: #fff;
+    position: absolute;
+    left: 15px;
+    top: 90px;
+}
+
+.chamLInIn>.fangyu i:nth-of-type(1) {
+    display: inline-block;
+    background: #fff;
+    width: 30px;
+    height: 4px;
+}
+
+.chamLInIn>.fangyu i:nth-of-type(2) {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.4);
+    width: 40px;
+    height: 4px;
+    margin-left: -5px;
+}
+
+.chamLInIn>.fangyu b:nth-of-type(1) {
+    display: inline-block;
+    background: #fff;
+    width: 20px;
+    height: 4px;
+}
+
+.chamLInIn>.fangyu b:nth-of-type(2) {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.4);
+    width: 50px;
+    height: 4px;
+    margin-left: -5px;
+}
+
+.chamLInIn>.chamLInInB {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    width: 154px;
+    height: 42px;
+    line-height: 42px;
+    color: #ffdb8b;
+    font-size: 14px;
+    text-align: center;
+    background: url(../img/index-spr.png)center center no-repeat;
+    background-position: -401px -179px;
+}
+
+.chamLInIn>.chamLInInB i {
+    width: 16px;
+    height: 9px;
+    display: inline-block;
+    background: url(../img/comm-spr.png) center center no-repeat;
+    background-position-x: -213px;
+    background-position-y: -126px;
+}
+
+.championR>img {
+    width: 100%;
+    height: 100%;
+}
+
+.championR>.championRO {
+    width: 350px;
+    height: 250px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.championR>.championRO>span {
+    width: 48px;
+    height: 20px;
+    color: #cdbe91;
+    font-size: 12px;
+    background: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    line-height: 20px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+.championRO>div {
+    height: 70px;
+    width: 350px;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.championRO>div>p {
+    width: 350px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    font-size: 16px;
+    color: #cdbe91;
+}
+
+.championRO>div>span {
+    color: #cfcfcf;
+    font-size: 14px;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+
+.chamRIn {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 0.2s linear;
+}
+
+.championR:hover .chamRIn {
+    opacity: 1;
+    transform: scale(1.15);
+}
+
+.chamRIn>video {
+    width: 100%;
+    height: 80%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.chamRIn>.chamRInB {
+    width: 100%;
+    height: 21%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: #fff;
+}
+
+.chamRIn>.chamRInB>.chamRInBL {
+    width: 50%;
+    height: 100%;
+    font-size: 14px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.chamRIn>.chamRInB>.chamRInBL>span {
+    font-size: 12px;
+    color: #aaa;
+}
+
+.chamRInBR {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    width: 30%;
+    height: 65%;
+    line-height: 37px;
+    border: 1px solid #cdbe91;
+    text-align: center;
+    color: #cdbe91;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.championR>.chamRImg {
+    width: 1230px;
+    height: 0px;
+    position: absolute;
+    top: 270px;
+    left: -360px;
+    transition: all 0.2s linear;
+}
+
+.championR:hover .chamRImg {
+    height: 240px;
+}
+
+.championR:hover .chamRImg>li>p {
+    display: block;
+}
+
+.chamRImg>li {
+    width: 145px;
+    height: 100%;
+    float: left;
+    margin-right: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.chamRImg>li:hover img {
+    width: 110%;
+    height: 110%;
+}
+
+.chamRImg>li:last-child {
+    margin-right: 0;
+}
+
+.chamRImg>li>img {
+    width: 100%;
+    height: 100%;
+    transition: all 0.2s linear;
+}
+
+.chamRImg>li>p {
+    color: #cdbe91;
+    display: none;
+    font-size: 14px;
+    height: 30px;
+    width: 100%;
+    line-height: 30px;
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.versonvideo .vervideoBox {
+    width: 260px;
+    height: 200px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    /* display:none; */
+    opacity: 0;
+    transition: all 0.3s linear;
+}
+
+.vervideoBox>video {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.vervideoBox>.verVB {
+    width: 100%;
+    height: 30%;
+    position: absolute;
+    left: 0;
+    bottom: 0%;
+    background: #fff;
+}
+
+.verVBL {
+    width: 150px;
+    height: 100%;
+    font-size: 12px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.verVBL>p {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.verVBL>span {
+    color: #b0b0b0;
+}
+
+.verVBR {
+    width: 100px;
+    height: 30px;
+    background: #fff;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    font-size: 14px;
+    line-height: 30px;
+    text-align: center;
+    transform: translateY(-50%);
+    border: 1px solid #cdbe61;
+    color: #cdbe61;
+    cursor: pointer;
+}
+
+.verVBR:hover {
+    color: #fff;
+    background: #cdbe61;
+}
+
+.versonvideo:hover .vervideoBox {
+    opacity: 1;
+    transform: scale(1.2);
+    z-index: 1;
+}
+
+.verimgIn {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    background-image: url(../img/index-spr.png);
+    background-position: -401px 1px;
+    opacity: 0;
+    transition: all 0.2s linear;
+}
+
+.versonimg:hover .verimgIn {
+    opacity: 1;
+}
+
+.verimgIn h4 {
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    left: 0;
+    top: 55px;
+    font-size: 16px;
+    color: #cdbe61;
+    font-weight: 300;
+}
+
+.verimgIn p {
+    width: 100%;
+    height: 30px;
+    position: absolute;
+    left: 0;
+    top: 85px;
+    font-size: 12px;
+    color: #aaa;
+    line-height: 30px;
+    text-align: center;
+}
+
+.versonstar>img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: all 0.3s linear;
+}
+
+.versonstar>img:nth-child(2) {
+    opacity: 0;
+}
+
+.versonstar:hover img:last-child {
+    opacity: 1;
+}
+
+.versonstar:hover img:nth-child(1) {
+    opacity: 0;
+}
+
+.verperIn {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: url(../img/index-spr.png) center center no-repeat;
+    background-position: -193px -253px;
+    text-align: center;
+    line-height: 60px;
+    font-size: 14px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.verperIn>b:first-child {
+    width: 20px;
+    height: 9px;
+    background-position: -531px -226px;
+    background-image: url(//game.gtimg.cn/images/lol/v3/index-spr.png);
+    background-size: 638px 572px;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 68px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.verperIn>b:last-child {
+    width: 20px;
+    height: 9px;
+    background-position: -506px -226px;
+    background-image: url(//game.gtimg.cn/images/lol/v3/index-spr.png);
+    background-size: 638px 572px;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 165px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.verperIn>i {
+    width: 15px;
+    height: 9px;
+    background-position: -342px -99px;
+    background-image: url(//game.gtimg.cn/images/lol/v3/comm-spr.png);
+    background-size: 393px 200px;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 138px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all 0.2s cubic-bezier(0.84, -0.77, 0, 3.5);
+}
+
+.versonper:hover .verperIn>i {
+    left: 142px;
+}
+
+.verperB {
+    width: 420px;
+    height: 180px;
+    background: #fff;
+    position: absolute;
+    right: 0;
+    top: 60px;
+    display: none;
+    transition: all 0.2s linear;
+    
+}
+.versonper:hover .verperB{
+    display: block;
+    z-index: 20;
+    transform: translateY(10px);
+    box-shadow: 0 0 10px 10px #aaa;
+}
+.sanjiao {
+    width: 0px;
+    height: 0px;
+    border-top: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-left: 8px solid transparent;
+    border-bottom: 8px solid #fff;
+    position: absolute;
+    right: 120px;
+    top: -16px;
+}
+
+.verperB>ul {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.verperB>ul>li {
+    width: 46px;
+    height: 46px;
+    float: left;
+    margin-right: 11px;
+    margin-bottom: 10px;
+}
+
+.verperB>ul>li>img {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    border: 2px solid #cdbe61;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.vid{
+    background: rgb(227, 226, 226);
+    width: 100%;
+    position: absolute;
+    top: 1480px;
+}
+.vidIn{
+    height: 500px;
 }

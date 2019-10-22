@@ -13,6 +13,11 @@ let $swper = $('.swper');
 let $wrapToplis = $('.wrapTop>li');
 let $wrapbodyul = $('.wrapbody>ul');
 let $actNavullis = $('.actNavul>li');
+let $actbody = $('.actbody');
+let $dowlodlast = $('.dowlodlast');
+let $dowlodlastI = $('.dowlodlast i');
+let $lodBox = $('.lodBox');
+
 let n = 0,timer = null;
 
 
@@ -88,4 +93,38 @@ $wrapToplis.on('mouseenter',function(){
 $actNavullis.on('mouseenter',function(){
     let n = $(this).index();
     $(this).addClass('wrapToplis').siblings().removeClass('wrapToplis');
+    $actbody.eq(n).addClass('actbodycur').siblings().removeClass('actbodycur')
+})
+
+$dowlodlast.on('mouseenter',function(){
+    $dowlodlastI.eq(0).animate({left:'-17px'},300);
+  
+   setTimeout(()=>{
+    $dowlodlastI.eq(0).css({display:'none'});
+    $lodBox.eq(0).css({display:'block'})
+   },400)
+    
+});
+$dowlodlast.on('mouseleave',function(){
+    $dowlodlastI.eq(0).css({display:'block'}).animate({left:'15px'},300);
+    $lodBox.eq(0).css({display:'none'})
+    setTimeout(()=>{
+        $dowlodlastI.eq(0).css({display:'block'}).animate({left:'15px'},300);
+        $lodBox.eq(0).css({display:'none'})
+    },400)
+    
+})
+$('.championR').on('mouseenter',function(){
+   $('.championR video').get(0).play();
+   $('.vid').animate({top:'1740px'},200)
+})
+$('.championR').on('mouseleave',function(){
+    $('.championR video').get(0).pause();
+    $('.vid').animate({top:'1480px'},200)
+})
+$('.versonvideo').on('mouseenter',function(){
+    $('.versonvideo video').get(0).play();
+})
+$('.versonvideo').on('mouseleave',function(){
+    $('.versonvideo video').get(0).pause();
 })
