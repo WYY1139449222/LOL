@@ -17,8 +17,17 @@ let $actbody = $('.actbody');
 let $dowlodlast = $('.dowlodlast');
 let $dowlodlastI = $('.dowlodlast i');
 let $lodBox = $('.lodBox');
-
+let $vidlis = $('.vidbody>li>ul>li');
+let $vidliTOuts = $('.vidbody>li>ul>li>.vidliTOut');
+let $vidliTIns = $('.vidbody>li>ul>li>.vidliTIn');
+let $vidliImgs = $('.vidbody>li>ul>li>img');
+let $vidLNavlis = $('.vidLNav>ul>li');
+let $vidbodylis = $('.vidbody>li');
+let $vidRNavlis = $('.vidRNav>ul>li');
 let n = 0,timer = null;
+
+
+
 
 
 navL.onmouseenter = function(){
@@ -56,7 +65,6 @@ window.onscroll = function(){
     wrap.style.top = '400px';
 
 }
-
 function move(){
     n++;
     if(n>$swperLis.length-1){
@@ -84,7 +92,6 @@ $swperFoots.on('mouseover',function(){
     n--;
     move()
 })
-
 $wrapToplis.on('mouseenter',function(){
     let n = $(this).index();
     $(this).addClass('wrapToplis').siblings().removeClass('wrapToplis');
@@ -95,7 +102,6 @@ $actNavullis.on('mouseenter',function(){
     $(this).addClass('wrapToplis').siblings().removeClass('wrapToplis');
     $actbody.eq(n).addClass('actbodycur').siblings().removeClass('actbodycur')
 })
-
 $dowlodlast.on('mouseenter',function(){
     $dowlodlastI.eq(0).animate({left:'-17px'},300);
   
@@ -116,11 +122,11 @@ $dowlodlast.on('mouseleave',function(){
 })
 $('.championR').on('mouseenter',function(){
    $('.championR video').get(0).play();
-   $('.vid').animate({top:'1740px'},200)
+   $('.vid').animate({top:'1740px'},500)
 })
 $('.championR').on('mouseleave',function(){
     $('.championR video').get(0).pause();
-    $('.vid').animate({top:'1480px'},200)
+    $('.vid').animate({top:'1480px'},500)
 })
 $('.versonvideo').on('mouseenter',function(){
     $('.versonvideo video').get(0).play();
@@ -129,32 +135,43 @@ $('.versonvideo').on('mouseleave',function(){
     $('.versonvideo video').get(0).pause();
 })
 $('.versonper').on('mouseenter',function(){
-    $('.vid').animate({top:'1660px'},200)
+    $('.vid').animate({top:'1660px'},500)
 })
 $('.versonper').on('mouseleave',function(){
-    $('.vid').animate({top:'1480px'},200)
+    $('.vid').animate({top:'1480px'},500)
     $('.sanjiao').css({display:'block'})
 })
-let $vidlis = $('.vidbody>li>ul>li');
-
-
-let $vidliTOuts = $('.vidbody>li>ul>li>.vidliTOut');
-let $vidliImgs = $('.vidbody>li>ul>li>img');
-console.log($vidlis);
-console.log($vidliTOuts);
-console.log($vidliImgs);
-
-
-
-
-$vidlis.on('mousemove',function(e){
+$vidLNavlis.on('mouseenter',function(){
     let n = $(this).index();
-    console.log(n);
-    
+    $(this).addClass('wrapToplis').siblings().removeClass('wrapToplis');
+    $vidbodylis.eq(n).show().siblings().hide()
+})
+$vidlis.on('mouseenter',function(){
+    let ary = $vidlis.get();
+    let k = ary.indexOf(this);
+    $vidliTIns.eq(k).css({display:'block'})
+    $vidliTOuts.eq(k).css({display:'block'})
+})
+$vidlis.on('mouseleave',function(){
+    let ary = $vidlis.get();
+    let k = ary.indexOf(this);
+    $vidliTIns.eq(k).css({display:'none'})
+    $vidliTOuts.eq(k).css({display:'none'})
+})
+$vidlis.on('mousemove',function(e){
+    let ary = $vidlis.get();
+    let k = ary.indexOf(this);
+    let m = ($(this).innerWidth())/8;
     let l = e.pageX - $(this).offset().left;
-    $vidliTOuts.eq(n).css({width:l+'px'});
-    $vidliImgs.eq(n).attr({'scr':'../img/vid4.jpg'})
-    console.log($vidliImgs.eq(n).attr('src'));
-    
+    $vidliTOuts.eq(k).css({width:l+'px'});
+    if(l<0)l=0.1;
+    m = Math.ceil(l/m)
+    $vidliImgs.eq(k).attr({src:`../img/vid${m}.jpg`})
+})
+
+$vidRNavlis.on('mouseenter',function(){
+    $(this).addClass('wrapToplis').siblings().removeClass('wrapToplis');
+
+
     
 })

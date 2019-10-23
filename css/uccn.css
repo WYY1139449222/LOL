@@ -1242,6 +1242,7 @@ body {
     position: absolute;
     left: 0;
     top: 0;
+   z-index: 10;
 }
 
 .versonimg {
@@ -1643,7 +1644,7 @@ body {
     position: absolute;
     left: 0;
     top: 0;
-    /* display:none; */
+    /* z-index: 10; */
     opacity: 0;
     transition: all 0.3s linear;
 }
@@ -1761,6 +1762,7 @@ body {
 
 .versonstar>img:nth-child(2) {
     opacity: 0;
+    z-index: 10;
 }
 
 .versonstar:hover img:last-child {
