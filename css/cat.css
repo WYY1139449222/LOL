@@ -1,3 +1,6 @@
+.body {
+  overflow: hidden;
+}
 .page3 .title03 {
   background: url("../img/cat-image/title03.png") no-repeat;
 }
@@ -58,7 +61,27 @@
   width: 100%;
   height: 576px;
   margin: 40px -80px 0 0;
-  overflow: hidden;
+}
+.page3 .content .core-warp .ci0 {
+  position: relative;
+}
+.page3 .content .core-warp .ci0 .icon-play {
+  position: absolute;
+  top: 229px;
+}
+.page3 .content .core-warp .ci1 {
+  position: relative;
+}
+.page3 .content .core-warp .ci1 .icon-play {
+  position: absolute;
+  top: 229px;
+}
+.page3 .content .core-warp .ci2 {
+  position: relative;
+}
+.page3 .content .core-warp .ci2 .icon-play {
+  position: absolute;
+  top: 229px;
 }
 .page3 .content .core-warp .core-tit {
   text-align: center;
@@ -68,9 +91,11 @@
   font-weight: 700;
 }
 .page3 .content .core-warp .core-item {
+  box-sizing: border-box;
   float: left;
   width: 281px;
   margin-right: 75px;
+  position: relative;
 }
 .page3 .content .core-warp .core-item .pic {
   border: 2px solid #9e6c36;
@@ -79,24 +104,80 @@
 .page3 .content .core-warp .core-item .pic .picimg {
   width: 100%;
 }
-.page3 .content .core-warp .core-item .pic .picspan {
+.page3 .content .core-warp .core-item .picI {
+  width: 281px;
+  height: 270px ;
+  border: 2px solid #9e6c37;
+  border-top: none;
+  padding-top: 80px;
+  border-bottom: none;
+  box-sizing: border-box;
+  position: relative;
+  background: #fff;
+  z-index: 333;
+  transition: all 0.1s ease-in;
+}
+.page3 .content .core-warp .core-item .picI .picIn {
+  overflow: hidden;
+}
+.page3 .content .core-warp .core-item .picI .picIn .picspan {
   display: inline-block;
   margin-left: 68px;
   font-size: 18px;
   color: #9e6c36;
   margin-bottom: 8px;
 }
-.page3 .content .core-warp .core-item .pic .spanimg1 {
+.page3 .content .core-warp .core-item .picI .picIn .spanimg1 {
   margin-left: 52px;
 }
-.page3 .content .core-warp .core-item .pic .spanimg2 {
+.page3 .content .core-warp .core-item .picI .picIn .spanimg2 {
   margin-left: 40px;
 }
-.page3 .content .core-warp .core-item .pic .tips {
+.page3 .content .core-warp .core-item .picI .picIn .tips {
+  text-align: center;
   font-size: 14px;
   color: #2f2f31;
-  width: 196px;
+  width: 190px;
   margin: 30px auto 0;
+}
+.page3 .content .core-warp .core-item .picI .picIn .lastpicSpan {
+  margin-left: 45px;
+}
+.page3 .content .core-warp .core-item .picI .picInN .piclit {
+  width: 256px;
+  margin: 0 auto;
+  font-weight: 700;
+  color: #9e6c36;
+  font-size: 24px;
+  text-align: center;
+}
+.page3 .content .core-warp .core-item .picI .picInN .piclitDiv {
+  background: #9e6c36;
+  width: 253px;
+  height: 1px;
+  margin: 0 auto 10px;
+  border-bottom: 1px solid #9e6c36;
+}
+.page3 .content .core-warp .core-item .picI .picInN .piclitDesc {
+  line-height: 26px;
+  font-size: 14px;
+  color: #2f2f31;
+  margin: 15px auto 15px;
+  width: 247px;
+  text-align: justify;
+}
+.page3 .content .core-warp .core-item .picI .hide {
+  display: none;
+}
+.page3 .content .core-warp .core-item .picI .after {
+  width: 281px;
+  height: 65px;
+  background: url('../img/cat-image/sprite-img.png');
+  background-position: 0 -2075px;
+  position: absolute;
+  bottom: -62px;
+  left: -2px;
+  z-index: 9999;
 }
 .page3 .content .core-warp .core-item:last-child {
   margin-right: 0px;

@@ -1,6 +1,12 @@
+.body {
+    overflow: hidden;
+}
+
 .page3 {
+
     .title03 {
         background: url("../img/cat-image/title03.png") no-repeat;
+        
     }
 
     .content {
@@ -70,7 +76,38 @@
             width: 100%;
             height: 576px;
             margin: 40px -80px 0 0;
-            overflow: hidden;
+           
+
+
+            .ci0 {
+                position: relative;
+
+                .icon-play {
+                    position: absolute;
+                    top: 229px;
+
+                }
+            }
+
+            .ci1 {
+                position: relative;
+
+                .icon-play {
+                    position: absolute;
+                    top: 229px;
+
+                }
+            }
+
+            .ci2 {
+                position: relative;
+
+                .icon-play {
+                    position: absolute;
+                    top: 229px;
+
+                }
+            }
 
             .core-tit {
 
@@ -82,43 +119,115 @@
             }
 
             .core-item {
+                box-sizing: border-box;
                 float: left;
                 width: 281px;
                 margin-right: 75px;
+                position: relative;
 
                 .pic {
                     border: 2px solid #9e6c36;
                     border-bottom: none;
-                  
+
                     .picimg {
                         width: 100%;
 
                     }
 
-                    .picspan {
-                        display: inline-block;
-                        margin-left: 68px;
-                        font-size: 18px;
-                        color: #9e6c36;
-                        margin-bottom: 8px;
-                    }
 
-                    .spanimg1 {
-                        margin-left: 52px;
-                    }
-
-                    .spanimg2 {
-                        margin-left: 40px;
-                    }
-
-                    .tips {
-                        font-size: 14px;
-                        color: #2f2f31;
-                        width: 196px;
-                        margin: 30px auto 0;
-                     
-                    }
                 }
+
+                .picI {
+                    width: 281px;
+                    height: 270px ;//修改这个高度   252px   304px  174px
+                    border: 2px solid #9e6c37;
+                    border-top: none;
+                    padding-top: 80px;
+                    border-bottom: none;
+                    box-sizing: border-box;
+                    position: relative;
+                    background: #fff;
+                    z-index:333;
+                    transition: all 0.1s ease-in;
+                  
+                    
+
+                    .picIn {
+                        overflow: hidden; 
+                        .picspan {
+                            display: inline-block;
+                            margin-left: 68px;
+                            font-size: 18px;
+                            color: #9e6c36;
+                            margin-bottom: 8px;
+                        }
+
+                        .spanimg1 {
+                            margin-left: 52px;
+                        }
+
+                        .spanimg2 {
+                            margin-left: 40px;
+                        }
+
+                        .tips {
+                            text-align: center;
+                            font-size: 14px;
+                            color: #2f2f31;
+                            width: 190px;
+                            margin: 30px auto 0;
+                        }
+
+                        .lastpicSpan {
+                            margin-left: 45px;
+                        }
+                    }
+                    .picInN{
+                        
+                        .piclit{
+                            width:256px;
+                            margin: 0 auto;
+                            font-weight: 700;
+                            color: #9e6c36;
+                            font-size: 24px;
+                            text-align: center;
+                        }
+                        .piclitDiv{
+                          background:  #9e6c36;
+                          width: 253px;
+                          height: 1px;
+                          margin: 0 auto 10px;
+                          border-bottom: 1px solid #9e6c36;
+                        }
+                        .piclitDesc{
+                            line-height: 26px;
+                           font-size: 14px;
+                           color: #2f2f31;
+                           margin: 15px auto 15px;
+                           width: 247px;
+                           text-align: justify;
+                        }
+                    }
+                    .hide{
+                        display: none;
+                    }
+
+                    .after {
+                        width: 281px;
+                        height: 65px;
+                        background: url('../img/cat-image/sprite-img.png');
+                        background-position: 0 -2075px;
+                        position: absolute;
+                        bottom: -62px;
+                        left: -2px;
+                        z-index:9999;
+                        
+
+
+                    }
+
+                }
+
             }
 
             .core-item:last-child {

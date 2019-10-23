@@ -12,7 +12,7 @@ class Banner {
         this.$iconPlay = this.$vido.find('.icon-play');
         this.init();
         this.onBind();
-       
+
 
     }
 
@@ -41,7 +41,7 @@ class Banner {
     init() {
         $(this.$vidoP).eq(0).siblings().hide();
         $(this.$vidoDesc).eq(this.n).show().siblings().hide();
-        
+
     }
     //左右点击事件
     onBind() {
@@ -74,3 +74,44 @@ class Banner {
 new Banner('page1');
 new Banner('page2');
 new Banner('page4');
+
+
+function playerMechanism() {
+    //玩家机制
+
+    let $coreItems = $('.core-warp .core-item'),
+        $picIs = $coreItems.find('.picI'),
+        $picIn = $coreItems.find('.picIn'),
+        $picInN = $coreItems.find('.picInN');
+    // console.log($picIs);
+    // console.log($picIn);
+    // console.log($picInN);
+    // console.log($coreItems);
+    $coreItems.on('mouseenter', function () {
+        let n = $(this).index();
+            if(n===0){
+                $picIs.eq(0).css({height:'522px'}); 
+            } else if(n===1){
+                $picIs.eq(1).css({height:'574px'});   
+            } else{
+                $picIs.eq(2).css({height:'444px'});   
+            }
+        
+            // $picIn.eq(n).animate({opacity:0});
+            $picIn.eq(n).addClass('hide');
+
+            $picInN.eq(n).removeClass('hide');
+
+    })
+    $coreItems.on('mouseleave',function(){
+        let n = $(this).index();
+      
+        $picIs.eq(0).css({height:'270px'});   
+        $picIs.eq(1).css({height:'270px'});   
+        $picIs.eq(2).css({height:'270px'});   
+        $picIs.eq(n).css({height:'270px'}); 
+        $picIn.eq(n).removeClass('hide');
+        $picInN.eq(n).addClass('hide');
+    })
+}
+playerMechanism();
