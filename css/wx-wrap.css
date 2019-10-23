@@ -205,7 +205,7 @@
 .mode2 {
   margin: 10px auto 0;
   overflow: visible;
-  height: 1550px;
+  height: 990px;
   position: relative;
 }
 .Eleft {
@@ -585,7 +585,6 @@
   width: 380px;
   height: 100px;
   float: right;
-  background: yellow;
 }
 .Edown_l_long a {
   color: black;
@@ -618,7 +617,7 @@
 .Edc_one {
   margin-left: 10px;
   overflow: hidden;
-  width: 420px;
+  width: 370px;
 }
 .Edc_one h2 {
   display: inline-block;
@@ -631,11 +630,11 @@
 }
 .Edc_two {
   margin-left: 10px;
+  overflow: hidden;
 }
 .Edc_two_h{
   display: block;
-  height: 36px;;
-  background:red;
+  height: 40px;;
 }
 .Edc_t_1 a {
   color: black;

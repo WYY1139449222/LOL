@@ -5,13 +5,24 @@
   text-decoration: none;
 }
 header {
-  width: 1230px;
-  overflow: hidden;
+  /* width: 1230px; */
+  /* overflow: visible; */
   margin:auto;
 }
 .TOP {
   height: 42px;
+  width: 1230px;
+  margin: auto;
   overflow: hidden;
+  position: relative;
+}
+.TOP_2{
+  /* position: absolute;
+  top:0;
+  left:0; */
+  width: 1230px;
+  height:50px;
+  margin: 0 auto;
 }
 .pic_0 {
   overflow: visition;
@@ -160,7 +171,7 @@ header {
 }
 
 .nav {
-  width: 1230px;
+  width: 100% !important;
   height: 470px;
   background: url("../img/wx-img/gao470.jpg") center center no-repeat;
   position: relative;
@@ -168,9 +179,10 @@ header {
 .nav .memu {
   width: 1230px;
   height: 55px;
+  margin: 0 auto;
   background: rgba(0, 0, 0, 0.5);
-  position: absolute;
-  top: 0;
+  /* position: absolute;
+  top: 0; */
 }
 .nav .memu .memu_box {
   width: 1230px;

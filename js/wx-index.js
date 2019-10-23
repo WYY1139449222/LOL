@@ -37,12 +37,13 @@
             btn2 = document.querySelector('.btn_two_li'),
             li1 = document.querySelector('.tc_box_1'),
             li2 = document.querySelector('.tc_box_2');
-        btn1.onclick = function(){
+        btn1.onclick = function () {
             btn2.classList.remove('colorS')
             li2.classList.remove('current')
             li1.classList.add('current')
+            btn1.classList.add('colorS')
         }
-        btn2.onclick = function(){
+        btn2.onclick = function () {
             btn2.classList.add('colorS')
             li2.classList.add('current')
             li1.classList.remove('current')
@@ -51,12 +52,27 @@
     }
     DJ()
 
-    function Edown(){
-        var $lia = $('.Edc_t_1 a')
-        $lia.onclick=function(){
-            console.log(222)
+    function Edown() {
+        var lias = document.querySelectorAll('.Edc_two_h');
+        var divs = document.querySelectorAll('.Edc_t_2')
+        var lis = document.querySelectorAll('.Edc_t_1')
+        for (let i = 0; i < lias.length; i++) {
+            lias[i].onmouseenter = function () {
+                divs[i].style.display = 'block'
+                lis[i].style.display = 'none'
+                lias[i].style.background = 'rgba(0,0,0,0.5)'
+                lias[i].style.height= '70px'
+                lias[i].onmouseleave = function () {
+                    divs[i].style.display = 'none'
+                    lis[i].style.display = 'block'
+                    lias[i].style.background = 'rgba(255,255,255)'
+                    lias[i].style.height= '40px'
+                }
+            }
+
         }
-        
+
+
     }
     Edown()
 })()
