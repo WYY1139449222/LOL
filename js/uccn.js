@@ -24,11 +24,12 @@ let $vidliImgs = $('.vidbody>li>ul>li>img');
 let $vidLNavlis = $('.vidLNav>ul>li');
 let $vidbodylis = $('.vidbody>li');
 let $vidRNavlis = $('.vidRNav>ul>li');
+let $vidRBodyuls = $('.vidRBodyIn>ul');
+    $vidRBodyuls.each(function(){this.m=0})
+let $vidRBodyL = $('.vidRBodyL');
+let $vidRBodyR = $('.vidRBodyR');
 let n = 0,timer = null;
-
-
-
-
+let s,timer2 = null;
 
 navL.onmouseenter = function(){
     deve.style.opacity = 1;
@@ -168,10 +169,71 @@ $vidlis.on('mousemove',function(e){
     m = Math.ceil(l/m)
     $vidliImgs.eq(k).attr({src:`../img/vid${m}.jpg`})
 })
-
 $vidRNavlis.on('mouseenter',function(){
+    let n = $(this).index();
     $(this).addClass('wrapToplis').siblings().removeClass('wrapToplis');
+    $vidRBodyuls.eq(n).css({display:'block'}).attr({flag:1}).siblings().css({display:'none'}).attr({flag:0})
+    $vidRBodyuls.get().forEach(item=>{
+        if($(item).attr('flag')==1){
+            s = $(item).index();
+        }
+    })
+})
+function vidRmove(){
+    $vidRBodyuls.get().forEach((item,index)=>{
+        if($(item).attr('flag')==1){
+            s = $(item).index();
+        }
+    })
+    $vidRBodyuls.eq(s)[0].m++;
+        if($vidRBodyuls.eq(s)[0].m>3){
+            $vidRBodyuls.eq(s)[0].m=0;
+            $vidRBodyuls.eq(s).css({left:-$vidRBodyuls.eq(s)[0].m*501+'px'})
+            $vidRBodyuls.eq(s)[0].m++;
+        };
+        $vidRBodyuls.eq(s).animate({left:-$vidRBodyuls.eq(s)[0].m*501+'px'},300)
+}
+function vidRAutoMove(){
+    timer2 = setInterval(()=>{
+        vidRmove()
+    },2000)
+}
+vidRAutoMove()
+$vidRBodyR.on('click',throttle(function(){
+    vidRmove()
+}));
+$vidRBodyL.on('click',throttle(function(){
+    $vidRBodyuls.eq(s)[0].m--;
+    if($vidRBodyuls.eq(s)[0].m<0){
+        $vidRBodyuls.eq(s)[0].m=3;
+        $vidRBodyuls.eq(s).css({left:-$vidRBodyuls.eq(s)[0].m*501+'px'})
+        $vidRBodyuls.eq(s)[0].m--;
+    }
+    $vidRBodyuls.eq(s)[0].m--;
+    vidRmove()
+}))
+$('.vidRBody').on('mouseenter',function(){
+    clearInterval(timer2);
+})
+$('.vidRBody').on('mouseleave',function(){
+    vidRAutoMove()
+})
+function throttle(cb){
+    let flag = true;
+    return function(){
+        if(!flag)return;
+        cb.call(this);
+        flag = false;
+        setTimeout(()=>{
+            flag = true;
+        },1000)
+    }
+}
 
-
+let $matchNavlis = $('.matchNav>ul>li');
+$matchNavlis.on('mouseenter',function(){
+    $(this).addClass('wrapToplis').siblings().removeClass('wrapToplis')
+    console.log(11);
     
 })
+console.log($matchNavlis);

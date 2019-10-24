@@ -10,7 +10,7 @@
   padding-top: 50px;
 }
 .vid .vidIn {
-  height: 500px;
+  height: 470px;
   position: relative;
 }
 .vidL {
@@ -280,21 +280,68 @@
   position: absolute;
   left: 0;
   top: 60px;
+  cursor: pointer;
 }
-.vidR .vidRBody ul li {
+.vidR .vidRBody .vidRBtn {
+  width: 100%;
+  height: 0px;
+  position: absolute;
+  left: 0;
+  top: 80px;
+  line-height: 40px;
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+  user-select: none;
+}
+.vidR .vidRBody .vidRBtn .vidRBodyL {
+  width: 20px;
+  height: 40px;
+  background: chartreuse;
+  position: absolute;
+  left: -16px;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+.vidR .vidRBody .vidRBtn .vidRBodyR {
+  width: 20px;
+  height: 40px;
+  background: chartreuse;
+  position: absolute;
+  right: -16px;
+  text-align: right;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+.vidR .vidRBody .vidRBodyIn {
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  height: 336px;
+  left: 0;
+  top: 0;
+}
+.vidR .vidRBody .vidRBodyIn ul {
+  width: 2004px;
+  position: absolute;
+  top: 0;
+  left: 0px;
+  display: none;
+}
+.vidR .vidRBody .vidRBodyIn ul:nth-child(1) {
+  display: block;
+}
+.vidR .vidRBody .vidRBodyIn ul li {
   width: 157px;
   height: 281px;
   position: relative;
   float: left;
   margin-right: 10px;
 }
-.vidR .vidRBody ul li:nth-child(3n) {
-  margin-right: 0;
-}
-.vidR .vidRBody ul li > img {
+.vidR .vidRBody .vidRBodyIn ul li > img {
   width: 100%;
 }
-.vidR .vidRBody ul li .vidRBodyOut {
+.vidR .vidRBody .vidRBodyIn ul li .vidRBodyOut {
   position: absolute;
   top: 150px;
   width: 100%;
@@ -302,14 +349,14 @@
   text-align: center;
   color: #fff;
 }
-.vidR .vidRBody ul li .vidRBodyOut p {
+.vidR .vidRBody .vidRBodyIn ul li .vidRBodyOut p {
   font-size: 16px;
   margin-bottom: 5px;
 }
-.vidR .vidRBody ul li .vidRBodyOut span {
+.vidR .vidRBody .vidRBodyIn ul li .vidRBodyOut span {
   font-size: 12px;
 }
-.vidR .vidRBody ul li .vidRBodyB {
+.vidR .vidRBody .vidRBodyIn ul li .vidRBodyB {
   height: 65px;
   width: 100%;
   position: absolute;
@@ -317,12 +364,16 @@
   left: 0;
   color: #a0a0a0;
 }
-.vidR .vidRBody ul li .vidRBodyB p {
+.vidR .vidRBody .vidRBodyIn ul li .vidRBodyB p {
   font-size: 14px;
   position: absolute;
   top: 0;
+  width: 157px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
-.vidR .vidRBody ul li .vidRBodyB img {
+.vidR .vidRBody .vidRBodyIn ul li .vidRBodyB img {
   width: 30px;
   height: 30px;
   border-radius: 50%;
@@ -330,7 +381,7 @@
   bottom: 0;
   left: 0;
 }
-.vidR .vidRBody ul li .vidRBodyB span {
+.vidR .vidRBody .vidRBodyIn ul li .vidRBodyB span {
   display: inline-block;
   height: 30px;
   font-size: 12px;
@@ -349,6 +400,9 @@
   border: 1px solid #ab8e66;
   color: #ab8e66;
   cursor: pointer;
+}
+.vidR .vidRBot:hover {
+  background: #fff;
 }
 .vidR .vidRBot:hover i {
   right: 166px;
@@ -385,4 +439,191 @@
   top: 55%;
   transform: translateY(-50%);
   transition: all 0.2s cubic-bezier(0.84, -0.77, 0, 3.5);
+}
+.match {
+  width: 100%;
+  position: absolute;
+  top: 2000px;
+  padding-top: 50px;
+}
+.match .matchIn {
+  width: 1230px;
+  margin: auto;
+  position: relative;
+}
+.match .matchIn .matchNav {
+  height: 35px;
+  line-height: 35px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+.match .matchIn .matchNav h2 {
+  position: absolute;
+  width: auto;
+  height: 28px;
+  top: 5px;
+  left: 0px;
+  box-sizing: border-box;
+  color: #0b0b0b;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+}
+.match .matchIn .matchNav h2::before {
+  content: '\0020';
+  display: inline-block;
+  vertical-align: middle;
+  width: 4px;
+  height: 28px;
+  line-height: 28px;
+  background-color: #1da6ba;
+}
+.match .matchIn .matchNav ul {
+  height: 35px;
+  width: 1100px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 16px;
+  color: #676767;
+  line-height: 40px;
+  border-bottom: 1px solid #ddd;
+}
+.match .matchIn .matchNav ul li {
+  display: inline-block;
+  margin-right: 65px;
+  cursor: pointer;
+}
+.match .matchIn .matchNav .matchR {
+  width: 220px;
+  height: 35px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.match .matchIn .matchNav .matchR div {
+  cursor: pointer;
+}
+.match .matchIn .matchNav .matchR div:hover > a {
+  text-decoration: solid;
+  color: gold;
+}
+.match .matchIn .matchNav .matchR div img {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.match .matchIn .matchNav .matchR div a {
+  font-size: 16px;
+  font-weight: 700;
+  color: #b0b0b0;
+  position: absolute;
+  left: 35px;
+}
+.match .matchIn .matchNav .matchR span {
+  width: 70px;
+  position: absolute;
+  right: 0;
+  height: 35px;
+  text-align: center;
+  font-size: 12px;
+  color: #7ea1a6;
+  cursor: pointer;
+}
+.match .matchIn .matchNav .matchR span:hover {
+  color: #1da6ba;
+}
+.match .matchIn .matchNav .matchR span:hover i {
+  right: 0;
+}
+.match .matchIn .matchNav .matchR span i {
+  width: 15px;
+  height: 9px;
+  background-position-x: -213px;
+  background-position-y: -126px;
+  background-image: url(../img/comm-spr.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 4px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all 0.2s cubic-bezier(0.84, -0.77, 0, 3.5);
+}
+.match .matchIn .matchBody {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 60px;
+}
+.match .matchIn .matchBody .matchB1 {
+  height: 616px;
+  width: 100%;
+  margin-bottom: 50px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.match .matchIn .matchBody .matchB1 .matchB1BO1 {
+  width: 514px;
+  height: 232px;
+  background: red;
+  position: absolute;
+  left: 0;
+  top: 0px;
+}
+.match .matchIn .matchBody .matchB1 .matchB1jifen {
+  width: 514px;
+  height: 313px;
+  background: gold;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.match .matchIn .matchBody .matchB1 .matchB1BO2 {
+  width: 240px;
+  height: 556px;
+  position: absolute;
+  top: 0px;
+  left: 550px;
+}
+.match .matchIn .matchBody .matchB1 .matchB1BO2 div {
+  width: 100%;
+  height: 124px;
+  margin-bottom: 20px;
+  background: blueviolet;
+}
+.match .matchIn .matchBody .matchB1 .matchB1jinji {
+  width: 371px;
+  height: 556px;
+  position: absolute;
+  right: 0;
+  top: 0px;
+}
+.match .matchIn .matchBody .matchB1 .matchB1jinji > div {
+  position: absolute;
+  left: 0;
+  top: 40px;
+  width: 100%;
+  height: 476px;
+}
+.match .matchIn .matchBody .matchB1 .matchB1jinji > div > div {
+  width: 100%;
+  height: 44px;
+  position: absolute;
+  background: fuchsia;
+  left: 0;
+}
+.match .matchIn .matchBody .matchB1 .matchB1jinji > div > div:last-child {
+  bottom: 0;
+}
+.match .matchIn .matchBody .matchB1 .matchB1jinji > div > div:nth-child(3) {
+  bottom: 142px;
+}
+.match .matchIn .matchBody .matchB1 .matchB1jinji > div > div:nth-child(2) {
+  top: 142px;
 }
