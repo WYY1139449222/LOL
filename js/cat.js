@@ -89,27 +89,40 @@ function playerMechanism() {
     // console.log($coreItems);
     $coreItems.on('mouseenter', function () {
         let n = $(this).index();
-            if(n===0){
-                $picIs.eq(0).css({height:'522px'}); 
-            } else if(n===1){
-                $picIs.eq(1).css({height:'574px'});   
-            } else{
-                $picIs.eq(2).css({height:'444px'});   
-            }
-        
-            // $picIn.eq(n).animate({opacity:0});
-            $picIn.eq(n).addClass('hide');
+        if (n === 0) {
+            $picIs.eq(0).css({
+                height: '522px'
+            });
+        } else if (n === 1) {
+            $picIs.eq(1).css({
+                height: '574px'
+            });
+        } else {
+            $picIs.eq(2).css({
+                height: '444px'
+            });
+        }
 
-            $picInN.eq(n).removeClass('hide');
+
+        $picIn.eq(n).addClass('hide');
+
+        $picInN.eq(n).removeClass('hide');
 
     })
-    $coreItems.on('mouseleave',function(){
+    $coreItems.on('mouseleave', function () {
         let n = $(this).index();
-      
-        $picIs.eq(0).css({height:'270px'});   
-        $picIs.eq(1).css({height:'270px'});   
-        $picIs.eq(2).css({height:'270px'});   
-        $picIs.eq(n).css({height:'270px'}); 
+        $picIs.eq(0).css({
+            height: '270px'
+        });
+        $picIs.eq(1).css({
+            height: '270px'
+        });
+        $picIs.eq(2).css({
+            height: '270px'
+        });
+        $picIs.eq(n).css({
+            height: '270px'
+        });
         $picIn.eq(n).removeClass('hide');
         $picInN.eq(n).addClass('hide');
     })

@@ -1,3 +1,6 @@
+a {
+  text-decoration: none;
+}
 .body {
   overflow: hidden;
 }
@@ -106,7 +109,7 @@
 }
 .page3 .content .core-warp .core-item .picI {
   width: 281px;
-  height: 270px ;
+  height: 270px;
   border: 2px solid #9e6c37;
   border-top: none;
   padding-top: 80px;
@@ -181,4 +184,226 @@
 }
 .page3 .content .core-warp .core-item:last-child {
   margin-right: 0px;
+}
+.page4 .vido-desc {
+  margin-top: 50px;
+  position: relative;
+}
+.page4 .vido-desc .desc {
+  width: 769px;
+  padding: 0 20px 40px;
+  margin: 0 auto;
+  background-color: #fff;
+  border: 1px solid #9e6c37;
+  box-sizing: border-box;
+  position: absolute;
+  left: 116px;
+}
+.page4 .vido-desc .desc .p0 {
+  display: block;
+  color: #9f6c35;
+  font-weight: 700;
+  font-size: 24px;
+  text-align: center;
+  margin: 22px 0;
+}
+.page4 .vido-desc .desc .p1 {
+  color: #2f2f31;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: justify;
+}
+.page5 {
+  position: relative;
+}
+.page5 .title05 {
+  background: url(../img/cat-image/title05.png) no-repeat;
+}
+.page5 .titleP {
+  text-align: center;
+  font-size: 16px;
+  color: #2f2f31;
+  margin: 18px auto 30px;
+}
+.page5 .main-btn {
+  position: absolute;
+  top: 125px;
+}
+.page5 .page5btn1 {
+  background: url(../img/cat-image/main-btn-new-y\ \(1\).png);
+  left: 355px;
+}
+.page5 .page5btn2 {
+  left: auto;
+  right: 45px;
+}
+.page5 .search {
+  padding-top: 200px;
+  width: 1060px;
+  margin: 0 auto;
+}
+.page5 .search #search {
+  margin: 0 auto;
+  text-indent: 35px;
+  vertical-align: top;
+  display: inline-block;
+  border: 1px solid #dd9b54;
+  border-right: none;
+  background: #ffefd5;
+  font-size: 14px;
+  color: #9f6c35;
+  width: 254px;
+  height: 35px;
+}
+.page5 .search .searchIn {
+  width: 298px;
+  margin: 0 auto 58px;
+  font-size: 0;
+}
+.page5 .search .searchBtn {
+  display: inline-block;
+  width: 40px;
+  height: 37px;
+  background: 1px solid #dd9b54;
+  background: #9f6c35;
+  line-height: 35px;
+  cursor: pointer;
+}
+.page5 .search .searchBtn #ser {
+  display: inline-block;
+  width: 17px;
+  height: 16px;
+  background: url(//game.gtimg.cn/images/lol/act/a20190702loltftwf/icon-search.png) no-repeat center center;
+  transform: translateX(12px) translateY(9px);
+  cursor: pointer;
+}
+.page5 .search .searchMain > span {
+  display: inline-block;
+  cursor: pointer;
+  width: 530px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  color: #d79443;
+  font-weight: bold;
+  font-size: 20px;
+  letter-spacing: 20px;
+  margin-left: -1px;
+  margin-right: -1px;
+  vertical-align: bottom;
+  margin-bottom: 27px;
+}
+.page5 .search .searchMain .onselect {
+  background: url(//game.gtimg.cn/images/lol/act/a20190702loltftwf/p5-tab-on.png) no-repeat center center;
+  width: 531px;
+  height: 56px;
+  line-height: 56px;
+}
+.page5 .search .searchMain .offselect {
+  background: url(//game.gtimg.cn/images/lol/act/a20190702loltftwf/p5-tab-a.png) no-repeat center center;
+}
+.page5 .search .searchMain .professionClass li {
+  float: left;
+  margin: 0px 18px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 29px;
+  cursor: pointer;
+}
+.page5 .search .searchMain .professionClass li a {
+  color: #9f6c35;
+}
+.page5 .search .searchMain .professionClass li:nth-child(n) a {
+  display: inline-block;
+}
+.page5 .search .searchMain .professionClass li:nth-child(n) a i {
+  display: inline-block;
+  background-size: contain;
+  background-image: url(//game.gtimg.cn/images/lol/act/a20190702loltftwf/icon-fs.png);
+  width: 72px;
+  height: 75px;
+}
+.page5 .search .searchMain .professionClass li:nth-child(n) a b {
+  display: block;
+  width: 7px;
+  height: 1px;
+  background-color: #9f6c35;
+  margin: 9px auto 0;
+}
+.page5 .search .searchMain .professionClass li:nth-child(2) a i {
+  background: url(//game.gtimg.cn/images/lol/act/a20190702loltftwf/icon-ck.png);
+}
+.page5 .search .searchMain .professionClass li:nth-child(3) a i {
+  background: url(//game.gtimg.cn/images/lol/act/a20190702loltftwf/icon-js.png);
+}
+.page5 .search .searchMain .professionClass li:nth-child(4) a i {
+  background-image: url(//game.gtimg.cn/images/lol/act/a20190702loltftwf/icon-ds.png);
+}
+.page5 .search .searchMain .professionClass li:nth-child(5) a i {
+  background-image: url(//game.gtimg.cn/images/lol/act/a20190702loltftwf/icon-yss.png);
+}
+.page5 .search .searchMain .professionClass li:nth-child(6) a i {
+  background-image: url(//game.gtimg.cn/images/lol/act/a20190702loltftwf/icon-hw.png);
+}
+.page5 .search .searchMain .professionClass li:nth-child(7) a i {
+  background-image: url(//game.gtimg.cn/images/lol/act/a20190702loltftwf/icon-qs.png);
+}
+.page5 .search .searchMain .professionClass li:nth-child(8) a i {
+  background-image: url(//game.gtimg.cn/images/lol/act/a20190702loltftwf/icon-qishi.png);
+}
+.page5 .search .searchMain .professionClass li:nth-child(9) a i {
+  background-image: url(//game.gtimg.cn/images/lol/act/a20190702loltftwf/icon-yx.png);
+}
+.page5 .search .searchMain .tips {
+  width: 455px;
+  margin-top: 157px;
+  color: #2f2f31;
+  font-size: 14px;
+  height: 82px;
+  margin-left: -40px;
+}
+.page5 .search .relevant {
+  width: 1060px;
+  height: 400px;
+}
+.page5 .search .relevant .tit {
+  margin-left: -40px;
+  color: #9f6c35;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: left;
+}
+.page5 .search .relevant .tit::after {
+  display: block;
+  content: "";
+  width: 40px;
+  height: 4px;
+  background: #9f6c35;
+  margin: 15px 0 18px;
+}
+.page5 .search .relevant .hero-list {
+  margin-left: -40px;
+  width: 1100px;
+  height: 63px;
+  background: red;
+}
+.page5 .search .relevant .cont5-bg {
+  margin-left: -40px;
+  position: relative;
+}
+.page5 .search .relevant .cont5-bg .video-wrap {
+  width: 497px;
+  height: 348px;
+  border: 1px solid #d79443;
+  box-sizing: border-box;
+  position: absolute;
+  right: 23px;
+  top: -191px;
+  background: salmon;
+}
+.page5 .search .relevant .cont5-bg .text-wrap {
+  width: 1051px;
+  height: 180px;
+  padding-top: 25px;
+  background: green;
 }

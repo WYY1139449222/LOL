@@ -84,7 +84,7 @@
   top: 30px;
 }
 
-.main .main-btn {
+.main-btn{
   display: inline-block;
   width: 305px;
   height: 88px;
@@ -99,7 +99,7 @@
   line-height: 88px;
 }
 
-.main .main-btn:hover {
+ .main-btn:hover {
   background-image: url(../img/cat-image/main-btn-new-y.png);
 }
 
@@ -141,7 +141,8 @@
 }
 
 .page .title01 {
-  background: url('../img/cat-image/title01.png');
+  background: url('../img/cat-image/title01.png') no-repeat;
+  background-size: contain;
 }
 
 .page .vido {
@@ -331,8 +332,8 @@
 }
 
 .page2 .title02 {
-  background: url(../img/cat-image/title02.png);
-  width: 497px;
+  background: url(../img/cat-image/title02.png) no-repeat;
+  background-size: contain;
 }
 
 .page .vido .vido-p img {
@@ -390,14 +391,14 @@
 }
 
 .page4 .title04 {
-  background: url(../img/cat-image/title04.png);
+  background: url(../img/cat-image/title04.png) no-repeat;
+  background-size: contain;
 }
 
 /* <!--游戏资料--> */
 .page5 {
   width: 1060px;
   height: 1160px;
-  background: green;
   margin: 0 auto;
 }
 
