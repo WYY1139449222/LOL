@@ -556,8 +556,7 @@
 
 .match-show2 {
   width: 1230px;
-  height: 1000px;
-  background: red;
+  height: 450px;
 }
 .match-show2 .score-rank-534 {
   margin-top: 51px;
@@ -632,14 +631,14 @@
   height: 238px;
   overflow: hidden;
 }
-.game-team-list{
-overflow: hidden;
+.game-team-list {
+  overflow: hidden;
 }
 .game-team-list li {
   height: 60px;
   overflow: hidden;
   position: relative;
-  border-bottom: 1px solid #eee;;
+  border-bottom: 1px solid #eee;
 }
 .gtl-status {
   font-size: 12px;
@@ -751,17 +750,162 @@ overflow: hidden;
   line-height: 18px;
   margin-left: 10px;
 }
-.gtl-list,.gtl-video{
+.gtl-list,
+.gtl-video {
   margin: 20px 10px 0 0;
 }
-.mode-gg2 a img{
+.mode-gg2 a img {
   width: 1230px;
   position: relative;
   top: 20px;
 }
 
+.match-show3 {
+  width: 1230px;
+  height: 700px;
+  margin-top: 40px;
+}
+.ms-3-nei {
+  width: 1230px;
+  color: #666;
+  font-size: 16px;
+}
+.m-part1 {
+  /* width: 261px; */
+  float: left;
+  height: 551px;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.s-g-t-1 {
+  padding-left: 10px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #eee;
+}
+.m-link1 {
+  padding-top: 106px;
+  float: left;
+  height: 551px;
+  overflow: hidden;
+  box-sizing: border-box;
+  font-size: 16px;
+  position: relative;
+}
+.m-link1 .link-one {
+  display: block;
+  margin-bottom: 115px;
+  background: url("../img/wx-img/link.png") no-repeat;
+  background-position: -313px -272px;
+  width: 200px;
+  height: 134px;
+}
+.m-link1 .link-two {
+  display: block;
 
+  background: url("../img/wx-img/link.png") no-repeat;
+  background-position: -313px -272px;
+  background-size: 699px 607px;
+  width: 200px;
+  height: 134px;
+}
 
+.m-part2 {
+  position: absolute;
+  top: 145px;
+  left: 460px;
+  width: 261px;
+}
 
-
-
+.match-part-name {
+  width: 100%;
+  height: 35px;
+  line-height: 35px;
+  text-align: left;
+  color: #29a2b4;
+  font-size: 16px;
+  font-weight: 700;
+  box-sizing: border-box;
+  padding-left: 1px;
+}
+.s-s-w {
+  margin-bottom: 5px;
+}
+.s-s-w span:nth-child(1) {
+  color: #fff;
+  background: #e68f21;
+  font-size: 12px;
+  border-radius: 3px;
+}
+.s-s-w span:nth-child(2) {
+  font-size: 12px;
+}
+.s-s-w a {
+  float: right;
+  border: 1px solid #bb9a6c;
+  color: #bb9a6c;
+  font-size: 15px;
+}
+.win-team {
+  width: 261px;
+  height: 44px;
+  background: #faf6ec;
+  position: relative;
+  border: 1px solid #eee;
+  box-sizing: border-box;
+}
+.img-box {
+  height: 44px;
+  line-height: 44px;
+}
+.img-box img {
+  margin: 7px 0 0 5px;
+  width: 30px;
+  height: 30px;
+}
+.team-name {
+  position: absolute;
+  top: 10px;
+  left: 50px;
+}
+.score {
+  position: relative;
+  float: right;
+  width: 23px;
+  height: 44px;
+  text-align: center;
+  line-height: 44px;
+  color: #fff;
+  background-color: #d1a662;
+}
+.margin-bottom {
+  margin-bottom: 135px;
+}
+.m-link2 {
+  padding-top: 163px;
+  float: left;
+  overflow: hidden;
+  box-sizing: border-box;
+  font-size: 16px;
+  position: relative;
+  margin-left: 260px;
+  width: 298px;
+}
+.link-one-2 {
+  display: block;
+  background: url("../img/wx-img/link.png") no-repeat;
+  background-position: -313px 0;
+  width: 250px;
+  height: 267px;
+}
+.game-over {
+  height: 44px;
+  width: 261px;
+  position: absolute;
+  top: 270px;
+  right: 0;
+}
+.mode-gg3 a img {
+  width: 1230px;
+  position: relative;
+  top: 20px;
+}
