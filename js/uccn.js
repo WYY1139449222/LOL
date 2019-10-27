@@ -28,6 +28,7 @@ let $vidRBodyuls = $('.vidRBodyIn>ul');
 $vidRBodyuls.each(function () { this.m = 0 })
 let $vidRBodyL = $('.vidRBodyL');
 let $vidRBodyR = $('.vidRBodyR');
+
 let n = 0, timer = null;
 let s, timer2 = null;
 
@@ -123,11 +124,13 @@ $dowlodlast.on('mouseleave', function () {
 })
 $('.championR').on('mouseenter', function () {
     $('.championR video').get(0).play();
-    $('.vid').animate({ top: '1740px' }, 500)
+    $('.vid').animate({ top: '1740px' }, 500);
+    $(".match").animate({ top: '2260px' }, 500);
 })
 $('.championR').on('mouseleave', function () {
     $('.championR video').get(0).pause();
-    $('.vid').animate({ top: '1480px' }, 500)
+    $('.vid').animate({ top: '1480px' }, 500);
+    $(".match").animate({ top: '2000px' }, 500);
 })
 $('.versonvideo').on('mouseenter', function () {
     $('.versonvideo video').get(0).play();
@@ -137,9 +140,11 @@ $('.versonvideo').on('mouseleave', function () {
 })
 $('.versonper').on('mouseenter', function () {
     $('.vid').animate({ top: '1660px' }, 500)
+    $(".match").animate({ top: '2180px' }, 500);
 })
 $('.versonper').on('mouseleave', function () {
-    $('.vid').animate({ top: '1480px' }, 500)
+    $('.vid').animate({ top: '1480px' }, 500);
+    $(".match").animate({ top: '2000px' }, 500);
     $('.sanjiao').css({ display: 'block' })
 })
 $vidLNavlis.on('mouseenter', function () {
@@ -232,10 +237,18 @@ function throttle(cb) {
 
 let $matchNavlis = $('.matchNav>ul>li');
 $matchNavlis.on('mouseenter', function () {
+    let n = $(this).index();
     $(this).addClass('wrapToplis').siblings().removeClass('wrapToplis')
-    console.log(11);
-
+    $('.matchBO').eq(n).css({display:'block'}).siblings().css({display:'none'})
+    if(n==1){
+        $('.match').css({height:270+'px'});
+        $(".part").css({top:2450+'px'})
+    }else{
+        $('.match').css({height:516+'px'});
+        $(".part").css({top:2680+'px'})
+    }
 })
+
 let $BO1BtnL = $('.BO1Btn>.BO1BtnL');
 let $BO1BtnR = $('.BO1Btn>.BO1BtnR');
 let $BO1UL = $('.BO1UL>ul');
@@ -267,16 +280,15 @@ function BO1ULMove() {
         oo--;
         $BO1UL.eq(0).animate({ left: `${-oo * 500}px` }, 300)
     })
-    let l,_e;
+    let l,k;
     $BO1UL.eq(0).on('mousedown', function (e) {
-        _e = e;
-        startX = e.pageX - $(this).offset().left;
+        startX = e.pageX;
+        k = parseFloat($BO1UL.eq(0).css('left'))
         $(window).on('mousemove', move)
     });
     function move(e) {
-        l = e.pageX - $BO1UL.eq(0).offset().left - startX;
-        let k = -oo * 500;
-        $BO1UL.eq(0).css({ left: k + l + 'px' })
+        l = e.pageX- startX;
+        $BO1UL.eq(0).css({ left: (k + l) })
     }
     $(window).on('mouseup', function () {
         $(window).off('mousemove', move)
@@ -299,6 +311,7 @@ function BO1ULMove() {
                 $BO1UL.eq(0).animate({ left: `${-oo * 500}px` }, 300)
             }
         }
+        l=0;
         if(oo<=0){
             $BO1BtnL.eq(0).hide()
         }else{
@@ -312,3 +325,75 @@ function BO1ULMove() {
     })
 }
 BO1ULMove()
+// let $matchB1jifenToplis = $('.matchB1jifenTop>ul>li');
+let $matchB2jifenToplis = $('.matchB2>.matchB1jifen>.matchB1jifenTop>ul>li');
+let $matchB1jifenToplis = $('.matchB1>.matchB1jifen>.matchB1jifenTop>ul>li');
+let $B2jifenBodyuls = $('.matchB2>.matchB1jifen>.jifenBody>ul');
+let $B1jifenBodyuls = $('.matchB1>.matchB1jifen>.jifenBody>ul');
+let $matchB2RTlis = $('.matchB2RT>ul>li');
+let $matchB2RBodyuls = $('.matchB2RBody>ul');
+//滚动条获取
+let bigBox = document.querySelector('.matchB2RBody');
+let bigMove = document.querySelectorAll('.matchB2RBody>ul');
+let litBox = document.getElementById('scroll');
+let litMove = document.getElementById('bar');
+scrollBar(bigBox,bigMove[0],litBox,litMove)
+
+function change(ary,arr,str){
+    let n=0;
+    ary.on('mouseenter',function(){
+        n = $(this).index();
+        $(this).addClass(str).siblings().removeClass(str);
+        arr.eq(n).css({display:'block'}).siblings('ul').css({display:'none'})
+        scrollBar(bigBox,bigMove[n],litBox,litMove)
+    })
+}
+change($matchB2jifenToplis,$B2jifenBodyuls,'wrapToplis');
+change($matchB1jifenToplis,$B1jifenBodyuls,'wrapToplis');
+change($matchB2RTlis,$matchB2RBodyuls,'currentB2');
+//滚动条
+function scrollBar(bigBox,bigMove,litBox,litMove){
+    let sy=t=endy=0;
+    let n = 0;
+    let minN = bigMove.clientHeight - bigBox.clientHeight;
+    let height = (bigBox.clientHeight*litBox.clientHeight)/(bigMove.clientHeight)
+    litMove.style.height = height + 'px';
+    let maxT = litBox.clientHeight - height;
+    let m = bigBox.clientHeight/height;
+    function init(){
+        bigMove.style.top = 0 +'px';
+        litMove.style.top = 0 + 'px';
+    }
+    init()
+    litMove.onmousedown = function(e){
+        sy = e.pageY
+        document.addEventListener('mousemove',move,false)
+    } 
+    function move(e){
+        window.getSelection?window.getSelection().removeAllRanges():document.selection.empty();
+        t = e.pageY - sy+endy;
+        t = t<=0?0:(t>=maxT?maxT:t)
+        litMove.style.top = t + 'px';
+        bigMove.style.top = -t*m + 'px';
+    }
+    document.addEventListener('mouseup',function(){
+        document.removeEventListener('mousemove',move,false);
+        endy = parseFloat(litMove.style.top)
+    },false) 
+    bigBox.addEventListener('mousewheel',function(e){
+        if(e.wheelDelta<0){
+            n-=5;
+            n = n<= -minN? - minN:n;
+        }
+        if(e.wheelDelta>0){
+            n+=5;
+            n = n>=0?0:n;
+        }
+        if(n<0&&n>-minN){
+            e.preventDefault();
+        }
+        bigMove.style.top = n +'px';
+        litMove.style.top = -n/m +'px';
+    },false)
+}
+
