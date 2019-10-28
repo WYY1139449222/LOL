@@ -1,0 +1,274 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+.hide {
+  display: none;
+}
+.after {
+  background: url("../img/wx-img/xxkhdsj.png") no-repeat;
+  background-size: 200px 54px;
+  background-position: -103px 30px;
+  font-weight: 700;
+  color: #1da6ba;
+}
+.before {
+  color: #fff;
+  background: #1da6ba;
+  border-radius: 16px;
+}
+.hover {
+  display: none;
+  width: 55px;
+  height: 53px;
+  background: url("../img/wx-img/xxkhdsj.png") no-repeat;
+  background-position: 0px -1px;
+  border-radius: 53px;
+  position: absolute;
+  top: 16%;
+  left: 35%;
+}
+.start-jiao {
+  display: none;
+  width: 0px;
+  height: 0px;
+  border: 8px solid #fff;
+  border-color: transparent transparent transparent #fff;
+  position: absolute;
+  top: 25%;
+  left: 47%;
+  z-index: 999;
+}
+footer {
+  width: 100%;
+  margin-top: 20px;
+}
+footer .mode4 {
+  width: 1230px;
+  margin: auto;
+}
+footer .mode4 .m4-part-top-tab {
+  overflow: hidden;
+}
+footer .mode4 .m4-part-top-tab h2 {
+  font-size: 24px;
+  float: left;
+}
+footer .mode4 .m4-part-top-tab .first-ul {
+  height: 35px;
+  width: 1100px;
+  float: right;
+  border-bottom: 1px solid #eee;
+  position: relative;
+}
+footer .mode4 .m4-part-top-tab .first-ul li {
+  width: auto;
+  float: left;
+  height: 37px;
+  font-size: 16px;
+  text-align: center;
+  box-sizing: border-box;
+  margin-right: 45px;
+}
+footer .mode4 .m4-part-top-tab .first-ul li:hover {
+  background: url("../img/wx-img/xxkhdsj.png") no-repeat;
+  background-size: 200px 54px;
+  background-position: -103px 30px;
+  font-weight: 700;
+  color: #1da6ba;
+  cursor: pointer;
+}
+footer .mode4 .m4-part-top-tab .first-ul a {
+  float: right;
+  display: block;
+  width: 60px;
+  height: 35px;
+  font-size: 13px;
+  line-height: 35px;
+  user-select: none;
+  cursor: pointer;
+}
+footer .mode4 .m4-part-top-tab .second-ul {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  padding-top: 30px;
+  box-sizing: border-box;
+  padding-left: 14px;
+  display: block;
+}
+footer .mode4 .m4-part-top-tab .second-ul li {
+  width: auto;
+  height: 32px;
+  line-height: 32px;
+  font-size: 14px;
+  margin-right: 10px;
+  float: left;
+  padding: 0 12px;
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+footer .mode4 .m4-part-top-tab .second-ul li:hover {
+  color: #fff;
+  background: #1da6ba;
+  border-radius: 16px;
+}
+footer .mode4 .Game-video {
+  width: 1230px;
+  overflow: hidden;
+  padding-top: 30px;
+}
+footer .mode4 .Game-video li {
+  width: 200px;
+  height: 185px;
+  float: left;
+  overflow: hidden;
+  margin: 0 6px 20px 0;
+  position: relative;
+}
+footer .mode4 .Game-video li:nth-child(6n) {
+  margin-right: 0;
+}
+footer .mode4 .Game-video li > a:nth-child(1) img {
+  display: block;
+  position: relative;
+  width: 200px;
+  height: 119px;
+}
+footer .mode4 .Game-video li .video-time {
+  position: absolute;
+  right: 10px;
+  top: 95px;
+  color: #fff;
+  font-size: 12px;
+}
+footer .mode4 .Game-video li p {
+  position: absolute;
+  left: 0;
+  top: 118px;
+  width: 100%;
+  height: 42px;
+  overflow: hidden;
+  padding: 0 10px;
+  box-sizing: border-box;
+  font-size: 14px;
+  line-height: 21px;
+  color: #424242;
+}
+footer .mode4 .Game-video li p a {
+  color: #424242;
+}
+footer .mode4 .Game-video li .play-times {
+  position: absolute;
+  left: 10px;
+  bottom: 6px;
+  font-size: 12px;
+  color: #919091;
+}
+footer .mode4 .Game-video li .update-time {
+  position: absolute;
+  right: 10px;
+  bottom: 6px;
+  font-size: 12px;
+  color: #919091;
+}
+footer .foot-bottom {
+  width: 100%;
+  height: 260px;
+  background-color: #e3e2e2;
+  overflow: hidden;
+}
+footer .foot-bottom .foot-dark {
+  width: 1230px;
+  height: 175px;
+  line-height: 175px;
+  margin: auto;
+  margin-top: 50px;
+  position: relative;
+}
+footer .foot-bottom .foot-dark .foot-left {
+  display: block !important;
+  height: 100px;
+  width: auto;
+  line-height: 100px;
+  font-size: 0;
+  text-align: left;
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  margin-top: -50px;
+}
+footer .foot-bottom .foot-dark .foot-left a {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 24px 0 8px;
+}
+footer .foot-bottom .foot-dark .foot-left .l {
+  background: url(//ossweb-img.qq.com/images/lol/v3/logo-tencentgame.png);
+  width: 189px;
+  height: 34px;
+}
+footer .foot-bottom .foot-dark .foot-left .r {
+  background: url(//ossweb-img.qq.com/images/lol/v3/logo-riot.png);
+  width: 83px;
+  height: 56px;
+  float: none;
+}
+footer .foot-bottom .foot-dark .foot-right {
+  float: right;
+  font-size: 12px;
+  width: 750px;
+  height: 120px;
+}
+footer .foot-bottom .foot-dark .foot-right li {
+  height: 20px;
+  line-height: 20px;
+  color: #9f9378;
+}
+footer .foot-bottom .foot-dark .foot-right li a {
+  color: #9f9378;
+}
+footer .foot-bottom .foot-dark .foot-right li p {
+  font-size: 10px;
+}
+footer .float {
+  position: absolute;
+  top: 900px !important;
+  z-index: 999;
+  right: 10px;
+  background-color: #eaeaea;
+}
+footer .float .float-slide {
+  width: 126px;
+}
+footer .float .float-slide img {
+  width: 120px;
+  height: 120px;
+  display: block;
+  border: 3px solid #343434;
+}
+footer .float .float-slide p {
+  padding: 5px 0;
+  text-align: center;
+  display: block;
+  background: #ff4001;
+}
+footer .float .float-slide .totp {
+  background: url("../img/wx-img/sprite_ico.png") no-repeat;
+  background-position: 0 -180px;
+}
+footer .float .float-slide a {
+  width: 102px;
+  background-color: #eaeaea;
+  display: block;
+  height: 30px;
+  padding-left: 24px;
+  text-align: center;
+  line-height: 30px;
+  color: #aaa;
+  margin-top: 2px;
+  font-size: 14px;
+  font-weight: 700;
+}
