@@ -8,6 +8,10 @@ a {
 
 }
 
+.hide {
+    display: none;
+}
+
 .page3 {
 
     .title03 {
@@ -380,22 +384,24 @@ a {
                 margin-left: -1px;
                 margin-right: -1px;
                 vertical-align: bottom; //基线对齐方式
-                margin-bottom: 27px;
+                margin-bottom: 30px;
+                background: url(//game.gtimg.cn/images/lol/act/a20190702loltftwf/p5-tab-a.png) no-repeat center center;
 
             }
+
 
             .onselect {
                 background: url(//game.gtimg.cn/images/lol/act/a20190702loltftwf/p5-tab-on.png) no-repeat center center;
-                width: 531px;
                 height: 56px;
                 line-height: 56px;
+
             }
 
-            .offselect {
-                background: url(//game.gtimg.cn/images/lol/act/a20190702loltftwf/p5-tab-a.png) no-repeat center center;
-            }
+
 
             .professionClass {
+                height: 122px;
+
                 li {
                     float: left;
                     margin: 0px 18px;
@@ -510,7 +516,7 @@ a {
 
             .tips {
                 width: 455px;
-                margin-top: 157px;
+                margin-top: 36px;
                 color: #2f2f31;
                 font-size: 14px;
                 height: 82px;
@@ -561,6 +567,7 @@ a {
                     cursor: pointer;
                     position: relative;
                     box-sizing: border-box;
+                    margin-right: 1px;
 
                     img {
                         width: 100%;
@@ -591,11 +598,13 @@ a {
 
             }
 
+
             .cont5-bg {
                 margin-left: -40px;
                 margin-top: 32px;
                 position: relative;
                 background: url(http://game.gtimg.cn/images/lol/act/a20190702loltftwf/cont5-bg.png);
+
 
                 .video-wrap {
                     width: 497px;
@@ -603,8 +612,9 @@ a {
                     border: 1px solid #d79443;
                     box-sizing: border-box;
                     position: absolute;
-                    right: 23px;
+                    right: 35px;
                     top: -191px;
+
 
                     img {
                         width: 100%;
@@ -619,6 +629,7 @@ a {
                         height: 100%;
                         background: rgba(0, 0, 0, 0.5);
 
+
                     }
                 }
 
@@ -629,6 +640,7 @@ a {
                     margin-left: 31px;
 
                     p {
+
                         span {
                             display: inline-block;
                             width: 170px;
@@ -661,8 +673,8 @@ a {
                             width: 60px;
                             height: 60px;
                             margin: -3px 15px 0px -3px;
-                           
-                            
+
+
                         }
 
                         #skillName {
@@ -679,7 +691,7 @@ a {
                             width: 225px;
                             font-weight: normal;
                             line-height: 16px;
-                            
+
                         }
                     }
                 }
@@ -687,5 +699,153 @@ a {
             }
 
         }
+    }
+}
+
+.page7 {
+    padding-top: 60px;
+    overflow: hidden;
+
+    .title07-2 {
+        background: url(//game.gtimg.cn/images/lol/act/a20190702loltftwf/title07-2.png);
+        width: 508px;
+        height: 46px;
+        margin-bottom: 40px;
+        position: relative;
+        z-index: 1;
+    }
+
+    .tit {
+        position: relative;
+        font-size: 24px;
+        color: #ffffff;
+        font-weight: bold;
+        text-align: center;
+
+        &::after {
+            display: block;
+            content: "";
+            width: 33px;
+            height: 2px;
+            background: #ffffff;
+            margin: 15px auto 0;
+        }
+    }
+
+    .tit-sub {
+        position: relative;
+        color: #2f2f31;
+        font-size: 16px;
+        text-align: center;
+        margin: 20px auto;
+    }
+
+    .egg-list {
+        position: relative;
+        text-align: left;
+
+        &>li:first-child {
+            margin-left: 0;
+        }
+
+        li {
+            display: inline-block;
+            margin-left: 4px;
+            font-size: 0;
+            text-align: center;
+
+            .txt {
+                width: 160px;
+                height: 30px;
+                background-color: #a76c30;
+                position: relative;
+                color: #fff2dc;
+
+                span {
+                    font-size: 18px;
+                    width: 160px;
+                    position: relative;
+                    line-height: 30px;
+                    z-index: 9;
+
+                    &::after {
+                        transition: all .3s;
+                        display: block;
+                        left: 0;
+                        top: 0;
+                        content: "";
+                        opacity: 0;
+                        position: absolute;
+                        visibility: hidden;
+                        background: url(//game.gtimg.cn/images/lol/act/a20190702loltftwf/icon-txt-bg3.png);
+                        width: 160px;
+                        height: 51px;
+                        line-height: 51px;
+                    }
+                }
+            }
+        }
+    }
+
+    .add-big-egg {
+        text-align: center;
+        width: 1000px;
+        font-size: 0;
+        padding-top: 40px;
+
+        li {
+            width: 206px;
+            height: 251px;
+            display: inline-block;
+            margin: 0 17px;
+            position: relative;
+
+            p {
+                position: absolute;
+                width: 100%;
+                height: 46px;
+                line-height: 46px;
+                bottom: 5px;
+                font-size: 22px;
+                color: #fff2dc;
+            }
+        }
+
+        .add-big-li1 {
+            background: url(//game.gtimg.cn/images/lol/act/a20190702loltftwf/add-big-egg1.png);
+        }
+
+        .add-big-li2 {
+            background: url(//game.gtimg.cn/images/lol/act/a20190702loltftwf/add-big-egg2.png);
+        }
+
+        .add-big-li3 {
+            background: url(//game.gtimg.cn/images/lol/act/a20190702loltftwf/add-big-egg3.png);
+        }
+    }
+
+    .btn-pub {
+        display: block;
+        font-size: 20px;
+        position: relative;
+        margin: 19px auto 30px;
+        width: 194px;
+        background-size: 100% 100%;
+        height: 57px;
+        line-height: 57px;
+        font-weight: bold;
+        color: #ffffff;
+        background: url(//game.gtimg.cn/images/lol/act/a20190702loltftwf/btn-pub.png) no-repeat center;
+        text-align: center;
+    }
+
+    .tit2 {
+        margin-top: 115px;
+        margin-bottom: 20px;
+    }
+
+    .egg-list2 {
+
+        margin: 0px 252px;
     }
 }
