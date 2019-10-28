@@ -53,17 +53,17 @@ window.onscroll = function () {
     imgs[1].style.transition = 'none';
     imgs[1].style.opacity = 1;
     let l = imgs[1].offsetHight;
-    imgs[1].style.transition = ' all 0.3s linear';
+    imgs[1].style.transition = ' all 1s linear';
     imgs[1].style.height = '360px';
     imgs[0].style.display = 'none'
-    p.style.transition = ' all 0.3s linear';
+    p.style.transition = ' all 1s linear';
     p.style.top = '300px';
-    descLOL.style.transition = ' all 0.3s linear';
+    descLOL.style.transition = ' all 1s linear';
     descLOL.style.top = '300px';
     // imgBox.style.transition=' all 0.3s linear';
-    imgBox.style.transition = ' all 0.3s linear';
+    imgBox.style.transition = ' all 1s linear';
     imgBox.style.height = '410px';
-    wrap.style.transition = ' all 0.3s linear';
+    wrap.style.transition = ' all 1s linear';
     wrap.style.top = '400px';
 
 }
@@ -239,13 +239,13 @@ let $matchNavlis = $('.matchNav>ul>li');
 $matchNavlis.on('mouseenter', function () {
     let n = $(this).index();
     $(this).addClass('wrapToplis').siblings().removeClass('wrapToplis')
-    $('.matchBO').eq(n).css({display:'block'}).siblings().css({display:'none'})
-    if(n==1){
-        $('.match').css({height:270+'px'});
-        $(".part").css({top:2450+'px'})
-    }else{
-        $('.match').css({height:516+'px'});
-        $(".part").css({top:2680+'px'})
+    $('.matchBO').eq(n).css({ display: 'block' }).siblings().css({ display: 'none' })
+    if (n == 1) {
+        $('.match').css({ height: 270 + 'px' });
+        $(".part").css({ top: 2450 + 'px' })
+    } else {
+        $('.match').css({ height: 516 + 'px' });
+        $(".part").css({ top: 2680 + 'px' })
     }
 })
 
@@ -256,10 +256,10 @@ let $BO1UL = $('.BO1UL>ul');
 function BO1ULMove() {
     let $BO1ULImgs = $('.BO1UL img');
     let $BO1ULas = $('.BO1UL a');
-    $BO1ULImgs.on('mousedown',function(e){
+    $BO1ULImgs.on('mousedown', function (e) {
         e.preventDefault();
     })
-    $BO1ULas.on('mousedown',function(e){
+    $BO1ULas.on('mousedown', function (e) {
         e.preventDefault();
     })
     let oo = 0;
@@ -280,14 +280,14 @@ function BO1ULMove() {
         oo--;
         $BO1UL.eq(0).animate({ left: `${-oo * 500}px` }, 300)
     })
-    let l,k;
+    let l, k;
     $BO1UL.eq(0).on('mousedown', function (e) {
         startX = e.pageX;
         k = parseFloat($BO1UL.eq(0).css('left'))
         $(window).on('mousemove', move)
     });
     function move(e) {
-        l = e.pageX- startX;
+        l = e.pageX - startX;
         $BO1UL.eq(0).css({ left: (k + l) })
     }
     $(window).on('mouseup', function () {
@@ -300,7 +300,7 @@ function BO1ULMove() {
                 $BO1UL.eq(0).animate({ left: `${-oo * 500}px` }, 300)
             }
         }
-        if(l==0){
+        if (l == 0) {
             $BO1UL.eq(0).animate({ left: `${-oo * 500}px` }, 300)
         }
         if (l < 0) {
@@ -311,15 +311,15 @@ function BO1ULMove() {
                 $BO1UL.eq(0).animate({ left: `${-oo * 500}px` }, 300)
             }
         }
-        l=0;
-        if(oo<=0){
+        l = 0;
+        if (oo <= 0) {
             $BO1BtnL.eq(0).hide()
-        }else{
+        } else {
             $BO1BtnL.eq(0).show()
         }
-        if(oo>=11){
+        if (oo >= 11) {
             $BO1BtnR.eq(0).hide()
-        }else{
+        } else {
             $BO1BtnR.eq(0).show();
         }
     })
@@ -337,63 +337,184 @@ let bigBox = document.querySelector('.matchB2RBody');
 let bigMove = document.querySelectorAll('.matchB2RBody>ul');
 let litBox = document.getElementById('scroll');
 let litMove = document.getElementById('bar');
-scrollBar(bigBox,bigMove[0],litBox,litMove)
+// scrollBar(bigBox,bigMove[0],litBox,litMove)
 
-function change(ary,arr,str){
-    let n=0;
-    ary.on('mouseenter',function(){
+function change(ary, arr, str) {
+    let n = 0;
+    ary.on('mouseenter', function () {
         n = $(this).index();
         $(this).addClass(str).siblings().removeClass(str);
-        arr.eq(n).css({display:'block'}).siblings('ul').css({display:'none'})
-        scrollBar(bigBox,bigMove[n],litBox,litMove)
+        arr.eq(n).css({ display: 'block' }).siblings('ul').css({ display: 'none' })
+        scrollBar(bigBox, bigMove[n], litBox, litMove)
     })
 }
-change($matchB2jifenToplis,$B2jifenBodyuls,'wrapToplis');
-change($matchB1jifenToplis,$B1jifenBodyuls,'wrapToplis');
-change($matchB2RTlis,$matchB2RBodyuls,'currentB2');
+change($matchB2jifenToplis, $B2jifenBodyuls, 'wrapToplis');
+change($matchB1jifenToplis, $B1jifenBodyuls, 'wrapToplis');
+change($matchB2RTlis, $matchB2RBodyuls, 'currentB2');
 //滚动条
-function scrollBar(bigBox,bigMove,litBox,litMove){
-    let sy=t=endy=0;
+function scrollBar(bigBox, bigMove, litBox, litMove) {
+    let sy = t = endy = 0;
     let n = 0;
     let minN = bigMove.clientHeight - bigBox.clientHeight;
-    let height = (bigBox.clientHeight*litBox.clientHeight)/(bigMove.clientHeight)
+    let height = (bigBox.clientHeight * litBox.clientHeight) / (bigMove.clientHeight)
     litMove.style.height = height + 'px';
     let maxT = litBox.clientHeight - height;
-    let m = bigBox.clientHeight/height;
-    function init(){
-        bigMove.style.top = 0 +'px';
+    let m = bigBox.clientHeight / height;
+    function init() {
+        bigMove.style.top = 0 + 'px';
         litMove.style.top = 0 + 'px';
     }
     init()
-    litMove.onmousedown = function(e){
+    litMove.onmousedown = function (e) {
         sy = e.pageY
-        document.addEventListener('mousemove',move,false)
-    } 
-    function move(e){
-        window.getSelection?window.getSelection().removeAllRanges():document.selection.empty();
-        t = e.pageY - sy+endy;
-        t = t<=0?0:(t>=maxT?maxT:t)
-        litMove.style.top = t + 'px';
-        bigMove.style.top = -t*m + 'px';
+        document.addEventListener('mousemove', move, false)
     }
-    document.addEventListener('mouseup',function(){
-        document.removeEventListener('mousemove',move,false);
+    function move(e) {
+        window.getSelection ? window.getSelection().removeAllRanges() : document.selection.empty();
+        t = e.pageY - sy + endy;
+        t = t <= 0 ? 0 : (t >= maxT ? maxT : t)
+        litMove.style.top = t + 'px';
+        bigMove.style.top = -t * m + 'px';
+    }
+    document.addEventListener('mouseup', function () {
+        document.removeEventListener('mousemove', move, false);
         endy = parseFloat(litMove.style.top)
-    },false) 
-    bigBox.addEventListener('mousewheel',function(e){
-        if(e.wheelDelta<0){
-            n-=5;
-            n = n<= -minN? - minN:n;
+    }, false);
+
+
+    bigBox.addEventListener('mousewheel', function (e) {
+        n = parseFloat(bigMove.style.top)
+
+        if (e.wheelDelta < 0) {
+            // endy-=10;
+            // endy = endy<= -minN? - minN:endy;
+            n -= 10;
+            n = n <= -minN ? - minN : n;
         }
-        if(e.wheelDelta>0){
-            n+=5;
-            n = n>=0?0:n;
+        if (e.wheelDelta > 0) {
+            // endy+=10;
+            // endy = endy>=0?0:endy;
+            n += 10;
+            n = n >= 0 ? 0 : n;
         }
-        if(n<0&&n>-minN){
-            e.preventDefault();
-        }
-        bigMove.style.top = n +'px';
-        litMove.style.top = -n/m +'px';
-    },false)
+        e.preventDefault();
+        // if(n<0&&n>-minN){
+        //     e.preventDefault();
+        // }
+        bigMove.style.top = n + 'px';
+        litMove.style.top = -n / m + 'px';
+
+        endy = parseFloat(litMove.style.top)
+
+    }, false)
 }
 
+//英雄库
+
+let $partIntopLis = $('.partIntop>ul>li');
+let $partIntopLisdiv = $('.partIntop>ul>li>div');
+let $partInBodylis = $('.partInBody>ul>li');
+let partInBody = document.getElementsByClassName('partInBody')[0];
+let partInBodyUl = partInBody.getElementsByTagName('ul')[0];
+let partScroll = document.getElementById('partScroll');
+let partBar = document.getElementById('partBar');
+
+function getData() {
+    $.ajax({
+        url: '../json/uccn.json',
+        type: 'get',
+        success: function (data) {
+            render(data);
+            scrollBar(partInBody, partInBodyUl, partScroll, partBar);
+            $partInBodylis = $('.partInBody>ul>li');
+        }
+    })
+}
+getData()
+let $partUl = $('.partInBody>ul');
+function render(data) {
+    let str = '';
+    data.forEach(item => {
+        str += `<li type = "${item.type}">
+        <img src="${item.img}">
+        <p>${item.title}</p>
+        <div><span></span></div>
+    </li>`
+    })
+    $partUl.html(str);
+}
+
+
+//英雄库选项卡
+
+function init() {
+    partInBodyUl.style.top = 0 + 'px';
+    partBar.style.top = 0 + 'px';
+}
+
+
+$partIntopLis.on('click', function () {
+    
+    init()
+    let n = $(this).index();
+    $partIntopLis.eq(n).addClass('race').siblings().removeClass('race');
+    clear($partIntopLisdiv.get())
+    function clear(ary) {
+        ary.forEach(item => {
+            item.classList.remove('race')
+        })
+    }
+    $partIntopLisdiv.eq(n).addClass('race')
+    lisnone(n);
+})
+
+function lisnone(n) {
+    let reg = new RegExp(`${n}`)
+
+    switch (n) {
+        case 0:
+            $partInBodylis.css({ display: 'block' })
+            break;
+        case 1:
+            hidelis(reg)
+            break;
+        case 2:
+            hidelis(reg)
+            break;
+        case 3:
+            hidelis(reg)
+            break;
+        case 4:
+            hidelis(reg)
+            break;
+        case 5:
+            hidelis(reg)
+            break;
+        case 6:
+            hidelis(reg)
+            break;
+        default:
+            break;
+    }
+
+    if (n == 0) {
+
+    }
+    if (n == 1) {
+        
+    }
+    // if(n==1){
+    //     console.log($partInBodylis.css({display:'none'}));
+
+    // }
+}
+function hidelis(reg) {
+    for (let i = 0; i < $partInBodylis.length; i++) {
+        if (!reg.test($partInBodylis.eq(i).attr('type'))) {
+            $partInBodylis.eq(i).hide()
+        }else{
+            $partInBodylis.eq(i).show();
+        }
+    }
+    // scrollBar(partInBody,partInBodyUl,partScroll,partBar);
+}
