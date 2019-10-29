@@ -2214,18 +2214,19 @@
   border-radius: 10px;
 }
 .fanart {
+  z-index: 10;
   width: 100%;
-  height: 570px;
+  height: 480px;
   position: absolute;
   left: 0;
   top: 3300px;
   padding-top: 50px;
+  background: #eee;
 }
 .fanart .fanartIn {
   width: 1230px;
   height: 470px;
   margin: 0 auto;
-  background: #bcbcbc;
   position: relative;
 }
 .fanart .fanartIn .fanartL {
@@ -2234,13 +2235,299 @@
   position: absolute;
   left: 0;
   top: 0;
-  background: salmon;
+}
+.fanart .fanartIn .fanartL .fanartLT {
+  height: 35px;
+  width: 100%;
+  line-height: 35px;
+}
+.fanart .fanartIn .fanartL .fanartLT h3 {
+  float: left;
+  height: 35px;
+  font-size: 20px;
+  font-weight: 300;
+}
+.fanart .fanartIn .fanartL .fanartLT h3::before {
+  content: '\0020';
+  display: inline-block;
+  vertical-align: middle;
+  width: 4px;
+  height: 28px;
+  background-color: #1da6ba;
+  margin-right: 10px;
+}
+.fanart .fanartIn .fanartL .fanartLT span {
+  float: right;
+  height: 35px;
+  font-size: 12px;
+  color: #7ea1a6;
+  width: 50px;
+  text-align: center;
+}
+.fanart .fanartIn .fanartL .fanartLT span i {
+  background-position: -213px -126px;
+  width: 15px;
+  height: 9px;
+  display: inline-block;
+  background-image: url(../img/comm-spr.png);
+}
+.fanart .fanartIn .fanartL .fanartLBody {
+  width: 710px;
+  height: 360px;
+  margin-top: 30px;
+}
+.fanart .fanartIn .fanartL .fanartLBody li {
+  width: 170px;
+  height: 170px;
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+.fanart .fanartIn .fanartL .fanartLBody li:hover > div {
+  transform: translateY(-50px);
+}
+.fanart .fanartIn .fanartL .fanartLBody li:hover > img {
+  transform: scale(1.2);
+}
+.fanart .fanartIn .fanartL .fanartLBody li:nth-child(4n) {
+  margin-right: 0;
+}
+.fanart .fanartIn .fanartL .fanartLBody li > img {
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s linear;
+}
+.fanart .fanartIn .fanartL .fanartLBody li > div {
+  height: 50px;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: -50px;
+  transition: all 0.3s linear;
+  background: rgba(0, 0, 0, 0.7);
+}
+.fanart .fanartIn .fanartL .fanartLBody li > div p {
+  font-size: 14px;
+  text-indent: 5px;
+  color: #fff;
+}
+.fanart .fanartIn .fanartL .fanartLBody li > div > img {
+  width: 21px;
+  height: 21px;
+  border-radius: 50%;
+  position: absolute;
+  left: 5px;
+  bottom: 5px;
+}
+.fanart .fanartIn .fanartL .fanartLBody li > div > span {
+  color: #aaa;
+  font-size: 12px;
+  position: absolute;
+  left: 30px;
+  bottom: 5px;
+}
+.fanart .fanartIn .fanartL .fanartLBody li > div > i {
+  background: url(../img/index-spr.png);
+  background-position: -456px -226px;
+  width: 23px;
+  height: 17px;
+  position: absolute;
+  bottom: 5px;
+  right: 25px;
+}
+.fanart .fanartIn .fanartL .fanartLBody li > div > b {
+  color: #AAA;
+  font-size: 12px;
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
 }
 .fanart .fanartIn .fanartR {
-  width: 490px;
-  height: 470px;
+  width: 480px;
+  height: 350px;
+  position: absolute;
+  right: 0;
+  top: 65px;
+}
+.fanart .fanartIn .fanartR > img {
+  height: 390px;
+  width: 230px;
+  position: absolute;
+  left: 0;
+  top: -40px;
+}
+.fanart .fanartIn .fanartR > ul {
+  width: 240px;
+  height: 100%;
   position: absolute;
   right: 0;
   top: 0;
-  background: greenyellow;
+}
+.fanart .fanartIn .fanartR > ul > li {
+  height: 88px;
+  width: 100%;
+  margin-bottom: 9px;
+  position: relative;
+  line-height: 88px;
+}
+.fanart .fanartIn .fanartR > ul > li > i {
+  background-position: -484px -226px !important;
+  background: url(../img/index-spr.png);
+  position: absolute;
+  background-size: 638px 572px;
+  left: 10px;
+  top: 36px;
+  font-size: 14px;
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+}
+.fanart .fanartIn .fanartR > ul > li > span {
+  position: absolute;
+  left: 40px;
+  top: 0px;
+  font-size: 14px;
+  width: 200px;
+  height: 88px;
+  color: #fff;
+}
+.fanart .fanartIn .fanartR > ul > li:nth-child(4) {
+  margin-bottom: 0;
+  height: 59px;
+  text-align: center;
+  position: relative;
+  line-height: 60px;
+  font-size: 14px;
+  color: #ffffff;
+  cursor: pointer;
+  background: url(../img/index-spr.png) -193px -253px no-repeat;
+  background-position: -193px -253px;
+}
+.fanart .fanartIn .fanartR > ul > li:nth-child(4):hover .fanartRB {
+  display: block;
+}
+.fanart .fanartIn .fanartR > ul > li:nth-child(4) .fanartRB {
+  height: 310px;
+  display: none;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: -310px;
+  background: #fff;
+  transition: all 0.2s linear;
+}
+.fanart .fanartIn .fanartR > ul > li:nth-child(4) .fanartRB > p {
+  height: 20px;
+  width: 100%;
+  font-size: 12px;
+  margin-top: 10px;
+  color: #424242;
+  line-height: 20px;
+  text-align: left;
+  text-indent: 20px;
+}
+.fanart .fanartIn .fanartR > ul > li:nth-child(4) .fanartRB > p:hover {
+  background: #ddd;
+}
+.fanart .fanartIn .fanartR > ul > li:nth-child(4):hover > em {
+  left: 157px;
+}
+.fanart .fanartIn .fanartR > ul > li:nth-child(4) b:nth-of-type(1) {
+  width: 20px;
+  height: 9px;
+  background-position: -531px -226px;
+  background-image: url(//game.gtimg.cn/images/lol/v3/index-spr.png);
+  background-size: 638px 572px;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 60px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.fanart .fanartIn .fanartR > ul > li:nth-child(4) b:nth-of-type(2) {
+  width: 20px;
+  height: 9px;
+  background-position: -506px -226px;
+  background-image: url(//game.gtimg.cn/images/lol/v3/index-spr.png);
+  background-size: 638px 572px;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 176px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.fanart .fanartIn .fanartR > ul > li:nth-child(4) > em {
+  width: 15px;
+  height: 9px;
+  background-position: -342px -99px;
+  background-image: url(//game.gtimg.cn/images/lol/v3/comm-spr.png);
+  background-size: 393px 200px;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 153px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.fanart .fanartIn .fanartR > ul > li > img {
+  width: 100%;
+  height: 100%;
+}
+.foot {
+  width: 100%;
+  height: 265px;
+  background: #e3e2e2;
+  color: #9f9378;
+  position: absolute;
+  left: 0;
+  top: 3830px;
+}
+.foot .footIn {
+  width: 1230px;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+.foot .footIn > span {
+  width: 189px;
+  height: 34px;
+  position: absolute;
+  left: 24px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: url(../img/topfoot-spr.png);
+  background-position: -216px 0;
+  cursor: pointer;
+}
+.foot .footIn > i {
+  background: url(../img/topfoot-spr.png);
+  width: 82px;
+  height: 28px;
+  position: absolute;
+  background-position: -216px -84px;
+  left: 265px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.foot .footIn > ul {
+  width: 750px;
+  height: 140px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.foot .footIn > ul > li {
+  height: 15px;
+  margin-bottom: 5px;
+  font-size: 12px;
+  line-height: 15px;
+}
+.foot .footIn > ul > li:nth-child(1),
+.foot .footIn > ul > li:nth-child(2),
+.foot .footIn > ul > li:nth-child(6) {
+  cursor: pointer;
 }

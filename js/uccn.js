@@ -243,9 +243,16 @@ $matchNavlis.on('mouseenter', function () {
     if (n == 1) {
         $('.match').css({ height: 270 + 'px' });
         $(".part").css({ top: 2450 + 'px' })
+        $('.fanart').css({top:3070})
+        $('.foot').css({top:3600})
+
+
     } else {
         $('.match').css({ height: 516 + 'px' });
         $(".part").css({ top: 2680 + 'px' })
+        $('.fanart').css({top:3300})
+        $('.foot').css({top:3830})
+
     }
 })
 
@@ -470,43 +477,11 @@ $partIntopLis.on('click', function () {
 
 function lisnone(n) {
     let reg = new RegExp(`${n}`)
-
-    switch (n) {
-        case 0:
-            $partInBodylis.css({ display: 'block' })
-            break;
-        case 1:
-            hidelis(reg)
-            break;
-        case 2:
-            hidelis(reg)
-            break;
-        case 3:
-            hidelis(reg)
-            break;
-        case 4:
-            hidelis(reg)
-            break;
-        case 5:
-            hidelis(reg)
-            break;
-        case 6:
-            hidelis(reg)
-            break;
-        default:
-            break;
+    if(n==0){
+        $partInBodylis.css({ display: 'block' })
+    }else{
+        hidelis(reg)
     }
-
-    if (n == 0) {
-
-    }
-    if (n == 1) {
-        
-    }
-    // if(n==1){
-    //     console.log($partInBodylis.css({display:'none'}));
-
-    // }
 }
 function hidelis(reg) {
     for (let i = 0; i < $partInBodylis.length; i++) {
