@@ -491,5 +491,4 @@ function hidelis(reg) {
             $partInBodylis.eq(i).show();
         }
     }
-    // scrollBar(partInBody,partInBodyUl,partScroll,partBar);
 }
