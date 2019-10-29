@@ -5,7 +5,7 @@
   text-decoration: none;
 }
 .hide {
-  display: none;
+  display: none ;
 }
 .after {
   background: url("../img/wx-img/xxkhdsj.png") no-repeat;
@@ -115,6 +115,7 @@ footer .mode4 .m4-part-top-tab .second-ul li:hover {
   background: #1da6ba;
   border-radius: 16px;
 }
+
 footer .mode4 .Game-video {
   width: 1230px;
   overflow: hidden;

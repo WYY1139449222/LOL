@@ -10,19 +10,21 @@
 }
 .matchBox {
   margin-top: 10px;
-  height: 205px;
+  height: 185px;;
 }
 .Top {
   width: 1170px;
   height: 195px;
+  overflow: hidden;
 }
 .Atop {
   width: 228px;
   height: 185px;
   float: left;
   position: relative;
-  margin-right: 7px;
+  margin-right: 5px;
   background: linen;
+
 }
 .Atop:nth-child(5n) {
   margin-right: 0;
@@ -291,11 +293,11 @@
 
 .ttt li {
   width: 400px;
-  height: 30px;
+  height: 35px;
   display: block;
   border-bottom: 1px solid #ccc;
   line-height: 40px;
-  font-size: 12px;
+  font-size: 13px;
 }
 .ttt span {
   height: 30px;
@@ -527,10 +529,19 @@
 .Ecenterdown ul li {
   float: left;
 }
+.EcD_l{
+  overflow: hidden;
+}
 .EcD_l img {
   height: 100%;
   width: 210px;
+  transition: all 0.3s linear;
 }
+.EcD_l img:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
 .EcD_a a {
   font-size: 12px;
   color: black;
@@ -586,11 +597,20 @@
   height: 100px;
   float: right;
 }
+.Edown_l_long{
+  overflow: hidden;
+  
+}
 .Edown_l_long a {
   color: black;
 }
 .Edown_l_long a img {
   width: 410px;
+  transition: all 0.3s linear;
+}
+.Edown_l_long a img:hover {
+  transform: scale(1.2);
+  cursor: pointer;
 }
 .Edown_l_long .rd {
   font-size: 10px;
@@ -604,10 +624,16 @@
   display: inline-block;
   background: #f7f7f7;
   width: 202px;
+  overflow: hidden;
 }
 .Edown_l_l img {
   display: inline-block;
   width: 202px;
+  transition: all 0.3s linear;
+}
+.Edown_l_l img:hover {
+  transform: scale(1.2);
+  cursor: pointer;
 }
 .Edown_l_l p {
   font-size: 11px;
@@ -629,18 +655,20 @@
   font-size: 20px;
 }
 .Edc_two {
-  margin-left: 10px;
+  margin:20px 0 0 10px;
   overflow: hidden;
 }
 .Edc_two_h{
   display: block;
-  height: 40px;;
+  height: 40px;
+  width: 380px;;
 }
 .Edc_t_1 a {
   color: black;
 }
 .Edc_t_1 span {
   float: right;
+  margin-right: 10px;
 }
 .Edc_t_2 {
   display: none;
@@ -663,4 +691,17 @@
   width: 1230px;
   background: #f7f7f7;
   margin-top: 20px;
+}
+
+
+.tit li a:hover{
+  color: sandybrown;
+}
+.tot li a:hover{
+  color: sandybrown;
+}
+.ttt li:hover{
+  color: sandybrown;
+  user-select: none;
+  cursor:pointer;
 }

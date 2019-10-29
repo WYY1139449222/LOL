@@ -60,13 +60,14 @@
             lias[i].onmouseenter = function () {
                 divs[i].style.display = 'block'
                 lis[i].style.display = 'none'
-                lias[i].style.background = 'rgba(0,0,0,0.5)'
-                lias[i].style.height= '70px'
+                lias[i].style.background = '#fff'
+                lias[i].style.height = '70px'
+                lias[i].style.cursor = 'pointer'
                 lias[i].onmouseleave = function () {
                     divs[i].style.display = 'none'
                     lis[i].style.display = 'block'
-                    lias[i].style.background = 'rgba(255,255,255)'
-                    lias[i].style.height= '40px'
+                    lias[i].style.background = '#fff'
+                    lias[i].style.height = '40px'
                 }
             }
 
@@ -75,4 +76,172 @@
 
     }
     Edown()
+
+
+
+    function mode1() {
+        $top = $('.Top')
+        $Lbtn = $('.btn_left')
+        $Rbtn = $('.btn_right')
+
+        function getData() {
+            $.ajax({
+                url: '../js/wx-data.json',
+                success: function (data) {
+                    render(data)
+                },
+                error: function (err) {
+                    console.log(err)
+                }
+            })
+        }
+        getData()
+
+        function render(data) {
+            let str = '', str2 = '<div class="BOX">';
+            data.forEach((item, index) => {
+                if (index % 5 == 0) {
+                    str2 += `<li class="Atop">
+                    <p class="Btop">
+                        <div class="Ctop"></div>
+                        <span class="Dspan1">${item.start}</span>
+                        <span class="Dspan2">${item.day}</span>
+                        <span class="Dspan3">${item.time}</span>
+                    </p>
+                    <div class="Bleft">
+                        <span>
+                            <a href="">
+                                <img src="${item.img}" alt="">
+                            </a>
+                        </span>
+                        <a>C9</a>
+                    </div>
+                    <div class="Bcenter">
+                        <a class="zero">0</a>
+                        <span class="mh">:</span>
+                        <a class="one">1</a>
+                    </div>
+                    <div class="Bright">
+                        <span>
+                            <a href="">
+                                <img src="${item.img2}" alt="">
+                            </a>
+                        </span>
+                        <a>C9</a>
+                    </div>
+                    <p class="Bdown">
+                        <a class="Bdata">数据</a>
+                        <a class="Bvideo">视频</a>
+                    </p>
+                    <p class="Bbottom">
+                        <span>2019全球总决赛</span>
+                        <a>小组赛 第六天 BO1</a>
+                    </p>
+                </li></div>`
+                    str += str2
+                    str2 = `<div class="BOX">`
+                } else {
+                    str2 += `<li class="Atop">
+                    <p class="Btop">
+                        <div class="Ctop"></div>
+                        <span class="Dspan1">${item.start}</span>
+                        <span class="Dspan2">${item.day}</span>
+                        <span class="Dspan3">${item.time}</span>
+                    </p>
+                    <div class="Bleft">
+                        <span>
+                            <a href="">
+                                <img src="${item.img}" alt="">
+                            </a>
+                        </span>
+                        <a>C9</a>
+                    </div>
+                    <div class="Bcenter">
+                        <a class="zero">0</a>
+                        <span class="mh">:</span>
+                        <a class="one">1</a>
+                    </div>
+                    <div class="Bright">
+                        <span>
+                            <a href="">
+                                <img src="${item.img2}" alt="">
+                            </a>
+                        </span>
+                        <a>C9</a>
+                    </div>
+                    <p class="Bdown">
+                        <a class="Bdata">数据</a>
+                        <a class="Bvideo">视频</a>
+                    </p>
+                    <p class="Bbottom">
+                        <span>2019全球总决赛</span>
+                        <a>小组赛 第六天 BO1</a>
+                    </p>
+                </li>`
+                }
+            })
+
+            $top.html(str)
+
+        }
+        let n = 0;
+        $Lbtn.on('click', function () {
+            $('.Top>div').eq(n).show().siblings().hide()
+            n++
+            if (n > 5) {
+                n = 0
+            }
+
+        })
+        $Rbtn.on('click', function () {
+            n--
+            $('.Top>div').eq(n).show().siblings().hide()
+            if (n < 0) {
+                n = 5
+            }
+
+        })
+    }
+    mode1()
+
+
+    function show(a, b, c) {
+        $lis = $('.selected_1')
+        $Boxs = $('.m-events-container>div')
+        for (let i = 0; i < $lis.length; i++) {
+
+            $lis[i].onclick = function () {
+                $Boxs.eq(i).show().siblings().hide()
+                $lis.eq(i).addClass('LISCURRENT').siblings().removeClass('LISCURRENT')
+            }
+        }
+    }
+    show()
+
+    function show2(a, b, c, x = null) {
+        $Ls = $(a)
+        $Bs = $(b)
+        $LIS = $(x)
+        for (let i = 0; i < $Ls.length; i++) {
+    
+            $Ls[i].onclick = function () {
+                $Bs.eq(i).show().siblings('.Game-video').hide()
+                $Ls.eq(i).addClass(c).siblings().removeClass(c)
+                if (i !== 0) {
+                    $LIS.hide()
+                } else {
+                    $LIS.show()
+                }
+            }
+    
+            $LIS[i].onclick=function(){
+                $LIS.eq(i).addClass('after before').siblings().removeClass('after before')
+                console.log(i)
+            }
+        }
+    }
+    show2('.first-ul>li', '.Game-video', 'after', '.second-ul>li')
+
+
+    
 })()

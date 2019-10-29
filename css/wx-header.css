@@ -5,9 +5,13 @@
   text-decoration: none;
 }
 header {
-  /* width: 1230px; */
-  /* overflow: visible; */
+  width: 1230px;
+  overflow: visible;
   margin:auto;
+}
+.matchBox{
+  overflow: hidden;
+
 }
 .TOP {
   height: 42px;
@@ -16,16 +20,21 @@ header {
   overflow: hidden;
   position: relative;
 }
+.TOP .fuck{
+  float: left;
+  overflow: hidden;
+}
 .TOP_2{
-  /* position: absolute;
-  top:0;
-  left:0; */
+
   width: 1230px;
   height:50px;
   margin: 0 auto;
 }
 .pic_0 {
   overflow: visition;
+  display: inline-block;
+  width: 700px;
+  height: 42px;
 }
 .pic_0 li a {
   float: left;
@@ -48,8 +57,9 @@ header {
   background-position: 0 -42px;
 }
 .wz_0 {
-  margin-left: 150px;
-  float: left;
+  position: relative;
+  top: -15px;
+  display: inline-block;
   height: 42px;
   line-height: 42px;
   text-align: center;
