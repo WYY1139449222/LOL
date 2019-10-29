@@ -257,7 +257,7 @@ function render(data) {
 getData('../json/profession.json', render);
 //获取相关英雄渲染
 
-TheHero();
+
 
 function TheHero() {
     getData('../json/theHero.json', renderTheHero);
@@ -312,15 +312,16 @@ function TheHero() {
         $cont5Bg.html(descStr);
         $cont6Bg = $('.relevant .cont6-bg');
         $lis = $heroList.find('li');
+        $lis.eq(0).addClass('on').siblings().removeClass('on');
         $cont6Bg.eq(0).show().siblings().hide();
-        
-        $lis.on('click',function(){
-            let n=$(this).index();
+
+        $lis.on('click', function () {
+            let n = $(this).index();
             $(this).addClass('on').siblings().removeClass('on');
             $cont6Bg.eq(n).show().siblings().hide();
-            
+
         })
-      
+
 
 
     }
@@ -330,18 +331,82 @@ function TheHero() {
     //点击相关英雄头衔进行切换英雄描述
     //    $heroList
     // let tabTheHeroN = 0;
-      
-   
+
+
 
 }
-
+TheHero();
 //点击种族的时候切换
-search();
-function search(){
-    let $spans=$(".searchMain span");
-  $spans.on('click',function(){
-      
-      $(this).addClass('onselect').siblings().removeClass('onselect');
 
-  })
+
+function search() {
+    let $spans = $(".searchMain span");
+    $spans.on('click', function () {
+
+        $(this).addClass('onselect').siblings().removeClass('onselect');
+
+    })
 }
+search();
+//楼梯
+
+function stairs() {
+    //楼梯什么时候显示  一屏的高度
+    let $navigation = $('.body .g-navigation'); //整个楼梯
+    let $last = $navigation.find('.last'); //最后一个楼梯
+    let $navlis = $('.g-navigation li').not('.last'); //楼梯
+    let $pages = $('.body .page'); //整个楼层
+    let $p=$('.nav-list p');
+    console.log($p);
+    
+    $(window).on('scroll', function () {
+        let $scroll = $(this).scrollTop();
+        if ($scroll >= 800) {
+            //显示
+            $navigation.addClass('onav');
+        } else {
+            //隐藏
+            $navigation.removeClass('onav');
+        }
+        //滚动对应各自的楼梯
+        $pages.each(function(){
+                
+            let $page=$pages.eq($(this).index()).offset().top+400;
+            if($page>$scroll){      
+                $navlis.removeClass('onli');
+                let n=($(this).index()*57);
+               
+                 
+                $p.css({top:n+70+'px'});
+                $navlis.eq($(this).index()).addClass('onli');
+                
+                return false;
+            }
+           
+            
+        })
+
+
+    });
+    //获取每个楼梯的offset().top,点击楼梯让对对应的内容模块移动到对应的位置 offset().left
+    //   console.log($navlis);
+      
+    $navlis.on('click', function () {
+        $(this).addClass('onli').siblings().removeClass('onli');
+       
+
+        let $lisTop = $('.page').eq($(this).index()).offset().top; //获取每一个楼梯的offsetTop值
+        $('html,body').animate({
+            scrollTop: $lisTop
+        })
+    });
+    //3回到顶部
+// console.log($last);
+
+    $last.on('click', function () {
+        $('html,body').animate({
+            scrollTop: 0
+        })
+    });
+}
+stairs();
