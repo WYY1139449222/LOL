@@ -1,0 +1,82 @@
+[{
+        "img": "//game.gtimg.cn/images/lol/tft/cham-icons/38.png",
+        "peopleName": "虚空行者",
+        "race": "虚空",
+        "job": "法师",
+        "price": "1金币",
+        "skilImg": "//game.gtimg.cn/images/lol/tft/skills/38.png",
+        "skillName": "虚空之刃",
+        "skillInfo": "卡萨丁的攻击可从敌人那里偷取法力值，并将其转化成一层护盾。"
+    },
+    {
+        "img": "//game.gtimg.cn/images/lol/tft/cham-icons/103.png",
+        "peopleName": "九尾妖狐",
+        "race": "狂野",
+        "job": "法师",
+        "price": "2金币",
+        "skilImg": "//game.gtimg.cn/images/lol/tft/skills/103.png",
+        "skillName": "欺诈宝珠",
+        "skillInfo": "阿狸沿直线发射一颗会折返的法球，对沿途的敌人造成伤害。"
+    },
+    {
+        "img": "//game.gtimg.cn/images/lol/tft/cham-icons/117.png",
+        "peopleName": "仙灵女巫",
+        "race": "约德尔人",
+        "job": "法师",
+        "price": "2金币",
+        "skilImg": "//game.gtimg.cn/images/lol/tft/skills/117.png",
+        "skillName": "狂野生长",
+        "skillInfo": "璐璐为一名友军提供额外生命值，并击飞该友军附近的敌人。"
+    },
+    {
+        "img": "//game.gtimg.cn/images/lol/tft/cham-icons/4.png",
+        "peopleName": "崔斯特",
+        "race": "海盗",
+        "job": "法师",
+        "price": "2金币",
+        "skilImg": "//game.gtimg.cn/images/lol/tft/skills/4.png",
+        "skillName": "选牌",
+        "skillInfo": "卡牌大师丢出一张卡牌，可以随机造成眩晕(金色)，目标周围的范围伤害(红色)或者是为自己和附近友军回复法力值(蓝色)的效果。"
+    },
+    {
+        "img": "//game.gtimg.cn/images/lol/tft/cham-icons/25.png",
+        "peopleName": "堕落天使",
+        "race": "恶魔",
+        "job": "法师",
+        "price": "3金币",
+        "skilImg": "//game.gtimg.cn/images/lol/tft/skills/25.png",
+        "skillName": " 灵魂镣铐",
+        "skillInfo": "莫甘娜对附近的敌人放置于枷锁，在短暂的延迟后，如果敌人仍在附近，则莫甘娜会对他们造成伤害和晕眩效果。"
+    },
+    {
+        "img": "//game.gtimg.cn/images/lol/tft/cham-icons/45.png",
+        "peopleName": "邪恶小法师",
+        "race": "约德尔人",
+        "job": "法师",
+        "price": "3",
+        "skilImg": "//game.gtimg.cn/images/lol/tft/skills/45.png",
+        "skillName": "能量爆裂",
+        "skillInfo": "维迦用魔法能量来轰击一名敌人。如果敌人的星级低于维迦，那么这个技能会将其立刻击杀。。"
+    },
+    {
+        "img": "//game.gtimg.cn/images/lol/tft/cham-icons/136.png",
+        "peopleName": "铸星龙王",
+        "race": "龙",
+        "job": "法师",
+        "price": "4金币",
+        "skilImg": "//game.gtimg.cn/images/lol/tft/skills/136.png",
+        "skillName": " 星弦高落",
+        "skillInfo": "奥瑞利安 · 索尔沿直线喷出一道龙息，来对敌人造成伤害。。"
+    },
+    {
+        "img": "//game.gtimg.cn/images/lol/tft/cham-icons/30.png",
+        "peopleName": "死亡颂唱者",
+        "race": "暗影",
+        "job": "法师",
+        "price": "5金币",
+        "skilImg": "//game.gtimg.cn/images/lol/tft/skills/30.png",
+        "skillName": "安魂曲",
+        "skillInfo": "卡尔萨斯在一段长时间的引导后对随机数量的敌人造成伤害。"
+    }
+
+]
