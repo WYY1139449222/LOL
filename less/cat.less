@@ -534,6 +534,7 @@ a {
                 font-size: 24px;
                 font-weight: 700;
                 text-align: left;
+
                 &::after {
                     display: block;
                     content: "";
@@ -700,8 +701,10 @@ a {
 }
 
 .page7 {
+    width: 1061px;
     padding-top: 60px;
     overflow: hidden;
+
 
     .title07-2 {
         background: url(//game.gtimg.cn/images/lol/act/a20190702loltftwf/title07-2.png);
@@ -845,10 +848,69 @@ a {
 
         margin: 0px 252px;
     }
+
+    .title07 {
+        width: 551px;
+        height: 42px;
+        margin-top: 153px;
+        background: url(//game.gtimg.cn/images/lol/act/a20190702loltftwf/title07.png) no-repeat center;
+    }
+
+    .tit3 {
+
+        font-size: 24px;
+        color: #9f6c35;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 42px;
+        margin-bottom: 13px;
+    }
+
+    .swper7 {
+        .swperLeft {
+            box-sizing: border-box;
+            width: 702px;
+            height: 435px;
+            float: left;
+            border: 2px solid #9e6c37;
+            font-size: 0px;
+
+            img {
+                width: 100%;
+                height: 100%;
+
+            }
+        }
+
+        .swperRight {
+            border: 1px solid #9e6c37;
+            position: relative;
+            width: 345px;
+            height: 435px;
+            box-sizing: border-box;
+            float: right;
+            padding: 10px;
+
+            p {
+                margin-bottom: 15px;
+                font-size: 16px;
+                color: #2f2f31;
+                text-align: justify;
+                line-height: 25px;
+            }
+
+            .btn-pub {
+                top: -25px;
+            }
+        }
+
+    }
 }
+
 
 .page10 {
     padding-top: 30px;
+
     .add-bar {
         height: 46px;
         background: url(//game.gtimg.cn/images/lol/act/a20190702loltftwf/add-bar.png);
@@ -869,6 +931,72 @@ a {
         height: 43px;
         background: url(//game.gtimg.cn/images/lol/act/a20190702loltftwf/top-icon.png);
         margin: 35px auto 0;
+    }
+
+    .add-bar3 {
+        margin-top: 750px;
+        position: relative;
+        font-size: 24px;
+        color: #a56f34;
+        font-weight: bold;
+        text-align: center;
+        padding-top: 40px;
+
+
+        &::after {
+            display: block;
+            content: "";
+            width: 33px;
+            height: 2px;
+            background: #a56f34;
+            margin: 15px auto 0;
+        }
+    }
+
+    .add-ul-box {
+        text-align: center;
+        overflow: hidden;
+        padding-top:80px;
+
+        li {
+            float: left;
+            width: 189px;
+            margin-right: 20px;
+
+            p {
+                width: 189px;
+                height: 36px;
+                line-height: 36px;
+                color: #513110;
+                font-size: 21px;
+                margin-top: -36px;
+                margin-bottom: 8px;
+            }
+
+            .egg-btn {
+                width: 189px;
+                height: 48px;
+                line-height: 48px;
+                background: url(//game.gtimg.cn/images/lol/act/a20190702loltftwf/add-egg-btn.png);
+                font-size: 20px;
+                color: #ffffff;
+                display: block;
+                font-weight: bold;
+                margin: 0 auto;
+            }
+        }
+         .special-egg{
+             .txt{
+                 color: #fff;
+             }
+         }
+        .divider {
+            width: 15px;
+            height: 282px;
+            background: url(//game.gtimg.cn/images/lol/act/a20190702loltftwf/add-divider.png);
+            margin: 0 55px;
+        }
+
     }
 
 
@@ -1113,14 +1241,14 @@ a {
     opacity: 0;
     right: -255px;
     visibility: hidden;
-    z-index:-1;
+    z-index: -1;
     transition: all .5s;
-   
+
 
     .nav-list {
         padding-top: 65px;
         position: relative;
-     
+
         li {
             cursor: pointer;
             text-align: center;
@@ -1148,7 +1276,8 @@ a {
 
             }
         }
-        .onli{
+
+        .onli {
             color: #ffec8c;
         }
 
@@ -1166,7 +1295,7 @@ a {
     }
 }
 
-.onav{
+.onav {
     opacity: 1;
     right: 0px;
     visibility: visible;

@@ -371,7 +371,7 @@ function stairs() {
         //滚动对应各自的楼梯
         $pages.each(function(){
                 
-            let $page=$pages.eq($(this).index()).offset().top+400;
+            let $page=$pages.eq($(this).index()).offset().top+600;
             if($page>$scroll){      
                 $navlis.removeClass('onli');
                 let n=($(this).index()*57);
