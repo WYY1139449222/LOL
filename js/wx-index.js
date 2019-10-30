@@ -223,7 +223,7 @@
         $Bs = $(b)
         $LIS = $(x)
         for (let i = 0; i < $Ls.length; i++) {
-    
+
             $Ls[i].onclick = function () {
                 $Bs.eq(i).show().siblings('.Game-video').hide()
                 $Ls.eq(i).addClass(c).siblings().removeClass(c)
@@ -233,15 +233,28 @@
                     $LIS.show()
                 }
             }
-    
-            $LIS[i].onclick=function(){
+
+            $LIS[i].onclick = function () {
                 $LIS.eq(i).addClass('after before').siblings().removeClass('after before')
-                console.log(i)
+
             }
         }
     }
     show2('.first-ul>li', '.Game-video', 'after', '.second-ul>li')
 
+    let scrT = document.documentElement.scrollTop;//卷去的高度
+    let wH = document.documentElement.clientHeight || document.body.clientHeight;//当前屏幕的高度
 
-    
+    let float = document.querySelector('.float')
+    window.onscroll = function () {
+        scrT = document.documentElement.scrollTop;
+        wH = document.documentElement.clientHeight || document.body.clientHeight;
+        if (wH + scrT > 1200) {
+            float.style.position = 'fixed'
+            float.style.top = wH / 10 + 'px'
+        } else {
+            float.style.position = 'absolute';
+            float.style.top = '900px';
+        }
+    }
 })()

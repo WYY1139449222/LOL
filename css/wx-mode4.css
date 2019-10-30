@@ -237,7 +237,7 @@ footer .foot-bottom .foot-dark .foot-right li p {
 }
 footer .float {
   position: absolute;
-  top: 900px !important;
+  top: 900px;
   z-index: 999;
   right: 10px;
   background-color: #eaeaea;
