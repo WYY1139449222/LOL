@@ -672,8 +672,257 @@ a {
 .page7 .swper7 .swperRight .btn-pub {
   top: -25px;
 }
+.page7 .tab000 {
+  margin-top: 42px;
+}
+.page7 .tab000 .tit003 {
+  font-size: 24px;
+  color: #bb6713;
+  font-weight: bold;
+  text-align: left;
+  padding-top: 42px;
+  margin-bottom: 13px;
+}
+.page7 .tab000 .tab000-left {
+  width: 177px;
+  background: url(//game.gtimg.cn/images/lol/act/a20190702loltftwf/nav-list-bg.png) no-repeat center;
+  padding-top: 24px;
+  margin-right: 110px;
+  float: left;
+}
+.page7 .tab000 .tab000-left li {
+  width: 134px;
+  height: 65px;
+  line-height: 65px;
+  font-weight: bold;
+  color: #ffbf7a;
+  font-size: 18px;
+  text-align: center;
+  position: relative;
+  margin: 0 auto;
+  cursor: pointer;
+  border-bottom: 1px solid #925921;
+}
+.page7 .tab000 .tab000-left li:last-child {
+  border-bottom: none;
+}
+.page7 .tab000 .tab000-right {
+  width: 740px;
+  float: left;
+  margin-top: -30px;
+  vertical-align: top;
+}
+.page7 .tab000 .tab000-right li {
+  position: relative;
+  color: #bdb6f1;
+  font-size: 17px;
+  text-align: center;
+  display: inline-block;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.page7 .tab000 .tab000-right .tab0001-top {
+  width: 100%;
+  font-size: 0;
+  margin-right: -10px;
+}
+.page7 .tab000 .tab000-right .tab0001-top li {
+  margin-left: 7px;
+}
+.page7 .tab000 .tab000-right .tab0001-top li:first-child {
+  margin-left: 0px;
+}
+.page7 .tab000 .tab000-right .tab0001-top li i {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 46px;
+  height: 48px;
+  display: block;
+}
+.page7 .tab000 .tab000-right .tab0001-top li .add-icon1 {
+  background: url(//game.gtimg.cn/images/lol/act/a20190702loltftwf/add-icon1.png);
+}
+.page7 .tab000 .tab000-right .tab0001-top li .add-icon2 {
+  background: url(//game.gtimg.cn/images/lol/act/a20190702loltftwf/add-icon2.png);
+}
+.page7 .tab000 .tab000-right .tab0001-top li .add-icon3 {
+  background: url(//game.gtimg.cn/images/lol/act/a20190702loltftwf/add-icon3.png);
+}
+.page7 .tab000 .tab000-right .tab0001-top li img {
+  width: 114px;
+  height: 114px;
+  border: 1px solid #6c4d13;
+  overflow: hidden;
+}
+.page7 .tab000 .tab000-right .tab0001-top li span {
+  padding-top: 4px;
+  transition: all 0.3s;
+  display: block;
+  text-align: center;
+  width: 115px;
+  height: 32px;
+}
+.page7 .tab000 .tab000-right .tab0001-top li .onspan {
+  background: url(//game.gtimg.cn/images/lol/act/a20190702loltftwf/icon-txt-bg.png) no-repeat;
+}
+.page7 .tab000 .tab000-right .tab0001-bottom {
+  width: 100%;
+  margin-top: 35px;
+}
+.page7 .tab000 .tab000-right .tab0001-bottom li {
+  margin-left: 10px;
+}
+.page7 .tab000 .tab000-right .tab0001-bottom li:first-child {
+  margin-left: 0px;
+}
+.page7 .tab000 .tab000-right .tab0001-bottom li img {
+  width: 232px;
+  height: 233px;
+  border: 1px solid #6c4d13;
+  overflow: hidden;
+}
+.page7 .tab000 .tab000-right .tab0001-bottom li .txt {
+  display: block;
+  background: url(//game.gtimg.cn/images/lol/act/a20190702loltftwf/icon-txt-bg2.png);
+  width: 182px;
+  height: 51px;
+  line-height: 51px;
+  margin-top: -26px;
+  margin-left: 25px;
+  position: relative;
+  z-index: 1;
+}
 .page10 {
   padding-top: 30px;
+  width: 1061px;
+}
+.page10 .add-bar2 {
+  width: 691px;
+  height: 41px;
+  margin: 161px auto 50px;
+  background: url(//game.gtimg.cn/images/lol/act/a20190702loltftwf/add-bar2.png) no-repeat center;
+}
+.page10 .tab000 {
+  margin-top: 42px;
+}
+.page10 .tab000 .tit003 {
+  font-size: 24px;
+  color: #bb6713;
+  font-weight: bold;
+  text-align: left;
+  padding-top: 42px;
+  margin-bottom: 13px;
+}
+.page10 .tab000 .tab000-left {
+  width: 177px;
+  background: url(//game.gtimg.cn/images/lol/act/a20190702loltftwf/nav-list-bg.png) no-repeat center;
+  padding-top: 24px;
+  margin-right: 110px;
+  float: left;
+}
+.page10 .tab000 .tab000-left li {
+  width: 134px;
+  height: 65px;
+  line-height: 65px;
+  font-weight: bold;
+  color: #ffbf7a;
+  font-size: 18px;
+  text-align: center;
+  position: relative;
+  margin: 0 auto;
+  cursor: pointer;
+  border-bottom: 1px solid #925921;
+}
+.page10 .tab000 .tab000-left li:last-child {
+  border-bottom: none;
+}
+.page10 .tab000 .tab000-right {
+  width: 740px;
+  float: left;
+  margin-top: -30px;
+  vertical-align: top;
+}
+.page10 .tab000 .tab000-right li {
+  position: relative;
+  color: #bdb6f1;
+  font-size: 17px;
+  text-align: center;
+  display: inline-block;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.page10 .tab000 .tab000-right .tab0001-top {
+  width: 100%;
+  font-size: 0;
+  margin-right: -10px;
+}
+.page10 .tab000 .tab000-right .tab0001-top li {
+  margin-left: 7px;
+}
+.page10 .tab000 .tab000-right .tab0001-top li:first-child {
+  margin-left: 0px;
+}
+.page10 .tab000 .tab000-right .tab0001-top li i {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 46px;
+  height: 48px;
+  display: block;
+}
+.page10 .tab000 .tab000-right .tab0001-top li .add-icon1 {
+  background: url(//game.gtimg.cn/images/lol/act/a20190702loltftwf/add-icon1.png);
+}
+.page10 .tab000 .tab000-right .tab0001-top li .add-icon2 {
+  background: url(//game.gtimg.cn/images/lol/act/a20190702loltftwf/add-icon2.png);
+}
+.page10 .tab000 .tab000-right .tab0001-top li .add-icon3 {
+  background: url(//game.gtimg.cn/images/lol/act/a20190702loltftwf/add-icon3.png);
+}
+.page10 .tab000 .tab000-right .tab0001-top li img {
+  width: 114px;
+  height: 114px;
+  border: 1px solid #6c4d13;
+  overflow: hidden;
+}
+.page10 .tab000 .tab000-right .tab0001-top li span {
+  padding-top: 4px;
+  transition: all 0.3s;
+  display: block;
+  text-align: center;
+  width: 115px;
+  height: 32px;
+}
+.page10 .tab000 .tab000-right .tab0001-top li .onspan {
+  background: url(//game.gtimg.cn/images/lol/act/a20190702loltftwf/icon-txt-bg.png) no-repeat;
+}
+.page10 .tab000 .tab000-right .tab0001-bottom {
+  width: 100%;
+  margin-top: 35px;
+}
+.page10 .tab000 .tab000-right .tab0001-bottom li {
+  margin-left: 10px;
+}
+.page10 .tab000 .tab000-right .tab0001-bottom li:first-child {
+  margin-left: 0px;
+}
+.page10 .tab000 .tab000-right .tab0001-bottom li img {
+  width: 232px;
+  height: 233px;
+  border: 1px solid #6c4d13;
+  overflow: hidden;
+}
+.page10 .tab000 .tab000-right .tab0001-bottom li .txt {
+  display: block;
+  background: url(//game.gtimg.cn/images/lol/act/a20190702loltftwf/icon-txt-bg2.png);
+  width: 182px;
+  height: 51px;
+  line-height: 51px;
+  margin-top: -26px;
+  margin-left: 25px;
+  position: relative;
+  z-index: 1;
 }
 .page10 .add-bar {
   height: 46px;
@@ -695,13 +944,12 @@ a {
   margin: 35px auto 0;
 }
 .page10 .add-bar3 {
-  margin-top: 750px;
+  margin-top: 10px;
   position: relative;
   font-size: 24px;
   color: #a56f34;
   font-weight: bold;
   text-align: center;
-  padding-top: 40px;
 }
 .page10 .add-bar3::after {
   display: block;

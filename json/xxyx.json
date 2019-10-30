@@ -1,0 +1,93 @@
+[{
+        "img": "//game.gtimg.cn/images/lol/tft/minilegends/lolapp_1016.png",
+        "txt": "暗影面具 ",
+        "type": "1",
+        "data": [{
+            "imgbig": "//game.gtimg.cn/images/lol/tft/minilegends/lolapp_1016.png",
+            "txtbig": "暗影面具 幽灵 1星"
+        }, {
+            "imgbig": "//game.gtimg.cn/images/lol/tft/minilegends/lolapp_105.png",
+            "txtbig": "暗影面具 幽灵 2星"
+        }, {
+            "imgbig": "//game.gtimg.cn/images/lol/tft/minilegends/lolapp_1018.png",
+            "txtbig": "暗影面具 幽灵 3星"
+        }]
+
+    }, {
+        "img": "//game.gtimg.cn/images/lol/tft/minilegends/lolapp_1007.png",
+        "txt": "月爪  ",
+        "type": "2",
+        "data": [{
+            "imgbig": "//game.gtimg.cn/images/lol/tft/minilegends/lolapp_1007.png",
+            "txtbig": "月爪 幽灵 1星"
+        }, {
+            "imgbig": "//game.gtimg.cn/images/lol/tft/minilegends/lolapp_1008.png",
+            "txtbig": "月爪 幽灵 2星"
+        }, {
+            "imgbig": "//game.gtimg.cn/images/lol/tft/minilegends/lolapp_1009.png",
+            "txtbig": "月爪 幽灵 3星"
+        }]
+
+    }, {
+        "img": "//game.gtimg.cn/images/lol/tft/minilegends/lolapp_1013.png",
+        "txt": "黑暗物质 ",
+        "type": "3",
+        "data": [{
+            "imgbig": "//game.gtimg.cn/images/lol/tft/minilegends/lolapp_1013.png",
+            "txtbig": "黑暗物质 幽灵 1星"
+        }, {
+            "imgbig": "//game.gtimg.cn/images/lol/tft/minilegends/lolapp_1014.png",
+            "txtbig": "黑暗物质 幽灵 2星"
+        }, {
+            "imgbig": "//game.gtimg.cn/images/lol/tft/minilegends/lolapp_1015.png",
+            "txtbig": "黑暗物质 幽灵 3星"
+        }]
+
+    }, {
+        "img": "//game.gtimg.cn/images/lol/tft/minilegends/lolapp_1001.png",
+        "txt": "暗影岛 ",
+        "type": "4",
+        "data": [{
+            "imgbig": "//game.gtimg.cn/images/lol/tft/minilegends/lolapp_1001.png",
+            "txtbig": "暗影岛 幽灵 1星"
+        }, {
+            "imgbig": "//game.gtimg.cn/images/lol/tft/minilegends/lolapp_1002.png",
+            "txtbig": "暗影岛 幽灵 2星"
+        }, {
+            "imgbig": "//game.gtimg.cn/images/lol/tft/minilegends/lolapp_1003.png",
+            "txtbig": "暗影岛 幽灵 3星"
+        }]
+
+    }, {
+        "img": "//game.gtimg.cn/images/lol/tft/minilegends/lolapp_1004.png",
+        "txt": "火焰血脉  ",
+        "type": "5",
+        "data": [{
+            "imgbig": "//game.gtimg.cn/images/lol/tft/minilegends/lolapp_1004.png",
+            "txtbig": "火焰血脉 幽灵 1星"
+        }, {
+            "imgbig": "//game.gtimg.cn/images/lol/tft/minilegends/lolapp_1005.png",
+            "txtbig": "火焰血脉 幽灵 2星"
+        }, {
+            "imgbig": "//game.gtimg.cn/images/lol/tft/minilegends/lolapp_1006.png",
+            "txtbig": "火焰血脉 幽灵 3星"
+        }]
+
+    }, {
+        "img": "//game.gtimg.cn/images/lol/tft/minilegends/lolapp_1010.png",
+        "txt": "剧毒",
+        "type": "6",
+        "data": [{
+            "imgbig": "//game.gtimg.cn/images/lol/tft/minilegends/lolapp_1010.png",
+            "txtbig": "剧毒 幽灵 1星"
+        }, {
+            "imgbig": "//game.gtimg.cn/images/lol/tft/minilegends/lolapp_1011.png",
+            "txtbig": "剧毒 幽灵  2星"
+        }, {
+            "imgbig": "//game.gtimg.cn/images/lol/tft/minilegends/lolapp_1012.png",
+            "txtbig": "剧毒 幽灵 3星"
+        }]
+
+    }
+
+]

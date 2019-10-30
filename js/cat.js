@@ -257,8 +257,6 @@ function render(data) {
 getData('../json/profession.json', render);
 //获取相关英雄渲染
 
-
-
 function TheHero() {
     getData('../json/theHero.json', renderTheHero);
     let $heroList = $('#hero-list');
@@ -337,8 +335,6 @@ function TheHero() {
 }
 TheHero();
 //点击种族的时候切换
-
-
 function search() {
     let $spans = $(".searchMain span");
     $spans.on('click', function () {
@@ -356,9 +352,9 @@ function stairs() {
     let $last = $navigation.find('.last'); //最后一个楼梯
     let $navlis = $('.g-navigation li').not('.last'); //楼梯
     let $pages = $('.body .page'); //整个楼层
-    let $p=$('.nav-list p');
+    let $p = $('.nav-list p');
     console.log($p);
-    
+
     $(window).on('scroll', function () {
         let $scroll = $(this).scrollTop();
         if ($scroll >= 800) {
@@ -369,31 +365,33 @@ function stairs() {
             $navigation.removeClass('onav');
         }
         //滚动对应各自的楼梯
-        $pages.each(function(){
-                
-            let $page=$pages.eq($(this).index()).offset().top+600;
-            if($page>$scroll){      
+        $pages.each(function () {
+
+            let $page = $pages.eq($(this).index()).offset().top + 600;
+            if ($page > $scroll) {
                 $navlis.removeClass('onli');
-                let n=($(this).index()*57);
-               
-                 
-                $p.css({top:n+70+'px'});
+                let n = ($(this).index() * 57);
+
+
+                $p.css({
+                    top: n + 70 + 'px'
+                });
                 $navlis.eq($(this).index()).addClass('onli');
-                
+
                 return false;
             }
-           
-            
+
+
         })
 
 
     });
     //获取每个楼梯的offset().top,点击楼梯让对对应的内容模块移动到对应的位置 offset().left
     //   console.log($navlis);
-      
+
     $navlis.on('click', function () {
         $(this).addClass('onli').siblings().removeClass('onli');
-       
+
 
         let $lisTop = $('.page').eq($(this).index()).offset().top; //获取每一个楼梯的offsetTop值
         $('html,body').animate({
@@ -401,7 +399,7 @@ function stairs() {
         })
     });
     //3回到顶部
-// console.log($last);
+    // console.log($last);
 
     $last.on('click', function () {
         $('html,body').animate({
@@ -410,3 +408,65 @@ function stairs() {
     });
 }
 stairs();
+//点击获取小小英雄们
+function getXx() {
+    getData('../json/xxyx.json', render);
+    let $tableft = $('.tab000-left li');
+    let $tab0001Top = $(".tab0001-top");
+
+    let $tab0001TopLis = $(".tab0001-top li");
+    let $tab0001TopLisTxt = $(".tab0001-top li .txt");
+    let $tabBottom=$('.tabBottom');
+    let $tab0001Bottom = $('.tab0001-bottom');
+    
+    // console.log($tableft);
+    $tableft.on('click', function () {
+    })
+    function render(data) {
+        let str = '';
+        data.forEach((item, index) => {
+            str += `
+                 <li>
+                        <i class="add-icon${index+1}"></i>
+                        <a href="javascript:;" class="pubBtn"></a> <img
+                            src="${item.img}">
+                        <span class="txt">${item.txt}</span>
+                 </li>
+
+             `;
+               if(index+1==item.type){
+                   console.log(1);
+                   let bottonStr = '';
+                item.data.forEach(item => { 
+                    bottonStr += `
+                       <li>
+                            <img  src="${item.imgbig}">
+                        <span class='txt'>${item.txtbig}</span>
+                        </li>     
+                    `;
+                });
+                $tab0001Bottom.eq(index).html(bottonStr);
+               }
+               
+                
+
+        });
+
+        $tab0001Top.html(str);
+        $tab0001TopLis = $(".tab0001-top li");
+        $tab0001TopLisTxt = $(".tab0001-top li .txt");
+        // $tab0001Bottom = $('.tab0001-bottom');
+        $tab0001Bottom.eq(0).show().siblings().hide();
+        $tab0001TopLisTxt.eq(0).addClass('onspan').siblings().removeClass('onspan');
+        // console.log($tab0001TopLisTxt);
+        
+        $tab0001TopLis.on('click',function(e){      
+         let n=$(this).index();          
+            $tab0001TopLis.eq(n).find('.txt').addClass('onspan')
+            $tab0001TopLis.eq(n).siblings().find('.txt').removeClass('onspan');
+            $tab0001Bottom.eq(n).show().siblings().hide();
+        })
+
+    }
+}
+getXx();
