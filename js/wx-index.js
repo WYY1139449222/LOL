@@ -86,7 +86,7 @@
 
         function getData() {
             $.ajax({
-                url: '../js/wx-data.json',
+                url: '../json/wx-data.json',
                 success: function (data) {
                     render(data)
                 },
