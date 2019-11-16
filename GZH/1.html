@@ -1,0 +1,2837 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>中国国家博物馆官方网站</title>
+    <meta id="MetaDescription" name="DESCRIPTION"
+        content="中国国家博物馆网站全面及时介绍中国国家博物馆概况,藏品,展览,活动,学术研究,国际交流等各项内容，提供参观导览,门票预约,留言问答等多类服务，努力为公众了解国家博物馆,参观国家博物馆和享受国家博物馆提供的各类文化休闲服务提供支持">
+    <meta id="MetaKeywords" name="KEYWORDS"
+        content="中国国家博物馆,国家博物馆,国博,北京国家博物馆,国家博物馆官网,中国历史博物馆,革命博物馆,革命历史博物馆,国家博物馆预约,国家博物馆复兴之路,国博官网,古代中国,复兴之路,复兴之路新时代部分,参观预约,导览,展览,藏品,学术,后母戊方鼎,四羊方尊">
+    <meta id="MetaCopyright" name="COPYRIGHT" content="Copyright 2011 by national museum of China">
+    <link type="text/css" rel="stylesheet" href="http://www.chnmuseum.cn/images/base.css">
+    <link type="text/css" rel="stylesheet" href="http://www.chnmuseum.cn/images/home.css">
+    <link type="text/css" rel="stylesheet" href="http://www.chnmuseum.cn/images/zhanlan_gb2018.css">
+    <link rel="stylesheet" href="http://www.chnmuseum.cn/images/calendar.css" type='text/css'>
+    <script src="http://www.chnmuseum.cn/images/jquery-1.8.3.min.js"></script>
+
+    <script src="http://www.chnmuseum.cn/images/jquery.SuperSlide.2.1.1.js"></script>
+
+    <script src="http://www.chnmuseum.cn/images/jquery.DB_tabMotionBanner.min.js"></script>
+
+    <script src="http://www.chnmuseum.cn/images/calendar.js"></script>
+    <script src="http://www.chnmuseum.cn/images/jquery.xdomainrequest.min.js"></script>
+    <!-- <script src="./images/miaov.js"></script> -->
+    <script src="http://www.chnmuseum.cn/images/respond.js"></script>
+    <link rel="stylesheet" href="http://www.chnmuseum.cn/favicon.ico">
+    <link rel="shortcut icon" href=http://www.chnmuseum.cn/favicon.ico type=image/x-icon> <link rel=icon sizes=any mask href=http://www.chnmuseum.cn/favicon.ico><title>中国国家博物馆</title></style>
+</head>
+
+<script>
+
+    function search() {
+        var searchword = $("#searchword").val();
+        if (searchword != "")
+            window.open("http://www.chnmuseum.cn/qwjs/?searchword=" + searchword);
+    }
+    function keyup_submit(e) {
+        var evt = window.event || e;
+        if (evt.keyCode == 13) {
+            //回车事件
+            search()
+        }
+    }
+
+
+    $(document).ready(function () {
+        var isPC = IsPC();//获取是否为PC端
+        if (isPC) {//如果是PC端加载PC的js和css
+            $(".phone_shows").css("display", "none");
+        } else {//如果是移动端加载移动端的js和css
+            $(".picban_show").css("display", "none");
+        }
+
+
+        function IsPC() {//获取设备是否为PC的方法
+            var userAgentInfo = navigator.userAgent;
+            var Agents = ["Android", "iPhone",
+                "SymbianOS", "Windows Phone",
+                "iPad", "iPod"];
+            var flag = true;
+            for (var v = 0; v < Agents.length; v++) {
+                if (userAgentInfo.indexOf(Agents[v]) >= 0) {
+                    flag = false;
+                    break;
+                }
+            }
+            return flag;
+        };
+    })
+</script>
+
+<body>
+    <style type="text/css">
+        .logo a img {
+            width: 210px;
+            height: 75px;
+        }
+
+        a.cf_youiangya {
+            width: 50px;
+            height: 50px;
+            display: block;
+            position: absolute;
+            right: 80px;
+            top: 4px;
+            padding: 0px;
+        }
+    </style>
+    <div class="header">
+        <div class="main">
+            <div class="menu-box">
+                <div class="logo"><a href="http://www.chnmuseum.cn/" title="国家博物馆"><img
+                            src="http://www.chnmuseum.cn/images/header-logo.png" title="国家博物馆" alt="国家博物馆" /></a></div>
+                <div class="menu">
+                    <dl>
+                        <dt><a href="http://www.chnmuseum.cn/" title="首页">首页</a></dt>
+                    </dl>
+
+                    <dl>
+                        <dt><a href="http://www.chnmuseum.cn/" title="征集">征集</a></dt>
+                    </dl>
+
+                    <dl>
+                        <dt><a href="http://www.chnmuseum.cn/" title="保管">保管</a></dt>
+                    </dl>
+
+                    <dl>
+                        <dt><a href="http://www.chnmuseum.cn/" title="研究">研究</a></dt>
+                    </dl>
+
+                    <dl>
+                        <dt><a href="http://www.chnmuseum.cn/" title="展览">展览</a></dt>
+                    </dl>
+
+                    <dl>
+                        <dt><a href="http://www.chnmuseum.cn/" title="社教">社教</a></dt>
+                    </dl>
+
+                    <dl>
+                        <dt><a href="http://www.chnmuseum.cn/" title="文创">文创</a></dt>
+                    </dl>
+
+                    <dl>
+                        <dt><a href="http://www.chnmuseum.cn/" title="服务">服务</a></dt>
+                    </dl>
+
+                    <dl>
+                        <dt><a href="http://www.chnmuseum.cn/" title="学习">学习</a></dt>
+                    </dl>
+
+                    <dl>
+                        <dt><a href="http://www.chnmuseum.cn/" title="视频">视频</a></dt>
+                    </dl>
+
+
+                </div>
+
+                <div class="menu-rgt">
+                    <!--
+                                    <a class="header-login" href="#" title="登录/注册">
+                                        <span>登录/注册</span>
+                                    </a>
+                                    <a class="header-share" href="#" title="分享网站">
+                                        <span>分享网站</span>
+                                    </a>
+                    -->
+                    <a href="http://old.chnmuseum.cn/" target="_blank"
+                        style="position: absolute; display: block; width: 50px; top: 0px; right: 150px; font-size: 19px; color: #fff; padding:0px; height: 40px;">旧版网站</a>
+                    <a href="https://webmail.chnmuseum.cn" class="cf_youiangya" target="_blank"><img
+                            src="http://www.chnmuseum.cn/images/cf_ho_email.png" /></a>
+                    <span class="header-search" style="border:0px;"><img
+                            src="http://www.chnmuseum.cn/images/header-search-icon.png" /></span>
+                    <!--<a class="header-lang"  title="导航"></a>-->
+                    <div class="header-search-box">
+                        <input onkeydown="keyup_submit(event);" class="search-ipt" type="text" id="searchword"
+                            value="请输入关键字" onfocus="if (value =='请输入关键字'){value =''}"
+                            onblur="if (value ==''){value='请输入关键字'}" />
+                        <span class="search-btn" onclick="search()"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--header_menu-->
+
+    <script>
+        $(".menu dl").hover(function () {
+            $(this).addClass("cur").siblings().removeClass("cur");
+        }, function () {
+            $(this).removeClass("cur");
+        })
+        //弹出搜索框
+        $(".header-search img").click(function (event) {
+            event.stopPropagation();
+            $(".header-search-box").attr("show", "true")
+            $(".header-search-box").animate({ 'right': '0', 'opacity': '1' }, 1000);
+        });
+        $(".search-ipt,.search-btn").click(function (event) { event.stopPropagation(); });
+        $(document).click(function (event) {
+            if ($(".header-search-box").attr("show") == "true") {
+                $(".header-search-box").animate({ 'right': '-390', 'opacity': '0' }, 1000);
+            }
+            event.stopPropagation();
+        })
+    </script>
+    <!--/header_menu-->
+    <style>
+        .DB_tab25 {
+            width: 1200px;
+            height: 800px;
+            margin: 0 auto;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .DB_tab25 .DB_bgSet {
+            position: relative;
+            width: 1200px;
+        }
+
+        .DB_tab25 .DB_bgSet li {
+            position: absolute;
+            width: 100%;
+            height: 800px;
+            display: none;
+        }
+
+        .DB_tab25 .DB_imgSet {
+            position: absolute;
+            width: 1200px;
+            left: 50%;
+            margin-left: -600px;
+        }
+
+        .DB_tab25 .DB_imgSet .DB_5_1 {
+            position: absolute;
+            top: 575px;
+            left: 35px;
+        }
+
+        .DB_tab25 .DB_imgSet .DB_1_1 {
+            position: absolute;
+            top: 575px;
+            left: 35px;
+        }
+
+        .DB_tab25 .DB_imgSet .DB_2_1 {
+            position: absolute;
+            top: 575px;
+            left: 35px;
+        }
+
+        .DB_tab25 .DB_imgSet .DB_3_1 {
+            position: absolute;
+            top: 575px;
+            left: 35px;
+        }
+
+        .DB_tab25 .DB_imgSet .DB_4_1 {
+            position: absolute;
+            top: 575px;
+            left: 35px;
+        }
+
+        .DB_tab25 .DB_imgSet li div {
+            width: 1030px;
+            z-index: 999;
+            font-size: 24px;
+            color: #fff;
+        }
+
+        .DB_tab25 .DB_imgSet li {
+            /* background:url(/images/home-lb-bg-0331.png) no-repeat left 545px; */
+            height: 800px;
+            width: 1200px;
+        }
+    </style>
+    <div style="position: relative; width: 1200px; margin:0px auto;">
+        <div class="DB_tab25">
+            <ul class="DB_bgSet">
+
+                <li
+                    style="background:url(http://www.chnmuseum.cn/shxg/topfocus/201903/W020190403462219459742.jpg) no-repeat;">
+                </li>
+
+                <li
+                    style="background:url(http://www.chnmuseum.cn/shxg/topfocus/201903/W020190403598501944053.jpg) no-repeat;">
+                </li>
+
+                <li
+                    style="background:url(http://www.chnmuseum.cn/shxg/topfocus/201903/W020190403311357865129.jpg) no-repeat;">
+                </li>
+
+                <li
+                    style="background:url(http://www.chnmuseum.cn/shxg/topfocus/201903/W020190403598501944053.jpg) no-repeat;">
+                </li>
+
+                <li
+                    style="background:url(http://www.chnmuseum.cn/shxg/topfocus/201903/W020190403311357865129.jpg) no-repeat;">
+                </li>
+
+            </ul>
+            <ul class="DB_imgSet">
+
+
+                <li style="cursor:pointer;"
+                    onclick="window.open('http://www.chnmuseum.cn/shxg/topfocus/201903/W020190402645908294861.png','');">
+                    <!-- <div class="DB_1_1" ><img src="./shxg/topfocus/201903/W020190402645554561546.png" /></div> -->
+                </li>
+
+
+                <li style="cursor:pointer;"
+                    onclick="window.open('http://www.chnmuseum.cn/shxg/topfocus/201903/W020190402645908294861.png','');">
+                    <!--  <div class="DB_2_1" ><img src="./shxg/topfocus/201903/W020190402645777445378.png" /></div> -->
+                </li>
+
+
+                <li style="cursor:pointer;"
+                    onclick="window.open('http://www.chnmuseum.cn/shxg/topfocus/201903/W020190402645908294861.png','');">
+                    <!-- <div class="DB_3_1" ><img src="./shxg/topfocus/201903/W020190402645908294861.png" /></div> -->
+                </li>
+
+
+                <li style="cursor:pointer;"
+                    onclick="window.open('http://www.chnmuseum.cn/shxg/topfocus/201903/W020190402645908294861.png','');">
+                    <!-- <div class="DB_4_1" ><img src="./shxg/topfocus/201903/W020190402646029179354.png" /></div> -->
+                </li>
+
+
+                <li style="cursor:pointer;"
+                    onclick="window.open('http://www.chnmuseum.cn/shxg/topfocus/201903/W020190402645908294861.png','');">
+                    <!-- <div class="DB_5_1" ><img src="./shxg/topfocus/201903/W020190402646166228843.png" /></div> -->
+                </li>
+
+            </ul>
+        </div>
+        <div style="position: absolute; top: 0px; left: 0px;  display: none;">
+            <div class="home-gbgg-list" id="sliderggbb">
+                <div class="bd">
+                    <ul>
+
+                        <li style="background:none; padding-right: 100px;"><img
+                                src="http://www.chnmuseum.cn/shxg/topfocus/201903/W020190402645554561546.png" /></li>
+
+                        <li style="background:none; padding-right: 100px;"><img
+                                src="http://www.chnmuseum.cn/shxg/topfocus/201903/W020190402645554561546.png" /></li>
+
+                        <li style="background:none; padding-right: 100px;"><img
+                                src="http://www.chnmuseum.cn/shxg/topfocus/201903/W020190402645554561546.png" /></li>
+
+                        <li style="background:none; padding-right: 100px;"><img
+                                src="http://www.chnmuseum.cn/shxg/topfocus/201903/W020190402646029179354.png" /></li>
+
+                        <li style="background:none; padding-right: 100px;"><img
+                                src="http://www.chnmuseum.cn/shxg/topfocus/201903/W020190402646029179354.png" /></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $(function () {
+            $('.DB_tab25').DB_tabMotionBanner({
+                key: 'b28551',
+                autoRollingTime: 6000,
+                bgSpeed: 500,
+                motion: {
+                    DB_1_1: { left: 1200, opacity: 0, speed: 1000, delay: 500 },
+                    DB_2_1: { left: 1200, opacity: 0, speed: 1000, delay: 500 },
+                    DB_3_1: { left: 1200, opacity: 0, speed: 1000, delay: 500 },
+                    DB_4_1: { left: 1200, opacity: 0, speed: 1000, delay: 500 },
+                    DB_5_1: { left: 1200, opacity: 0, speed: 1000, delay: 500 },
+                    end: null
+                }
+            });
+        });
+    </script>
+
+    <style type="text/css">
+        .home-gbgg-list ul li {
+            height: 52px;
+            margin-left: 40px;
+        }
+
+        .home-gbgg-list ul li a {
+            font-size: 20px;
+            height: 52px;
+            line-height: 52px;
+        }
+
+        .home-gbgg-list ul li a span {
+            color: #fff;
+            font-size: 20px;
+        }
+
+        .home-gbgg-title img {
+            width: 74px;
+            height: 35px;
+            margin-top: 7px;
+        }
+
+        .home-gbgg-more a {
+            height: 80px;
+        }
+    </style>
+    <!--main-->
+
+    <div class="main">
+        <!--国博公告-->
+        <div class="home-gbgg" style="height: 80px;">
+            <div class="home-gbgg-title" style="height: 66px;"><img
+                    src="http://www.chnmuseum.cn/images/home-gbgg2.png" /></div>
+            <div class="home-gbgg-list" id="slidergg" style="height: 60px;">
+                <div class="bd">
+                    <ul>
+
+                        <li><a href="http://www.chnmuseum.cn/zj/zjgg/201812/t20181225_36715.shtml"
+                                title="中国国家博物馆关于征集文物藏品的公告">中国国家博物馆关于征集文物藏品的公告<span>2018/06/01</span></a></li>
+
+                        <li><a href="http://www.chnmuseum.cn/gbgg/201909/t20190925_154945.shtml"
+                                title="严正声明">严正声明<span>2019/09/25</span></a>
+                        </li>
+
+                        <li><a href="http://www.chnmuseum.cn/gbgg/201909/t20190920_153417.shtml"
+                                title="中国国家博物馆关于延时开放常态化开展的公告">中国国家博物馆关于延时开放常态化开展的公告<span>2019/09/20</span></a></li>
+
+                        <li><a href="http://www.chnmuseum.cn/gbgg/201908/t20190829_147029.shtml"
+                                title="《博物馆管理》征稿启事">《博物馆管理》征稿启事<span>2019/08/29</span></a></li>
+
+                        <li><a href="http://www.chnmuseum.cn/gbgg/201908/t20190805_139795.shtml"
+                                title="中国国家博物馆招收访问学者启事">中国国家博物馆招收访问学者启事<span>2019/08/05</span></a></li>
+
+                        <li><a href="http://www.chnmuseum.cn/gbgg/201907/t20190717_134233.shtml"
+                                title="关于展厅讲解若干事宜的公告">关于展厅讲解若干事宜的公告<span>2019/07/16</span></a></li>
+
+                        <li><a href="http://www.chnmuseum.cn/gbgg/201903/t20190330_97183.shtml"
+                                title="关于施行全员实名分时段预约参观机制的公告">关于施行全员实名分时段预约参观机制的公告<span>2019/03/28</span></a></li>
+
+                        <li><a href="http://www.chnmuseum.cn/gbgg/201903/t20190330_97181.shtml"
+                                title="关于观众携带充电宝入馆管理办法的公告">关于观众携带充电宝入馆管理办法的公告<span>2019/03/27</span></a></li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="home-gbgg-more" style="height: 80px;"><a href="http://www.chnmuseum.cn/gbgg/"></a></div>
+        </div>
+        <!--/国博公告-->
+
+        <!--国博新闻-->
+        <div class="home-gbxw" style="padding:30px 0px 45px;">
+            <style type="text/css">
+                .xin_list_zuobian {
+                    float: left;
+                    width: 158px;
+                    padding-left: 64px;
+                    padding-top: 15px;
+                }
+
+                .xin_dl_lianjie {}
+
+                .xin_dl_lianjie dt {
+                    background-color: #a5343c;
+                    font-size: 16px;
+                    color: #fff;
+                    text-indent: 22px;
+                    height: 33px;
+                    line-height: 33px;
+                }
+
+                .xin_dl_lianjie dt a {
+                    font-size: 16px;
+                    color: #fff;
+                }
+
+                .xin_dl_lianjie dd {
+                    background-color: #ebebeb;
+                }
+
+                .xin_dl_lianjie dd ul li {
+                    height: 36px;
+                    line-height: 36px;
+                    border-bottom: 1px solid #c5c5c5;
+                }
+
+                .xin_dl_lianjie dd ul li a {
+                    font-size: 15px;
+                    color: #808080;
+                    display: block;
+                    text-indent: 22px;
+                }
+
+                .xin_dl_lianjie dd ul li a:hover {
+                    background-color: #c5c5c5;
+                    color: #fff;
+                }
+
+                .xin_chuangkoud {
+                    overflow: hidden;
+                    padding-top: 10px;
+                }
+
+                .xin_chuangkoud ul {
+                    position: relative;
+                    overflow: hidden;
+                    margin-left: -25px;
+                }
+
+                .xin_chuangkoud ul li {
+                    float: left;
+                    width: 279px;
+                    height: 208px;
+                    margin-left: 25px;
+                }
+
+                .xin_ruguanfans {
+                    background-color: #2f5a82;
+                    height: 45px;
+                    line-height: 45px;
+                    border-radius: 6px;
+                    font-size: 22px;
+                    text-align: center;
+                    margin-bottom: 20px;
+                    color: #fff;
+                }
+
+                .xin_ruguanfans a {
+                    color: #fff;
+                    font-size: 22px;
+                }
+            </style>
+            <div class="xin_list_zuobian">
+
+                <dl class="xin_dl_lianjie">
+                    <dt>全景国博</dt>
+                    <dd>
+                        <ul>
+                            <li><a target="_blank" href="http://www.chnmuseum.cn/gbgk/gbjj/">国博简介</a></li>
+                            <li><a target="_blank" href="http://www.chnmuseum.cn/gbgk/gzzc/">馆长致辞</a></li>
+                            <li><a target="_blank" href="http://www.chnmuseum.cn/gbgk/zndw/">职责定位</a></li>
+                            <li><a target="_blank" href="http://www.chnmuseum.cn/gbgk/zzjg/">业务范围</a></li>
+                            <!-- <li><a target="_blank" href="./zk/gbyj/">智　　库</a></li> -->
+                            <li><a target="_blank">国博招聘</a></li>
+                            <li><a target="_blank" href="http://www.chnmuseum.cn/shxg/lxwm/">联系我们</a></li>
+                        </ul>
+                    </dd>
+                </dl>
+                <dl class="xin_dl_lianjie">
+                    <dt>欢迎参观</dt>
+                    <dd>
+                        <ul>
+                            <li><a target="_blank" href="http://www.chnmuseum.cn/gbgg/">通告公告</a></li>
+                            <li><a target="_blank" href="http://www.chnmuseum.cn/cg/ ">开放时间</a></li>
+                            <li><a target="_blank" href="http://www.chnmuseum.cn/cg/#visit_rgfs">参观预约</a></li>
+                            <li><a target="_blank" href="http://www.chnmuseum.cn/cg/#visit-cgxz">参观须知</a></li>
+                            <li><a target="_blank" href="http://www.chnmuseum.cn/cg/dlfw/zzjj/">参观讲解</a></li>
+                            <li><a target="_blank" href="http://www.chnmuseum.cn/cg/dlfw/yydl/">参观导览</a></li>
+                            <!-- <li><a target="_blank" href="./cg/#visit_rgfs">特展购票</a></li> -->
+                        </ul>
+                    </dd>
+                </dl>
+                <dl class="xin_dl_lianjie">
+                    <!-- <dt style="border-bottom:1px solid #fff;"><a href="./zj/" target="_blank">藏品征集</a></dt> -->
+                    <dt style="border-bottom:1px solid #fff;"><a
+                            href="http://www.chnmuseum.cn/zl/zlsq/201901/t20190102_37011.shtml" target="_blank">展览申请</a>
+                    </dt>
+                    <dt>观众服务</dt>
+                    <dd>
+                        <ul>
+                            <li><a target="_blank" href="http://www.chnmuseum.cn/cg/cy/">餐饮休息</a></li>
+                            <li><a target="_blank" href="http://www.chnmuseum.cn/cg/wcsm/">文创产品</a></li>
+                            <li><a target="_blank" href="http://www.chnmuseum.cn/cg/#visit-ssyfw">便民举措</a></li>
+                            <li><a target="_blank" href="http://www.chnmuseum.cn/fw/hd/zxhd/">活动参与</a></li>
+                            <li><a target="_blank" href="http://www.chnmuseum.cn/cg/rxdh/">热线电话</a></li>
+                        </ul>
+                    </dd>
+                </dl>
+                <dl class="xin_dl_lianjie">
+                    <dt><a target="_blank" href="http://www.chnmuseum.cn/shxg/yqlj/">友情链接</a></dt>
+                    <!-- <dd>
+                    <ul>
+                        <li><a target="_blank" href="./shxg/yqlj/">政府部门</a></li>
+                        <li><a target="_blank" href="./shxg/yqlj/">科研机构</a></li>
+                        <li><a target="_blank" href="./shxg/yqlj/">文博单位</a></li>
+                    </ul>
+                </dd> -->
+                </dl>
+            </div>
+            <div class="home-gbxw-lft">
+                <div class="home-gbxw-head"><span class="title"><img
+                            src="http://www.chnmuseum.cn/images/zl2019_sdabiaoti1.png" /></span><a class="more"
+                        href="http://www.chnmuseum.cn/zx/">更多</a></div>
+                <div style="padding-bottom: 12px; overflow: hidden;">
+                    <div class="home-gbxw-list">
+                        <ul>
+
+                            <li><a style="width:358px;" target="_blank"
+                                    href="http://www.chnmuseum.cn/images/zl2019_sdabiaoti1.png"
+                                    title="习近平参观庆祝改革开放40周年大型展览">习近平参观庆祝改革开放40周年大型展览</a><span class="video-icon">
+                                    <!---->
+
+                                </span><span class="time" style="width:60px;">18/11/13</span></li>
+
+                            <li><a style="width:358px;" target="_blank"
+                                    href="http://www.chnmuseum.cn/zx/gbxw/201811/t20181113_2154.shtml"
+                                    title="习近平在看望参加政协会议的文艺界社科界委员">习近平在看望参加政协会议的文艺界社科界委员</a><span class="video-icon">
+                                    <!---->
+
+                                </span><span class="time" style="width:60px;">19/3/4</span></li>
+
+                            <li><a style="width:358px;" target="_blank"
+                                    href="http://www.chnmuseum.cn/zx/gbxw/201906/t20190608_122779.shtml"
+                                    title="习近平：《福州古厝》序">习近平：《福州古厝》序</a><span class="video-icon">
+                                    <!---->
+
+                                </span><span class="time" style="width:60px;">19/6/8</span></li>
+
+                            <li><a style="width:358px;" target="_blank"
+                                    href="http://www.chnmuseum.cn/zx/gbxw/201910/t20191029_164897.shtml"
+                                    title="光明日报：从甲骨到图书，照亮着文明的征程">光明日报：从甲骨到图书，照亮着文明的征程</a><span class="video-icon">
+                                    <!---->
+
+                                </span><span class="time" style="width:60px;">19/10/29</span></li>
+
+                            <li><a style="width:358px;" target="_blank"
+                                    href="http://www.chnmuseum.cn/zx/gbxw/201910/t20191028_164589.shtml"
+                                    title="巴西国家博物馆馆长科尔纳访问中国国家博物馆">巴西国家博物馆馆长科尔纳访问中国国家博物馆</a><span class="video-icon">
+                                    <!---->
+
+                                </span><span class="time" style="width:60px;">19/10/28</span></li>
+
+                            <li><a style="width:358px;" target="_blank"
+                                    href="http://www.chnmuseum.cn/zx/gbxw/201910/t20191028_164589.shtml"
+                                    title="摩洛哥国家旅游局局长阿德尔·菲克尔到访">摩洛哥国家旅游局局长阿德尔·菲克尔到访</a><span class="video-icon">
+                                    <!---->
+
+                                </span><span class="time" style="width:60px;">19/10/28</span></li>
+
+                            <li><a style="width:358px;" target="_blank"
+                                    href="http://www.chnmuseum.cn/zx/gbxw/201910/t20191028_164562.shtml"
+                                    title="北青报：2020年国博陪你每天认识一件文物">北青报：2020年国博陪你每天认识一件文物</a><span class="video-icon">
+                                    <!---->
+
+                                </span><span class="time" style="width:60px;">19/10/28</span></li>
+
+                            <li><a style="width:358px;" target="_blank"
+                                    href="http://www.chnmuseum.cn/zx/gbxw/201910/t20191027_164297.shtml"
+                                    title="光明日报：写在甲骨上的中国自信">光明日报：写在甲骨上的中国自信</a><span class="video-icon">
+                                    <!---->
+
+                                </span><span class="time" style="width:60px;">19/10/27</span></li>
+
+                            <li><a style="width:358px;" target="_blank"
+                                    href="http://www.chnmuseum.cn/zx/gbxw/201910/t20191024_163504.shtml"
+                                    title="90岁讲课还能“一站到底”，这位老人令人钦佩">90岁讲课还能“一站到底”，这位老人令人钦佩</a><span class="video-icon">
+                                    <!---->
+
+                                </span><span class="time" style="width:60px;">19/10/24</span></li>
+
+                            <li><a style="width:358px;" target="_blank"
+                                    href="http://www.chnmuseum.cn/zx/gbxw/201910/t20191024_163483.shtml"
+                                    title="国博北科大达成战略合作协议">国博北科大达成战略合作协议</a><span class="video-icon">
+                                    <!---->
+
+                                </span><span class="time" style="width:60px;">19/10/24</span></li>
+
+                        </ul>
+                    </div>
+                    <div class="gbxw-banner">
+                        <div id="slideBox2" class="fullSlide">
+                            <div class="hd">
+                                <ul>
+
+                                    <li>1</li>
+
+                                    <li>2</li>
+
+                                    <li>3</li>
+
+                                    <li>4</li>
+
+                                    <li>5</li>
+
+                                </ul>
+                            </div>
+                            <div class="bd">
+                                <ul>
+
+                                    <li><a href="http://www.chnmuseum.cn/zx/gbxw/201910/t20191002_156968.shtml"
+                                            target="_blank" title="天安门广场举行盛大活动庆祝新中国成立70周年"><img
+                                                src="http://www.chnmuseum.cn/shxg/dqzl/201910/W020191002422776984084.jpg"
+                                                alt="图片新闻_首页" title="天安门广场举行盛大活动庆祝新中国成立70周年" /></a></li>
+
+                                    <li><a href="http://www.chnmuseum.cn/sp/xwlb/201909/t20190917_152471.shtml"
+                                            target="_blank" title="央视国博联合出品国庆短片：《今天是你的生日》"><img
+                                                src="http://www.chnmuseum.cn/shxg/dqzl/201909/W020190918276026133481.jpg"
+                                                alt="图片新闻_首页" title="央视国博联合出品国庆短片：《今天是你的生日》" /></a></li>
+
+                                    <li><a href="http://www.chnmuseum.cn/zx/gbxw/201909/t20190917_152551.shtml"
+                                            target="_blank" title="国博讲述“回归之路”——回归文物展见证祖国强大"><img
+                                                src="http://www.chnmuseum.cn/shxg/dqzl/201909/W020190917620529332875.jpg"
+                                                alt="图片新闻_首页" title="国博讲述“回归之路”——回归文物展见证祖国强大" /></a></li>
+
+                                    <li><a href="http://www.chnmuseum.cn/portals/0/web/zt/20190917hgzl/" target="_blank"
+                                            title="回归之路——新中国成立70周年流失文物回归成果展"><img
+                                                src="http://www.chnmuseum.cn/shxg/dqzl/201909/W020190918271116861620.jpg"
+                                                alt="图片新闻_首页" title="回归之路——新中国成立70周年流失文物回归成果展" /></a></li>
+
+                                    <li><a href="http://www.chnmuseum.cn/zx/gbxw/201908/t20190828_146740.shtml"
+                                            target="_blank" title="作曲家马可先生日记手稿入藏中国国家博物馆"><img
+                                                src="http://www.chnmuseum.cn/shxg/dqzl/201909/W020190918272578381205.jpg"
+                                                alt="图片新闻_首页" title="作曲家马可先生日记手稿入藏中国国家博物馆" /></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="home-gbxw-head">
+                    <span class="title"><img src="http://www.chnmuseum.cn/images/zl2019_sdabiaoti2.png" /></span>
+                    <a class="more" href="http://www.chnmuseum.cn/zj/">更多</a>
+                    <div
+                        style="position: absolute; top: 18px; right: 70px; border-radius: 5px; font-size: 22px; color: #fff; background-color: #8d343c; padding:6px 12px;">
+                        <a href="http://www.chnmuseum.cn/zj/zjgg/201812/t20181225_36715.shtml" target="_blank"
+                            style="color:#fff; font-size:22px;">中国国家博物馆关于征集文物藏品的公告</a></div>
+                </div>
+
+                <div class="xin_chuangkoud">
+                    <ul>
+                        <li><a target="_blank" href="http://www.chnmuseum.cn/zj/cpzj/"><img
+                                    src="http://www.chnmuseum.cn/images/zl2019_chuangkou2.png" alt="征集项目" /></a></li>
+                        <li><a target="_blank" href="http://www.chnmuseum.cn/zj/gsww/"><img
+                                    src="http://www.chnmuseum.cn/images/zl2019_chuangkou1.png" alt="国史文物" /></a></li>
+                        <li><a target="_blank" href="http://donate.chnmuseum.cn"><img
+                                    src="http://www.chnmuseum.cn/images/zl2019_chuangkou3.png" alt="我要捐赠" /></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--国博新闻-->
+        <style type="text/css">
+            .gbbg_list {
+                overflow: hidden;
+            }
+
+            .gbbg_list dt {
+                float: left;
+                width: 465px;
+            }
+
+            .gbbg_list dt a {
+                display: block;
+            }
+
+            .gbbg_list dd {
+                float: right;
+                width: 584px;
+            }
+
+            .gbbg_list dd a {
+                display: block;
+                float: right;
+            }
+        </style>
+
+        <!--国博保管-->
+        <div class="home-cgyy" style="padding-bottom: 20px;">
+            <div class="home-cgyy-head">
+                <img src="http://www.chnmuseum.cn/images/zl2019_sdabiaoti3.png" alt="国博保管" />
+                <a class="more" href="http://www.chnmuseum.cn/zp/">更多</a>
+            </div>
+            <style type="text/css">
+                .shjy_hm_kuai3 {
+                    margin-left: -22px;
+                    overflow: hidden;
+                    position: relative;
+                }
+
+                .shjy_hm_kuai3 li {
+                    width: 524px;
+                    height: 207px;
+                    float: left;
+                    background-color: #efc8a8;
+                    margin-left: 22px;
+                    margin-bottom: 24px;
+                }
+
+                .shjy_hm_kuai3 li a img {
+                    width: 524px;
+                    height: 207px;
+                }
+            </style>
+            <div style="padding:5px 0px 0px 0px; overflow: hidden; background-color: #ececec;">
+                <ul class="shjy_hm_kuai3">
+                    <li><a target="_blank"
+                            href="http://www.chnmuseum.cn/portals/0/web/zt/cangpin/colletionlist.html"><img
+                                src="http://www.chnmuseum.cn/images/xlm_home_pic1.png" alt="藏品总目(一)(二)" /></a></li>
+                    <li><a target="_blank" href="http://www.chnmuseum.cn/zp/#znjdlsj"><img
+                                src="http://www.chnmuseum.cn/images/xlm_home_pic2.png" alt="馆藏精品" /></a>
+                    </li>
+                    <li><a target="_blank" href="http://www.chnmuseum.cn/zp/kfgl/"><img
+                                src="http://www.chnmuseum.cn/images/xlm_home_pic3.png" alt="库房管理" /></a>
+                    </li>
+                    <li><a target="_blank" href="http://www.chnmuseum.cn/zp/cpsh/"><img
+                                src="http://www.chnmuseum.cn/images/xlm_home_pic4.png" alt="那人那事" /></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--/国博保管-->
+        <style type="text/css">
+            .guanz_yan {
+                float: left;
+                width: 715px;
+            }
+
+            .guanz_yan dt {
+                background-color: #a2343c;
+                text-indent: 25px;
+                height: 42px;
+                line-height: 42px;
+            }
+
+            .guanz_yan dt a {
+                display: block;
+                font-size: 22px;
+                color: #fff;
+            }
+
+            .guanz_yan dd {
+                background-color: #e8e8e8;
+                padding: 0px 20px;
+                overflow: hidden;
+            }
+
+            .guanz_yan dd ul {
+                border-bottom: 1px solid #c2c2c2;
+                overflow: hidden;
+                position: relative;
+                overflow: hidden;
+                width: 725px;
+                margin-left: -10px;
+            }
+
+            .guanz_yan dd ul li {
+                float: left;
+                width: 100%;
+                height: 33px;
+                line-height: 33px;
+                margin: 0;
+                border-bottom: 1px solid #c2c2c2;
+            }
+
+            .guanz_yan dd ul li.noborder {
+                border: 0;
+            }
+
+            .guanz_yan dd ul li a {
+                font-size: 15px;
+                color: #808080;
+                margin-left: 10px !important;
+            }
+
+            .zuofjouoj {
+                float: right;
+                width: 330px;
+            }
+
+            .guanz_yan2 {
+                overflow: hidden;
+            }
+
+            .guanz_yan2 dt {
+                background-color: #a2343c;
+                text-indent: 25px;
+                height: 42px;
+                line-height: 42px;
+            }
+
+            .guanz_yan2 dt a {
+                display: block;
+                font-size: 22px;
+                color: #fff;
+            }
+
+            .guanz_yan2 dd {
+                background-color: #e8e8e8;
+                padding: 0px 0px 0px 0px;
+                overflow: hidden;
+            }
+
+            /* .guanz_yan2 dd ul{border-bottom: 1px solid #c2c2c2; overflow: hidden;  position: relative; overflow: hidden;}
+            .guanz_yan2 dd ul li{ float: left; width: 52px; height: 33px; line-height: 33px; margin-left: 20px; }
+            .guanz_yan2 dd ul li a{}*/
+
+            .guanz_yan3 {
+                overflow: hidden;
+                margin-top: 24px;
+            }
+
+            .guanz_yan3 dt {
+                background-color: #a2343c;
+                width: 153px;
+                float: left;
+                text-indent: 25px;
+                height: 42px;
+                line-height: 42px;
+            }
+
+            .guanz_yan3 dt a {
+                display: block;
+                font-size: 22px;
+                color: #fff;
+            }
+
+            .guanzhan_yanjius {
+                position: relative;
+                overflow: hidden;
+                padding-top: 25px;
+                padding-bottom: 25px;
+            }
+
+            .guanzhan_yanjius ul {
+                margin-left: -25px;
+                position: relative;
+                overflow: hidden;
+            }
+
+            .guanzhan_yanjius ul li {
+                width: 250px;
+                height: 215px;
+                float: left;
+                margin-left: 24px;
+            }
+
+            .guanzhan_yanjius ul li a img {
+                width: 250px;
+                height: 215px;
+            }
+
+            .guanzhan_yanjius2 {
+                position: relative;
+                overflow: hidden;
+            }
+
+            .guanzhan_yanjius2 ul {
+                margin-left: -25px;
+                position: relative;
+                overflow: hidden;
+            }
+
+            .guanzhan_yanjius2 ul li {
+                width: 525px;
+                height: 190px;
+                float: left;
+                margin-left: 24px;
+            }
+
+            .guanzhan_yanjius2 ul li a img {
+                width: 525px;
+                height: 190px;
+            }
+        </style>
+
+        <!--学术研究-->
+        <div class="" style="background:#ffffff; padding: 0 65px 0px 65px; overflow: hidden;">
+            <div class="home-cgyy-head"><span class="title"><img
+                        src="http://www.chnmuseum.cn/images/zl2019_sdabiaoti4.png" /></span>
+                <a target="_blank" class="more" href="http://www.chnmuseum.cn/yj/">更多</a>
+            </div>
+
+        </div>
+
+        <div style="padding:5px 63px 20px 63px; overflow: hidden; background-color: #fff;">
+
+            <!--图标
+        <div class="icon-box">
+            <a href="./yj/#yyjgg" target="_blank"><img src="./images/yjjg-0330.png" /><p>研究机构</p></a>
+            <a href="./yj/#zjjgxu" target="_blank"><img src="./images/xswyh-0330.png" /><p>专家学者</p></a>
+            <a href="./yj/#kyaxing" target="_blank"><img src="./images/yjkt-0330.png" /><p>科研项目</p></a>
+            <a href="./yj/#xushhiu" target="_blank"><img src="./images/xshy-0330.png" /><p>学术会议</p></a>
+            <a href="./yj/#xushhiu" target="_blank"><img src="./images/xscg-0330.png" /><p>科研成果</p></a>
+            <a href="./yj/#guanlikey" target="_blank"><img src="./images/yjgl-0330.png" /><p>科研管理</p></a>      
+            
+          <a href="./yj/gbjt/"><img src="./images/gbjt-0330.png" /><p>国博讲堂</p></a>
+            <a href="./yj/gbgk/"><img src="./images/gbgk-0330.png" /><p>国博馆刊</p></a>
+            <a href="./yj/kydt/"><img src="./images/yjdt-0330.png" /><p>研究动态</p></a> 
+        </div>
+-->
+
+            <style type="text/css">
+                .xsyj_hm_kuai3 {
+                    margin-left: -22px;
+                    overflow: hidden;
+                    position: relative;
+                }
+
+                .xsyj_hm_kuai3 li {
+                    width: 515px;
+                    height: 203px;
+                    float: left;
+                    background-color: #efc8a8;
+                    margin-left: 30px;
+                    margin-bottom: 24px;
+                }
+
+                .xsyj_hm_kuai3 li a img {
+                    width: 515px;
+                    height: 203px;
+                }
+            </style>
+
+            <ul class="xsyj_hm_kuai3">
+                <li><a target="_blank" href="http://www.chnmuseum.cn/yj/#yyjgg"><img
+                            src="http://www.chnmuseum.cn/images/sy_kyjg2019.jpg" alt="科研机构" /></a></li>
+                <li><a target="_blank" href="http://www.chnmuseum.cn/yj/#yyjgg"><img
+                            src="http://www.chnmuseum.cn/images/sy_kyjg2019.jpg" alt="专家学者" /></a></li>
+                <li><a target="_blank" href="http://www.chnmuseum.cn/yj/#yyjgg"><img
+                            src="http://www.chnmuseum.cn/images/sy_kyxm2019.jpg" alt="科研项目" /></a></li>
+                <li><a target="_blank" href="http://www.chnmuseum.cn/yj/#xushhiu"><img
+                            src="http://www.chnmuseum.cn/images/sy_kycg2019.jpg" alt="学术会议" /></a>
+                </li>
+                <li><a target="_blank" href="http://www.chnmuseum.cn/yj/#xushhiu"><img
+                            src="http://www.chnmuseum.cn/images/sy_kycg2019.jpg" alt="科研成果" /></a></li>
+                <li><a target="_blank" href="http://www.chnmuseum.cn/yj/#xushhiu"><img
+                            src="http://www.chnmuseum.cn/images/sy_kygl2019.jpg" alt="科研管理" /></a></li>
+            </ul>
+
+
+
+            <style>
+                .icon-box {
+                    padding-top: 30px;
+                    margin-left: -21px;
+                    width: 1095px;
+                    overflow: hidden;
+                }
+
+                .icon-box a {
+                    float: left;
+                    width: 100px;
+                    margin-left: 74px;
+                }
+
+                .icon-box a p {
+                    font-size: 18px;
+                    font-weight: bold;
+                    color: #666666;
+                    text-align: center;
+                    padding-top: 10px;
+                }
+            </style>
+            <!--/图标-->
+
+        </div>
+        <!--/学术研究-->
+
+        <!--正在展出-->
+        <div style="background: #ececec; text-align: center; padding: 0 65px 0px 65px;">
+            <div class="home-cgyy-head">
+                <span class="title"><img src="http://www.chnmuseum.cn/images/zl2019_sdabiaoti5.png" O /></span>
+                <a style="position: absolute; top: 40px; right: 80px; display: block; height: 37px; width: 141px; font-size: 25px; color: #333; background-image: url(../images/zlsq_more_.png); background-repeat: no-repeat; background-position: 0px 0px; text-align: right;"
+                    href="http://www.chnmuseum.cn/zl/zlsq/201901/t20190102_37011.shtml" target="_blank">展览申请</a>
+                <a target="_blank" class="more" href="http://www.chnmuseum.cn/zl/">更多</a>
+            </div>
+        </div>
+
+        <style type="text/css">
+            .renshuoshijiu {
+                width: 340px;
+                float: left;
+                margin-left: 148px;
+                margin-top: 30px;
+            }
+
+            .renshuoshijiu dt {}
+
+            .renshuoshijiu dd {
+                text-align: center;
+                font-size: 26px;
+                color: #000;
+                padding-top: 20px;
+            }
+
+            .renshuoshijiu dd a {
+                font-size: 26px;
+                color: #000;
+            }
+
+            #posterTvGrid86805 .posterTvGrid,
+            #posterTvGrid86804 .posterTvGrid {
+                height: 510px;
+            }
+
+            /*  #posterTvGrid86805,#posterTvGrid86804{width:502px!important;height:510px!important;} 
+        #posterTvGrid86805 .posterTvGrid,#posterTvGrid86804 .posterTvGrid{height:510px;}
+        #posterTvGrid86805 div.contentHolderUnit,#posterTvGrid86804 div.contentHolderUnit{height:400px!important;width:345px!important;margin-top:55px!important;} 
+        #posterTvGrid86805 div.active,#posterTvGrid86804 div.active{width:385px!important;height:510px!important;margin-top:0px!important;}  */
+        </style>
+
+
+        <div class="picban_show"
+            style="width: 1162px; margin:0px auto; overflow: hidden; background: #ececec; padding-left: 38px; padding-bottom: 45px;">
+            <dl class="renshuoshijiu" style="width:502px;margin-left:30px; margin-top: 5px;">
+                <dt class="zhutiteshuda">
+                    <div id="posterTvGrid86805" class="lunbotudejius"></div>
+                </dt>
+                <dd><a href="http://www.chnmuseum.cn/zl/ztzl/" target="_blank">主题展览</a></dd>
+            </dl>
+            <dl class="renshuoshijiu" style="width:502px;margin-left:65px; margin-top: 5px;">
+                <dt>
+                    <div id="posterTvGrid86804" class="lunbotudejius"></div>
+                </dt>
+                <dd><a href="http://www.chnmuseum.cn/zl/jbcl/" target="_blank">基本陈列</a></dd>
+            </dl>
+            <dl class="renshuoshijiu" style="margin-left:12px;">
+                <dt>
+                    <div id="posterTvGrid86803" class="lunbotudejius"></div>
+                </dt>
+                <dd><a href="http://www.chnmuseum.cn/zl/ztcl/" target="_blank">专题展览</a></dd>
+            </dl>
+
+            <dl class="renshuoshijiu" style="margin-left:38px;">
+                <dt>
+                    <div id="posterTvGrid86802" class="lunbotudejius"></div>
+                </dt>
+                <dd><a href="http://www.chnmuseum.cn/zl/lszl/qt/" target="_blank">临时展览</a></dd>
+            </dl>
+            <dl class="renshuoshijiu" style="margin-left:38px;">
+                <dt>
+                    <div id="posterTvGrid86801" class="lunbotudejius"></div>
+                </dt>
+                <dd><a href="http://www.chnmuseum.cn/zl/zhanlanyugao/" target="_blank">展览预告</a></dd>
+            </dl>
+        </div>
+        <!--/正在展出-->
+
+        <div class="phone_shows">
+            <style type="text/css">
+                .cj_jbchenglie ul li img.tshujil {
+                    height: 456px;
+                }
+            </style>
+
+            <!--主题展览-->
+            <div class="cj_ercom_wai cj_bg_write  cj_vio_padd" style="padding: 45px 0px 45px;">
+
+                <div class="cj_erlanmuye">
+                    <div class="cj_ertitle"><img alt="主题展览" src="http://www.chnmuseum.cn/images/bmfw_201904026.png" />
+                    </div>
+
+                </div>
+                <div class="cj_jbchenglie" style="padding-top: 10px;">
+                    <ul>
+
+                        <li style="height: 456px;"><a target="_blank"
+                                href="http://www.chnmuseum.cn/zl/ztzl/201910/W020191030386811092413.png"><img
+                                    class="tshujil" alt="书影中的70年·新中国图书版本展"
+                                    src="http://www.chnmuseum.cn/zl/ztzl/201909/W020190917476773830352.jpg" /></a></li>
+
+                        <li style="height: 456px;"><a target="_blank"
+                                href="http://www.chnmuseum.cn/portals/0/web/zt/20190809yldf/"><img class="tshujil"
+                                    alt="回归之路——新中国成立70周年流失文物回归成果展"
+                                    src="http://www.chnmuseum.cn/zl/ztzl/201909/W020190917476773830352.jpg" /></a></li>
+
+                        <li style="height: 456px;"><a target="_blank"
+                                href="http://www.chnmuseum.cn/portals/0/web/zt/20190809yldf/"><img class="tshujil"
+                                    alt="屹立东方——馆藏经典美术作品展"
+                                    src="http://www.chnmuseum.cn/zl/ztzl/201909/W020190917476773830352.jpg" /></a></li>
+                    </ul>
+                </div>
+            </div>
+            <!--/主题展览-->
+
+            <!--展览视频-->
+            <div class="cj_ercom_wai cj_bg_huise  cj_vio_padd">
+
+                <div class="cj_erlanmuye">
+                    <div class="cj_ertitle"><img alt="基本陈列" src="http://www.chnmuseum.cn/images/cj_title3_gb2018.png" />
+                    </div>
+                </div>
+                <div class="cj_jbchenglie">
+                    <ul>
+
+                        <li><a target="_blank" href="http://www.chnmuseum.cn/portals/0/web/zt/gudai/default.html"><img
+                                    alt="古代中国"
+                                    src="http://www.chnmuseum.cn/zl/jbcl/201812/W020190325682335916587.jpg" /></a></li>
+
+                        <li><a target="_blank" href="http://old.chnmuseum.cn/portals/0/web/zt/fuxing/"><img alt="复兴之路"
+                                    src="http://www.chnmuseum.cn/zl/jbcl/201812/W020190325682659769955.jpg" /></a></li>
+
+                        <li><a target="_blank" href="http://old.chnmuseum.cn/Portals/0/web/zt/2018dlfj/"><img
+                                    alt="复兴之路新时代部分"
+                                    src="http://www.chnmuseum.cn/zl/jbcl/201812/W020190404037823467687.jpg" /></a></li>
+
+
+                    </ul>
+                </div>
+            </div>
+            <!--/展览视频-->
+
+            <!--专题陈列-->
+            <div class="cj_ercom_wai cj_bg_write cj_vio_padd">
+
+                <div class="cj_erlanmuye">
+                    <div class="cj_ertitle"><img alt="专题陈列" src="http://www.chnmuseum.cn/images/zl2019_dabiaoti1.png" />
+                    </div>
+                    <!-- <a target="_blank" class="cj_ermore" href="./zl/ztcl/">更多</a> -->
+                </div>
+
+                <div class="cj_inBox">
+                    <div class="cj_inBd">
+                        <ul id="div">
+
+                            <li>
+                                <a target="_blank" class="recurl"
+                                    href="http://www.chnmuseum.cn/zl/zzzc/201812/t20181220_32179.shtml" ztzlurl="">
+                                    <img style='width:250px;'
+                                        src="http://www.chnmuseum.cn/zl/zzzc/201812/P020190117667830734896.jpg"
+                                        alt="友好往来 历史见证——党和国家领导人外交活动受赠礼品展" />
+                                </a>
+                            </li>
+
+                            <li>
+                                <a target="_blank" class="recurl"
+                                    href="http://www.chnmuseum.cn/zl/zzzc/201812/t20181220_32170.shtml" ztzlurl="">
+                                    <img style='width:250px;'
+                                        src="http://www.chnmuseum.cn/zl/zzzc/201812/P020190324805026804347.jpg"
+                                        alt="中国古代佛造像艺术" />
+                                </a>
+                            </li>
+
+                            <li>
+                                <a target="_blank" class="recurl"
+                                    href="http://www.chnmuseum.cn/zl/zzzc/201812/t20181220_32175.shtml" ztzlurl="">
+                                    <img style='width:250px;'
+                                        src="http://www.chnmuseum.cn/zl/zzzc/201812/P020190324804045996913.jpg"
+                                        alt="中国古代钱币" />
+                                </a>
+                            </li>
+
+                            <li>
+                                <a target="_blank" class="recurl"
+                                    href="http://www.chnmuseum.cn/zl/zzzc/201812/t20181220_32178.shtml" ztzlurl="">
+                                    <img style='width:250px;'
+                                        src="http://www.chnmuseum.cn/zl/zzzc/201812/P020190117668187274558.jpg"
+                                        alt="中国古代瓷器艺术展" />
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+            <!--/专题展览-->
+
+            <!--临时展览-->
+            <div class="cj_ercom_wai cj_bg_huise cj_vio_padd">
+
+                <div class="cj_erlanmuye">
+                    <div class="cj_ertitle"><img alt="临时展览" src="http://www.chnmuseum.cn/images/zl2019_dabiaoti2.png" />
+                    </div>
+                    <!-- <a target="_blank" class="cj_ermore" href="./zl/lszl/">更多</a> -->
+                </div>
+
+                <div class="cj_inBox">
+                    <div class="cj_inBd">
+                        <ul id="div">
+                            <li>
+                                <a target="_blank" class="recurl"
+                                    href="http://www.chnmuseum.cn/zl/lszl/lswhxl/201909/t20190919_153106.shtml"
+                                    ztzlurl="/portals/0/web/zt/20191022jiagu/">
+                                    <img style='width:250px;'
+                                        src="http://www.chnmuseum.cn/zl/lszl/lswhxl/201909/P020191021551572033659.jpg"
+                                        alt="证古泽今——甲骨文文化展" />
+                                </a>
+                            </li>
+
+                            <li>
+                                <a target="_blank" class="recurl"
+                                    href="http://www.chnmuseum.cn/zl/lszl/201909/t20190919_153178.shtml" ztzlurl="">
+                                    <img style='width:250px;'
+                                        src="http://www.chnmuseum.cn/zl/lszl/201909/P020191008295118917462.jpg"
+                                        alt="倾情山河•深耕时光——朱曜奎艺术展" />
+                                </a>
+                            </li>
+
+                            <li>
+                                <a target="_blank" class="recurl"
+                                    href="http://www.chnmuseum.cn/zl/lszl/201907/t20190705_130771.shtml"
+                                    ztzlurl="http://www.chnmuseum.cn/portals/0/web/zt/20190809yldf/">
+                                    <img style='width:250px;'
+                                        src="http://www.chnmuseum.cn/zl/lszl/201907/P020190705552026179770.jpg"
+                                        alt="和合共生——临漳邺城佛造像展" />
+                                </a>
+                            </li>
+
+                            <li>
+                                <a target="_blank" class="recurl"
+                                    href="http://www.chnmuseum.cn/zl/lszl/201907/t20190705_130771.shtml"
+                                    ztzlurl="http://www.chnmuseum.cn/portals/0/web/zt/20190809yldf/">
+                                    <img style='width:250px;'
+                                        src="http://www.chnmuseum.cn/zl/lszl/201907/P020190705552026179770.jpg"
+                                        alt="万里同风——新疆文物精品展" />
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--/临时展览-->
+        </div>
+
+        <!--社会教育-->
+        <div class="djxx-zxhd-box" style="background:#ffffff; padding:0px 65px 0 65px;">
+            <div class="home-cgyy-head"><span class="title"><img
+                        src="http://www.chnmuseum.cn/images/sy_cz_2019_title1.png" /></span>
+                <a target="_blank" class="more" href="http://www.chnmuseum.cn/fw/">更多</a>
+            </div>
+        </div>
+        <style type="text/css">
+            .shjy_hm_kuai2 {
+                margin-left: -20px;
+                overflow: hidden;
+                position: relative;
+            }
+
+            .shjy_hm_kuai2 li {
+                width: 250px;
+                height: 188px;
+                float: left;
+                background-color: #efc8a8;
+                margin-left: 20px;
+                margin-bottom: 30px;
+            }
+
+            .shjy_hm_kuai2 li a img {
+                width: 250px;
+                height: 188px;
+            }
+        </style>
+        <div style="padding:10px 63px 20px 63px; overflow: hidden; background-color: #fff;">
+            <ul class="shjy_hm_kuai3">
+                <li><a href="./fw/#shhijiao" target="_blank"><img src="http://www.chnmuseum.cn/images/xlm_home_pic7.png"
+                            alt="社会讲解" /></a>
+                </li>
+                <li><a href="http://www.chnmuseum.cn/fw/#shhijiao" target="_blank"><img
+                            src="http://www.chnmuseum.cn/images/xlm_home_pic8.png" alt="外事讲解" /></a>
+                </li>
+                <li><a href="http://www.chnmuseum.cn/fw/#guxnaos" target="_blank"><img
+                            src="http://www.chnmuseum.cn/images/xlm_home_pic9.png" alt="馆校合作" /></a></li>
+                <li><a href="http://www.chnmuseum.cn/fw/#qinshaol" target="_blank"><img
+                            src="http://www.chnmuseum.cn/images/xlm_home_pic10.png" alt="青少活动" /></a>
+                </li>
+            </ul>
+        </div>
+        <!--/社会教育-->
+
+        <style type="text/css">
+            .shjy_hm_kuai28 {
+                margin-left: -20px;
+                overflow: hidden;
+                position: relative;
+            }
+
+            .shjy_hm_kuai28 li {
+                width: 344px;
+                height: 240px;
+                float: left;
+                background-color: #efc8a8;
+                margin-left: 20px;
+                margin-bottom: 30px;
+            }
+
+            .shjy_hm_kuai28 li a img {
+                width: 344px;
+                height: 240px;
+            }
+        </style>
+
+        <!--国际联络-->
+        <div class="djxx-zxhd-box" style="background:#ececec; padding:0px 65px 0 65px;">
+            <div class="home-cgyy-head"><span class="title"><img
+                        src="http://www.chnmuseum.cn/images/nxue_home_pic4.png" /></span>
+                <!-- <a target="_blank" class="more" href="./fw/">更多</a> -->
+            </div>
+        </div>
+        <div style="padding:10px 63px 15px 63px; overflow: hidden; background-color: #ececec;">
+            <ul class="shjy_hm_kuai28">
+                <li><a href="http://www.chnmuseum.cn/shxg/gjll/gjzz/" target="_blank"><img
+                            src="http://www.chnmuseum.cn/images/bmfw_201904026.jpg" alt="国际组织" /></a>
+                </li>
+                <li><a href="http://www.chnmuseum.cn/shxg/gjll/whkt/" target="_blank"><img
+                            src="http://www.chnmuseum.cn/images/bmfw_201904027.jpg" alt="文化客厅" /></a>
+                </li>
+                <li><a href="http://www.chnmuseum.cn/shxg/gjll/jlzl/" target="_blank"><img
+                            src="http://www.chnmuseum.cn/images/bmfw_201904028.jpg" alt="交流展览" /></a>
+                </li>
+            </ul>
+        </div>
+        <!--/国际联络-->
+
+        <!--国博文创-->
+        <div class="djxx-zxhd-box" style="background:#fff; padding:0px 65px 0 65px;">
+            <div class="home-cgyy-head"><span class="title"><img
+                        src="http://www.chnmuseum.cn/images/sy_cz_2019_title2.png" /></span>
+                <a target="_blank" class="more" href="http://www.chnmuseum.cn/wc/">更多</a>
+            </div>
+        </div>
+        <style type="text/css">
+            .shjy_hm_kuai1 {
+                margin-left: -15px;
+                overflow: hidden;
+                position: relative;
+            }
+
+            .shjy_hm_kuai1 li {
+                width: 525px;
+                height: 288px;
+                float: left;
+                background-color: #efc8a8;
+                margin-left: 15px;
+                margin-bottom: 30px;
+            }
+
+            .shjy_hm_kuai1 li a img {
+                width: 525px;
+                height: 288px;
+            }
+        </style>
+        <div style="padding:10px 63px 15px 63px; overflow: hidden; background-color: #fff;">
+            <ul class="shjy_hm_kuai1">
+                <li><a href="https://zggjbwg.tmall.com/" target="_blank"><img
+                            src="http://www.chnmuseum.cn/images/xlm_home_pic11.png" /></a>
+                </li>
+                <li><a target="_blank" href="http://www.chnmuseum.cn/wc/yswh/201903/t20190331_97465.shtml"><img
+                            src="http://www.chnmuseum.cn/images/xlm_home_pic12.png" /></a></li>
+                <li><a target="_blank" href="http://www.chnmuseum.cn/wc/whsy/201903/t20190331_97464.shtml"><img
+                            src="http://www.chnmuseum.cn/images/xlm_home_pic13.png" /></a></li>
+                <li><a target="_blank" href="http://www.chnmuseum.cn/wc/wwyj/201903/t20190331_97466.shtml"><img
+                            src="http://www.chnmuseum.cn/images/xlm_home_pic14.png" /></a></li>
+            </ul>
+        </div>
+        <!--/国博文创-->
+
+
+        <!--国博文创-->
+        <div class="djxx-zxhd-box" style=" background-color: #ececec; padding:0px 65px 0 65px;">
+            <div class="home-cgyy-head"><span class="title"><img
+                        src="http://www.chnmuseum.cn/images/sy_cz_2019_title3.png" /></span>
+                <a target="_blank" class="more" href="http://www.chnmuseum.cn/cg/">更多</a>
+            </div>
+        </div>
+        <div style="padding:10px 63px 60px 63px; overflow: hidden; background-color: #ececec;">
+            <style>
+                .bmfw {
+                    width: 160px;
+                    height: 160px;
+                    float: left;
+                    margin-left: 46px;
+
+                }
+
+                .bmfw img {
+                    width: 100%;
+                }
+            </style>
+            <div class='bmfw'><a href="http://www.chnmuseum.cn/cg/dlfw/yydl/" target="_blank"><img
+                        src="http://www.chnmuseum.cn/images/xlm_home_pic5.png" /></a>
+            </div>
+            <div class='bmfw'><a href="http://www.chnmuseum.cn/cg/dlfw/yydl/" target="_blank"><img
+                        src="http://www.chnmuseum.cn/images/bmfw_201904025.png" /></a></div>
+
+            <div class='bmfw'><a href="http://www.chnmuseum.cn/cg/#visit-ssyfw" target="_blank"><img
+                        src="http://www.chnmuseum.cn/images/bmfw_201904022.png" /></a>
+            </div>
+            <div class='bmfw'><a href="http://www.chnmuseum.cn/cg/#visit-ssyfw" target="_blank"><img
+                        src="http://www.chnmuseum.cn/images/bmfw_201904021.png" /></a>
+            </div>
+            <!-- <div class='bmfw'><a href="/cg/dlfw/yydl/" target="_blank"><img src="./images/bmfw_201904023.png" /></a></div> -->
+            <div class='bmfw'><a href="http://www.chnmuseum.cn/cg/#visit-ssyfw" target="_blank"><img
+                        src="http://www.chnmuseum.cn/images/bmfw_201904024.png" /></a>
+            </div>
+
+            <!--<div style="width: 838px; height: 209px; float: right;"><a href="/cg/cy/201903/t20190322_84469.shtml" target="_blank"><img src="./images/xlm_home_pic6.png" /></a></div>-->
+        </div>
+        <!--/国博文创-->
+
+        <div class="djxx-zxhd-box" style="background:#ffffff; padding:0px 0px 0 0;display: none;">
+            <div class="home-cgyy-head"><span class="title"><img
+                        src="http://www.chnmuseum.cn/images/home-dmgb.png" /></span>
+            </div>
+        </div>
+
+        <!--banner-->
+        <div class="home-banner" style="display: none;">
+            <div id="slideBox" class="fullSlide">
+                <div class="hd" style="position: absolute;bottom: 30px; right: 30px;z-index: 1000000;">
+                    <ul>
+
+                        <li>1</li>
+
+                        <li>2</li>
+
+                        <li>3</li>
+
+                        <li>4</li>
+
+                        <li>5</li>
+
+                        <li>6</li>
+
+                        <li>7</li>
+
+                        <li>8</li>
+
+
+                    </ul>
+                </div>
+                <div class="bd">
+                    <ul>
+
+                        <li><a href="http://www.chnmuseum.cn/zp/" doctitle='保管' target="_blank"
+                                style="background:url(http://www.chnmuseum.cn/images/home-dmgb.png) no-repeat center center; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://www.chnmuseum.cn/images/home-dmgb.png',sizingMethod='scale');display:block;width:100%;background-size:cover;">
+                                <img src="http://www.chnmuseum.cn/shxg/sydt/201903/W020190318589543063249.jpg"
+                                    alt="保管" /> </a>
+                        </li>
+
+                        <li><a href="http://www.chnmuseum.cn/zl/" doctitle='展览' target="_blank"
+                                style="background:url(http://www.chnmuseum.cn/shxg/sydt/201903/W020190318589543063249.jpg) no-repeat center center; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://www.chnmuseum.cn/shxg/sydt/201903/W020190318589543063249.jpg',sizingMethod='scale');display:block;width:100%;background-size:cover;">
+                                <img src="http://www.chnmuseum.cn/shxg/sydt/201903/W020190318593553856556.jpg"
+                                    alt="展览" /> </a>
+                        </li>
+
+                        <li><a href="http://www.chnmuseum.cn/zp/" doctitle='保管' target="_blank"
+                                style="background:url(http://www.chnmuseum.cn/shxg/sydt/201903/W020190318593553856556.jpg) no-repeat center center; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://www.chnmuseum.cn/shxg/sydt/201903/W020190318592723846678.jpg',sizingMethod='scale');display:block;width:100%;background-size:cover;">
+                                <img src="http://www.chnmuseum.cn/shxg/sydt/201903/W020190318592723846678.jpg"
+                                    alt="保管" /> </a>
+                        </li>
+
+                        <li><a href="http://www.chnmuseum.cn/portals/0/web/zt/gudai/default.html" doctitle='gudai'
+                                target="_blank"
+                                style="background:url(http://www.chnmuseum.cn/shxg/sydt/201903/W020190320339247679813.jpg) no-repeat center center; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://www.chnmuseum.cn/shxg/sydt/201903/W020190320339247679813.jpg',sizingMethod='scale');display:block;width:100%;background-size:cover;">
+                                <img src="http://www.chnmuseum.cn/shxg/sydt/201903/W020190320339247679813.jpg"
+                                    alt="gudai" /> </a>
+                        </li>
+
+                        <li><a href="http://www.chnmuseum.cn/portals/0/web/zt/gudai/default.html" doctitle='fuxing'
+                                target="_blank"
+                                style="background:url(http://www.chnmuseum.cn/shxg/sydt/201903/W020190318604521588654.jpg) no-repeat center center; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://www.chnmuseum.cn/shxg/sydt/201903/W020190318604521588654.jpg',sizingMethod='scale');display:block;width:100%;background-size:cover;">
+                                <img src="http://www.chnmuseum.cn/shxg/sydt/201903/W020190318604521588654.jpg"
+                                    alt="fuxing" /> </a>
+                        </li>
+
+                        <li><a href="http://www.chnmuseum.cn/Portals/0/web/zt/2018dlfj/" doctitle='复兴之路新时代部分'
+                                target="_blank"
+                                style="background:url(http://www.chnmuseum.cn/shxg/sydt/201903/W020190318604521588654.jpg) no-repeat center center; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://www.chnmuseum.cn/shxg/sydt/201903/W020190318604521588654.jpg',sizingMethod='scale');display:block;width:100%;background-size:cover;">
+                                <img src="http://www.chnmuseum.cn/shxg/sydt/201903/W020190318604521588654.jpg"
+                                    alt="复兴之路新时代部分" /> </a>
+                        </li>
+
+                        <li><a href="http://www.chnmuseum.cn/qjgb/dmgb/" doctitle='西门' target="_blank"
+                                style="background:url(http://www.chnmuseum.cn/shxg/sydt/201903/W020190318604521588654.jpg) no-repeat center center; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://www.chnmuseum.cn/shxg/sydt/201903/W020190318556622663921.jpg',sizingMethod='scale');display:block;width:100%;background-size:cover;">
+                                <img src="http://www.chnmuseum.cn/shxg/sydt/201903/W020190318556622663921.jpg"
+                                    alt="西门" /> </a>
+                        </li>
+
+                        <li><a href="http://www.chnmuseum.cn/qjgb/dmgb/" doctitle='西门小广场' target="_blank"
+                                style="background:url(http://www.chnmuseum.cn/shxg/sydt/201903/W020190318556622663921.jpg) no-repeat center center; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://www.chnmuseum.cn/shxg/sydt/201903/W020190318601401277887.jpg',sizingMethod='scale');display:block;width:100%;background-size:cover;">
+                                <img src="http://www.chnmuseum.cn/shxg/sydt/201903/W020190318601401277887.jpg"
+                                    alt="西门小广场" /> </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!--/banner-->
+    </div>
+
+    <!--/main-->
+    <!--footer-->
+    <!--footer-->
+    <div class="footer">
+        <div class="main" style="width: 1080px;">
+            <div style="height: 170px;">
+                <div style="float: left; width: 744px;">
+                    <div class="footer-link" style="text-align: left; border-bottom: 1px solid #adadad;">
+                        <!--<a class="header-lang" title="网站导航">网站导航</a>-->
+                        <a style="padding-left:0px;" href="http://www.chnmuseum.cn/shxg/yqlj/" title="友情链接">友情链接</a>
+                        <a href="http://www.chnmuseum.cn/sp/" title="国博视频">国博视频</a>
+                        <a href="http://www.chnmuseum.cn/cg/lybd/" title="留言板">留言板</a>
+                        <a href="http://www.chnmuseum.cn/shxg/lxwm/" title="联系我们">联系我们</a>
+                        <a href="http://www.chnmuseum.cn/shxg/bqsm/" title="版权声明">版权声明</a>
+                        <a href="http://www.chnmuseum.cn/shxg/yszc/" title="隐私政策">隐私政策</a>
+                        <a style="background:none; padding-right: 0px;" href="http://www.chnmuseum.cn/shxg/wjdc/"
+                            title="问卷调查">问卷调查</a>
+
+                    </div>
+
+                    <div class="footer-txt" style="text-align: left;">
+                        <p style="text-align: left;">
+                            <span style="padding-left:0px;">中国国家博物馆版权所有</span>|
+                            <span>网站维护：新闻传播处</span>|<span>技术支持：<a href='http://www.trs.com.cn/' target='_blank'
+                                    style='color:#cacaca;'>北京拓尔思信息技术股份有限公司</a> </span>
+
+                        </p>
+                        <p style="text-align: left;">
+                            <span style="padding-left:0px;">京ICP备05008885号</span>|
+                            <span>京公网安备11010102003012号</span>|
+                            <span style="padding-right: 0px;">EMAIL：service@chnmuseum.cn</span>
+                        </p>
+                    </div>
+                </div>
+                <div style="float: right;">
+                    <ul class="ft_xiamian_jiand">
+                        <li><a href="https://weibo.com/chnmuseum/" target="_blank"><img
+                                    src="http://www.chnmuseum.cn/images/ft_20190410_icon1.png" /></a></li>
+                        <li class="ft_teshuxu">
+                            <a href="javascript:void(0);"><img
+                                    src="http://www.chnmuseum.cn/images/ft_20190410_icon2.png" /></a>
+                            <div class="ft_ying_weixin"><img
+                                    src="http://www.chnmuseum.cn/images/ft_20190410_wei1.jpg" /><img
+                                    src="http://www.chnmuseum.cn/images/ft_20190410_wei2.jpg" /></div>
+                        </li>
+                        <li style="display: none;"><a href=""><img
+                                    src="http://www.chnmuseum.cn/images/ft_20190410_icon3.png" /></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-logo"><img src="http://www.chnmuseum.cn/images/footer-logo.png" title="国家博物馆"
+                    alt="国家博物馆" /></div>
+        </div>
+    </div>
+    <!--/footer-->
+
+    <div class="nav_eject_Box">
+        <div class="nav_eject_close"></div>
+        <div class="nav_eject_center">
+            <ul class="nav_eject_Tul">
+
+                <li><a href="http://www.chnmuseum.cn/zj/" title="征集">征集</a></li>
+
+                <li><a href="http://www.chnmuseum.cn/zp/" title="保管">保管</a></li>
+
+                <li><a href="http://www.chnmuseum.cn/yj/" title="研究">研究</a></li>
+
+                <li><a href="http://www.chnmuseum.cn/zl/" title="展览">展览</a></li>
+
+                <li><a href="http://www.chnmuseum.cn/fw/" title="社教">社教</a></li>
+
+                <li><a href="http://www.chnmuseum.cn/wc/" title="文创">文创</a></li>
+
+                <li><a href="http://www.chnmuseum.cn/cg/" title="服务">服务</a></li>
+
+                <li><a href="http://www.chnmuseum.cn/dj/" title="学习">学习</a></li>
+
+            </ul>
+            <ul class="nav_eject_Bul">
+                <li class="nav_eject_Bli">
+                    <ul>
+                        <li><a id="quanjing3" value="3" onclick="gotoquanjing3()" title="职能介绍">职能简介</a></li>
+                        <li><a href="http://www.chnmuseum.cn/qjgb/#qj_gzzc" title="馆长致辞">馆长致辞</a></li>
+                        <li><a href="http://www.chnmuseum.cn/zx/" title="国博新闻">国博新闻</a></li>
+                        <li><a href="http://www.chnmuseum.cn/sp/" title="视频">国博视频</a></li>
+                        <li><a id="quanjing0" value="0" onclick="gotoquanjing0()" title="正在展出" title="历史沿革">历史沿革</a>
+                        </li>
+                        <li><a id="quanjing1" value="1" onclick="gotoquanjing1()" title="历任领导">历任领导</a></li>
+                        <li><a id="quanjing2" value="2" onclick="gotoquanjing2()" title="现任领导">现任领导</a></li>
+
+                    </ul>
+                </li>
+                <li class="nav_eject_Bli">
+                    <ul>
+                        <li><a href="http://www.chnmuseum.cn/Portals/0/web/zt/cangpin/" title="藏品总目">藏品总目</a></li>
+                        <li><a href="http://www.chnmuseum.cn/zp/zpml/" title="馆藏精品">馆藏精品</a></li>
+
+                    </ul>
+                </li>
+                <li class="nav_eject_Bli">
+                    <ul>
+                        <li><a href="http://www.chnmuseum.cn/yj/zjxz/" title="专家学者">专家学者</a></li>
+                        <li><a href="" title="科研课题">科研课题</a></li>
+
+                        <li><a href="" title="学术专著">学术专著</a></li>
+                        <li><a href="http://www.chnmuseum.cn/yj/xscg/xslw/" title="学术论文">学术论文</a></li>
+
+                        <li><a href="http://www.chnmuseum.cn/yj/gbjt/" title="国博讲堂">国博讲堂</a></li>
+                        <li><a href="" title="馆刊">馆刊</a></li>
+
+
+                    </ul>
+                </li>
+                <li class="nav_eject_Bli">
+                    <ul>
+                        <li><a id="zhanlan0" value="0" onclick="gotofuwi0()" title="正在展出">正在展出</a></li>
+                        <li><a id="zhanlan1" value="1" onclick="gotofuwi1()" title="展览预告">展览预告</a></li>
+                        <li><a id="zhanlan2" value="2" onclick="gotofuwi2()" title="展览回顾">展览回顾</a></li>
+                        <li><a href="http://www.chnmuseum.cn/Portals/0/web/vr/index.html" title="网上展览">网上展览</a></li>
+                        <li><a href="http://www.chnmuseum.cn/zl/zlsq/" title="展览申请">展览申请</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav_eject_Bli">
+                    <ul>
+                        <li><a href="http://www.chnmuseum.cn/fw/hd/zxhd/" title="最新活动">最新活动</a></li>
+                        <li><a href="http://www.chnmuseum.cn/fw/ggjy/jyhdjs/" title="教育活动">教育活动</a></li>
+                        <li><a href="http://www.chnmuseum.cn/fw/ggjy/wzgbjww/" title="我在国博讲文物">我在国博讲文物</a></li>
+                        <li><a href="http://www.chnmuseum.cn/fw/ggjy/gb100j/" title="馆校合作">馆校合作</a></li>
+                    </ul>
+                </li>
+
+
+                <li class="nav_eject_Bli">
+                    <ul>
+
+                        <li><a href="https://zggjbwg.tmall.com/" title="国博文创">国博文创</a></li>
+                        <li><a href="http://www.chnmuseum.cn/fw/gbwc/" title="馆属企业">馆属企业</a></li>
+                        <li><a href="http://www.chnmuseum.cn/wc/ipsq/" title="IP授权">IP授权</a></li>
+                        <li><a href="http://www.chnmuseum.cn/fw/zlxz/" title="资料下载">资料下载</a></li>
+
+                    </ul>
+                </li>
+
+
+                <li class="nav_eject_Bli">
+                    <ul>
+                        <li><a href="http://www.chnmuseum.cn/cg/" title="开放时间">开放时间</a></li>
+                        <li><a style="cursor:pointer;"
+                                onclick="window.open('http://www.chnmuseum.cn/cg/#visit_rgfs','','','true');"
+                                title="入馆方式">入馆方式</a></li>
+                        <li><a style="cursor:pointer;"
+                                onclick="window.open('http://www.chnmuseum.cn/cg/#visit-jtdl','','','true');"
+                                title="交通地理">交通地理</a></li>
+                        <li><a style="cursor:pointer;"
+                                onclick="window.open('http://www.chnmuseum.cn/cg/#visit-cgxz','','','true');"
+                                title="参观须知">参观须知</a></li>
+                        <li><a style="cursor:pointer;"
+                                onclick="window.open('http://www.chnmuseum.cn/cg/#visit-ssyfw','','','true');"
+                                title="设施与服务">设施与服务</a></li>
+                        <li><a style="cursor:pointer;"
+                                onclick="window.open('http://www.chnmuseum.cn/cg/#visit-dlfw','','','true');"
+                                title="导览服务">导览服务</a></li>
+                        <li><a style="cursor:pointer;"
+                                onclick="window.open('http://www.chnmuseum.cn/cg/#visit-ztfb','','','true');"
+                                title="展厅分布">展厅分布</a></li>
+                    </ul>
+                </li>
+                <li class="nav_eject_Bli">
+                    <ul>
+
+                    </ul>
+                </li>
+                <!--      <li class="nav_eject_Bli">
+                    <ul>
+                        <li><a href="http://www.chnmuseum.cn/sp/gbzp/" title="精品文物">精品文物</a></li>
+                        <li><a href="http://www.chnmuseum.cn/sp/gbzl/" title="展览视频">展览视频</a></li>
+                        <li><a href="http://www.chnmuseum.cn/sp/gbjt_150/" title="国博讲堂">国博讲堂</a></li>
+    
+                    </ul>
+                </li> -->
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        $(function () {
+            var windowwidth = $(window).width();
+            if (windowwidth < 1200) {
+                $(".header,.footer").css("width", "1200px");
+            } else {
+                $(".header,.footer").css("width", "100%");
+            }
+            $(window).resize(function () {
+                var windowwidth = $(window).width();
+                if (windowwidth < 1200) {
+                    $(".header,.footer").css("width", "1200px");
+                } else {
+                    $(".header,.footer").css("width", "100%");
+                }
+
+            });
+
+            /*导航弹出层 开始*/
+
+            $('.nav_eject_Bul .nav_eject_Bli:last-child').css('border', '0');
+            $('.header-lang').click(function () {
+
+                $('.nav_eject_Box').show();
+                var windowHeight = $(window).height();
+                //var navejectcenterH = $('.nav_eject_center').height();
+                //$('.nav_eject_center').css('margin-top',(windowHeight-navejectcenterH)*0.5+'px')
+            })
+            $('.nav_eject_close').click(function () {
+                $('.nav_eject_Box').hide();
+            })
+            /*导航弹出层 结束*/
+
+
+            $('.nav_eject_Bul li a').click(function () {
+                $('.nav_eject_Box').hide();
+            })
+
+
+            $(".ft_teshuxu").hover(function () {
+                $(".ft_ying_weixin").show();
+            }, function () {
+                $(".ft_ying_weixin").hide();
+            })
+
+        })
+
+
+
+        var zl_jiekou = "http://www.chnmuseum.cn/zl/?";
+        var zl_maodian = "#zl_zzzl";
+
+        function gotofuwi0() {
+            var zhanlan0 = $("#zhanlan0").attr("value")
+            location.href = zl_jiekou + "tex=" + encodeURI(zhanlan0) + zl_maodian;
+            $('.nav_eject_Box').hide();
+        }
+
+        function gotofuwi1() {
+            var zhanlan1 = $("#zhanlan1").attr("value")
+            location.href = zl_jiekou + "tex=" + encodeURI(zhanlan1) + zl_maodian;
+            $('.nav_eject_Box').hide();
+        }
+
+        function gotofuwi2() {
+            var zhanlan2 = $("#zhanlan2").attr("value")
+            location.href = zl_jiekou + "tex=" + encodeURI(zhanlan2) + zl_maodian;
+            $('.nav_eject_Box').hide();
+        }
+
+
+
+        var qj_jiekou = "http://www.chnmuseum.cn/qjgb/?";
+        var qj_maodian = "#qj_lishil";
+        var qj_maodianzl = "#znjdlsj";
+
+        function gotoquanjing0() {
+            var quanjing0 = $("#quanjing0").attr("value")
+            location.href = qj_jiekou + "tex=" + encodeURI(quanjing0) + qj_maodian;
+            $('.nav_eject_Box').hide();
+        }
+
+
+        function gotoquanjing1() {
+            var quanjing1 = $("#quanjing1").attr("value")
+            location.href = qj_jiekou + "tex=" + encodeURI(quanjing1) + qj_maodian;
+            $('.nav_eject_Box').hide();
+        }
+
+        function gotoquanjing2() {
+            var quanjing2 = $("#quanjing2").attr("value")
+            location.href = qj_jiekou + "tex=" + encodeURI(quanjing2) + qj_maodian;
+            $('.nav_eject_Box').hide();
+        }
+
+
+        function gotoquanjing3() {
+            var quanjing3 = $("#quanjing3").attr("value")
+            location.href = qj_jiekou + "tex=" + encodeURI(quanjing3) + qj_maodianzl;
+            $('.nav_eject_Box').hide();
+        }
+
+
+
+    </script>
+
+    <!--网脉-->
+    <script id="_trs_ta_js" src="//ta.trs.cn/c/js/ta.js?mpid=2797" async="async" defer="defer"></script>
+
+    <!--百度-->
+    <script>
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?d8512e191052092ef1dd135588660448";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+    <!--/footer-->
+
+    <!--侧边导航条-->
+    <div class="slider-box" id="sidebar">
+        <ul class="sidebarUl">
+
+            <li class="sidebarLi"><a target='_blank' href="http://www.chnmuseum.cn/cg/#vister_yxzj" title="参观预约"><img
+                        class="dft" src="http://www.chnmuseum.cn/images/slider-icon1.png" /><img class="cur"
+                        src="http://www.chnmuseum.cn/images/slider-icon1-cur.png" /></a></li>
+
+
+            <li class="sidebarLi"><a href="http://www.chnmuseum.cn/cg/#cg_jtdt" title="交通地理"><img class="dft"
+                        src="http://www.chnmuseum.cn/images/slider-icon4.png" /><img class="cur"
+                        src="http://www.chnmuseum.cn/images/slider-icon4-cur.png" /></a></li>
+
+            <li class="sidebarLi"><a href="http://www.chnmuseum.cn/cg/lybd/" title="留言咨询"><img class="dft"
+                        src="http://www.chnmuseum.cn/images/slider-icon5.png" /><img class="cur"
+                        src="http://www.chnmuseum.cn/images/slider-icon5-cur.png" /></a></li>
+
+            <!-- <li  class="sidebarLi" id="hdrl"><a title="活动日历"><img class="dft" src="../../images/slider-icon6.png" /><img class="cur" src="../../images/slider-icon6-cur.png" /></a></li> -->
+
+            <li class="sidebarLi last"><a href="https://zggjbwg.tmall.com/" target='_blank' title="网上商店"><img
+                        class="dft" src="http://www.chnmuseum.cn/images/slider-icon7.png" /><img class="cur"
+                        src="http://www.chnmuseum.cn/images/slider-icon7-cur.png" /></a></li>
+
+
+            <!-- <li  class="sidebarLi" id="mtslider"><a href="javascript:void(0);" title="媒体频道" ><img class="dft" src="../../images/slider-icon2.png" /><img class="cur" src="../../images/slider-icon2-cur.png" /></a></li> -->
+            <!-- <li  class="sidebarLi" id="zjslider"><a href="javascript:void(0);" title="研究频道" ><img class="dft" src="../../images/slider-icon3.png" /><img class="cur" src="../../images/slider-icon3-cur.png" /></a></li> -->
+            <li class="sidebarLi" id="fhdblider"><a href="javascript:void(0);" title="返回顶部"><img class="dft"
+                        src="http://www.chnmuseum.cn/images/fhdbImg.jpg" /><img class="cur"
+                        src="http://www.chnmuseum.cn/images/fhdbImgText.jpg" /></a></li>
+        </ul>
+        <div class="hdrlCalendarBox">
+            <div id="hdrlCalendar"></div>
+        </div>
+    </div>
+
+    <script>
+        $('#hdrlCalendar').calendar({
+            width: 348,
+            height: 346,
+            data: {},
+            onSelected: function (view, date, data) {
+                //console.log('view:' + view);
+                //console.log('date:' + date);
+                //console.log('data:' + data);
+                //console.log('data:' + (data || 'None'));
+                var y = date.getFullYear();
+                var m = date.getMonth();
+                var d = date.getDate();
+                if (m < 10) {
+                    var em = '0' + (m + 1);
+                } else {
+                    var em = (m + 1);
+                }
+                if (d < 10) {
+                    var ed = '0' + d;
+                } else {
+                    var ed = d;
+                }
+                selectDate = y + '/' + em + '/' + ed;
+                //window.location.href = "/zlrl?time="+selectDate;
+                window.open("/zlrlnew?time=" + selectDate);
+            }
+        });
+        $("#sidebar ul #hdrl").click(function () {
+            if ($('.hdrlCalendarBox').width() == 0) {
+                $('.hdrlCalendarBox').animate({ width: '346px' }, 450)
+            } else {
+                $('.hdrlCalendarBox').animate({ width: '0' }, 450)
+            }
+
+        })
+        //侧边栏效果
+        $("#sidebar ul li").hover(function () {
+            $(this).addClass("hover");
+        }, function () {
+            $(this).removeClass("hover");
+        });
+        $(function () {
+            var $sidebar = $("#sidebar"),
+                $window = $(window),
+                offset = $sidebar.offset(),
+                topPadding = 15;
+
+            $window.scroll(function () {
+                if ($window.scrollTop() > 700) {
+                    $sidebar.show();
+                } else {
+                    $sidebar.hide();
+                }
+            });
+
+        });
+        $('#fhdblider').click(function () {
+            $('body,html').animate({ 'scrollTop': '0px' }, 700)
+        })
+    </script>
+
+    <div class="cj_big_mga" id="mtlayer" style="display:none;">
+        <div class="cj_juju">
+            <span class="cj_bm_close" id="mtclose"><img alt="关闭"
+                    src="http://www.chnmuseum.cn/images/cj_close.png" /></span>
+            <div class="cj_bm_nei">
+                <div class="cj_mt_wai">
+                    <div class="cj_mt_ab">
+                        <div class="cj_mt_shangxing">
+                            <div class="cj_mt_zhengji">
+                                <!-- <a href="" title="征集">
+                                <img alt="征集" src="../../images/cj_mt1.png" />
+                                <span>征集</span>
+                            </a> -->
+                                <dl class="cj_guobonews_list">
+                                    <dt style="cursor:pointer;"
+                                        onclick="window.open('http://www.chnmuseum.cn/zx/gbxw/','');">国博新闻</dt>
+                                    <dd>
+                                        <ul>
+
+                                            <li><a href="http://www.chnmuseum.cn/zx/gbxw/201811/t20181113_2154.shtml"
+                                                    title="习近平参观庆祝改革开放40周年大型展览">习近平参观庆祝改革开放40周年大型展览</a></li>
+
+                                            <li><a href="http://www.chnmuseum.cn/zx/gbxw/201903/t20190307_79924.shtml"
+                                                    title="习近平在看望参加政协会议的文艺界社科界委员">习近平在看望参加政协会议的文艺界社科界委员</a></li>
+
+                                            <li><a href="http://www.chnmuseum.cn/zx/gbxw/201906/t20190608_122779.shtml"
+                                                    title="习近平：《福州古厝》序">习近平：《福州古厝》序</a></li>
+
+                                            <li><a href="http://www.chnmuseum.cn/zx/gbxw/201910/t20191029_164897.shtml"
+                                                    title="光明日报：从甲骨到图书，照亮着文明的征程">光明日报：从甲骨到图书，照亮着文明的征程</a></li>
+
+                                            <li><a href="http://www.chnmuseum.cn/zx/gbxw/201910/t20191028_164588.shtml"
+                                                    title="巴西国家博物馆馆长科尔纳访问中国国家博物馆">巴西国家博物馆馆长科尔纳访问中国国家博物馆</a></li>
+
+                                            <li><a href="http://www.chnmuseum.cn/zx/gbxw/201910/t20191028_164589.shtml"
+                                                    title="摩洛哥国家旅游局局长阿德尔·菲克尔到访">摩洛哥国家旅游局局长阿德尔·菲克尔到访</a></li>
+
+
+                                        </ul>
+                                    </dd>
+                                </dl>
+                            </div>
+
+                            <div id="slideBox3" class="slideBox3">
+                                <div class="hd cj_heise">
+                                    <ul>
+
+                                        <li>1</li>
+
+                                        <li>2</li>
+
+                                        <li>3</li>
+
+                                        <li>4</li>
+
+                                        <li>5</li>
+
+                                    </ul>
+                                </div>
+                                <div class="bd3">
+                                    <ul>
+
+                                        <li><a href="http://www.chnmuseum.cn/Portals/0/web/zt/2018dlfj/"
+                                                doctitle='复兴之路·新时代部分' target="_blank"><img src=""
+                                                    alt="复兴之路·新时代部分" /></a></li>
+
+                                        <li><a href="http://www.chnmuseum.cn/portals/0/web/zt/fuxing/" doctitle='复兴之路'
+                                                target="_blank"><img src="" alt="复兴之路" /></a></li>
+
+                                        <li><a href="http://www.chnmuseum.cn/portals/0/web/zt/gudai/default.html"
+                                                doctitle='古代中国' target="_blank"><img src="" alt="古代中国" /></a></li>
+
+                                        <li><a href="http://www.chnmuseum.cn/zl/zzzc/201812/t20181220_32178.shtml"
+                                                doctitle='中国古代瓷器艺术展' target="_blank"><img src="" alt="中国古代瓷器艺术展" /></a>
+                                        </li>
+
+                                        <li><a href="http://www.chnmuseum.cn/zl/zzzc/201812/t20181220_32176.shtml"
+                                                doctitle='中国古代玉器艺术' target="_blank"><img src="" alt="中国古代玉器艺术" /></a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                                <a class="prev" href="javascript:void(0)"></a>
+                                <a class="next" href="javascript:void(0)"></a>
+                                <div class="cj_zhanlan_text">展览</div>
+                            </div>
+                        </div>
+                        <div class="cj_mt_shangxing2">
+                            <div class="cj_gonggao">
+                                <ul>
+                                    <li class="cj_gg3">
+                                        <a href="http://www.chnmuseum.cn/zx/mtgz/" title="媒体关注">
+                                            <img src="http://www.chnmuseum.cn/images/cj_mt8.png" alt="" />
+                                            <span>媒体关注</span>
+                                        </a>
+                                    </li>
+                                    <li class="cj_gg1">
+                                        <!--国家博物馆新闻采访办法-->
+                                        <a href="/qjgb/gbgg/201107/t20110729_2162.shtml" title="采访预约" IGNOREAPD="TRUE">
+                                            <img src="http://www.chnmuseum.cn/images/cj_mt5.png" alt="" />
+                                            <span>采访预约</span>
+                                        </a>
+                                    </li>
+                                    <li class="cj_gg2">
+                                        <a href="http://www.chnmuseum.cn/gbgg/" title="公告">
+                                            <img src="http://www.chnmuseum.cn/images/cj_mt7.png" alt="" />
+                                            <span>公告</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="cj_gg4">
+                                        <a href="http://www.chnmuseum.cn/sp/" title="国博视频">
+                                            <img src="http://www.chnmuseum.cn/images/cj_mt6.png" alt="" />
+                                            <span>国博视频</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div id="mtslideBox4" class="slideBox4">
+                                <div class="hd">
+                                    <ul>
+
+                                        <li>1</li>
+
+                                        <li>2</li>
+
+                                        <li>3</li>
+
+                                        <li>4</li>
+
+                                        <li>5</li>
+
+                                    </ul>
+                                </div>
+                                <div class="bd4">
+                                    <ul>
+
+                                        <li><a href="http://www.chnmuseum.cn/sp/xwlb/201910/t20191023_163108.shtml"
+                                                title="朝闻天下：国博最大甲骨文文化展启幕" target="_blank">
+
+                                                <script>
+                                                    var vpic = "../../sp/xwlb/201910/P020191023355124660319.png";
+                                                    if (vpic == '') {
+
+                                                        document.write("<img src='' alt='朝闻天下：国博最大甲骨文文化展启幕' />")
+
+                                                    } else {
+
+                                                        document.write("<img src='../../sp/xwlb/201910/P020191023355124660319.png' alt='朝闻天下：国博最大甲骨文文化展启幕' />")
+                                                    }
+                                                </script>
+
+                                                <span class="cj_mt_bofang"></span></a></li>
+
+                                        <li><a href="http://www.chnmuseum.cn/sp/tjsp/201910/t20191014_160506.shtml"
+                                                title="国博24小时" target="_blank">
+
+                                                <script>
+                                                    var vpic = "../../sp/tjsp/201910/P020191014519097350690.jpg";
+                                                    if (vpic == '') {
+
+                                                        document.write("<img src='http://www.chnmuseum.cn//masvod/public/2019/10/14/718.images/v718_b1571023951802.jpg' alt='国博24小时' />")
+
+                                                    } else {
+
+                                                        document.write("<img src='../../sp/tjsp/201910/P020191014519097350690.jpg' alt='国博24小时' />")
+                                                    }
+                                                </script>
+
+
+                                                <span class="cj_mt_bofang"></span></a></li>
+
+                                        <li><a href="http://www.chnmuseum.cn/sp/xwlb/201910/t20191009_159155.shtml"
+                                                title="“书影中的70年·新中国图书版本展”国博启幕" target="_blank">
+
+                                                <script>
+                                                    var vpic = "../../sp/xwlb/201910/P020191009791120809479.jpg";
+                                                    if (vpic == '') {
+
+                                                        document.write("<img src='http://www.chnmuseum.cn//masvod/public/2019/10/09/716.images/v716_b1570629641658.jpg' alt='“书影中的70年·新中国图书版本展”国博启幕' />")
+
+                                                    } else {
+
+                                                        document.write("<img src='../../sp/xwlb/201910/P020191009791120809479.jpg' alt='“书影中的70年·新中国图书版本展”国博启幕' />")
+                                                    }
+                                                </script>
+                                                <span class="cj_mt_bofang"></span></a></li>
+
+                                        <li><a href="http://www.chnmuseum.cn/sp/xwlb/201909/t20190917_152471.shtml"
+                                                title="央视国博联合出品国庆短片：《今天是你的生日》" target="_blank">
+
+                                                <script>
+                                                    var vpic = "../../sp/xwlb/201909/P020190917312050645201.jpg";
+                                                    if (vpic == '') {
+
+                                                        document.write("<img src='http://www.chnmuseum.cn//masvod/public/2019/09/17/713.images/v713_b1568679944133.jpg' alt='央视国博联合出品国庆短片：《今天是你的生日》' />")
+
+                                                    } else {
+
+                                                        document.write("<img src='../../sp/xwlb/201909/P020190917312050645201.jpg' alt='央视国博联合出品国庆短片：《今天是你的生日》' />")
+                                                    }
+                                                </script>
+
+                                                <span class="cj_mt_bofang"></span></a></li>
+
+                                        <li><a href="http://www.chnmuseum.cn/sp/xwlb/201909/t20190902_148099.shtml"
+                                                title="香港青年代表参观国博 呼吁加强历史教育" target="_blank">
+
+                                                <script>
+                                                    var vpic = "../../sp/xwlb/201909/P020190902360641607665.jpg";
+                                                    if (vpic == '') {
+
+                                                        document.write("<img src='' alt='香港青年代表参观国博 呼吁加强历史教育' />")
+
+                                                    } else {
+
+                                                        document.write("<img src='../../sp/xwlb/201909/P020190902360641607665.jpg' alt='香港青年代表参观国博 呼吁加强历史教育' />")
+                                                    }
+                                                </script>
+                                                <span class="cj_mt_bofang"></span></a></li>
+
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="cj_mt_lingdao">
+                                <dl class="cj_mt_ldzc">
+                                    <dd>
+                                        <a href="http://www.chnmuseum.cn/qjgb/" title="馆长致辞">
+                                            <img src="http://www.chnmuseum.cn/images/cj_zhongdian1.png" alt="馆长致辞" />
+                                            <span>馆长致辞</span>
+                                        </a>
+                                    </dd>
+                                </dl>
+                                <div class="cj_mt_dangjian"><a href="http://www.chnmuseum.cn/qjgb/" title=""><img
+                                            src="http://www.chnmuseum.cn/images/cj_mt11.png"
+                                            alt="全景" /><span>全景</span></a></div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        //轮播图js效果
+        var ary = location.href.split("&");
+        $("#mtslideBox4").slide({
+            mainCell: ".bd4 ul",
+            effect: "fold",
+            autoPlay: "true",
+            trigger: ary[3],
+            easing: ary[4],
+            delayTime: ary[5],
+            mouseOverStop: ary[6],
+            pnLoop: ary[7]
+        });
+
+
+        var arye = location.href.split("&");
+        $(".slideBox3").slide({
+            mainCell: ".bd3 ul",
+            effect: "fold",
+            autoPlay: "true",
+            trigger: arye[3],
+            easing: arye[4],
+            delayTime: arye[5],
+            mouseOverStop: arye[6],
+            pnLoop: "true",
+            prevCell: ".prev",
+            nextCell: ".next"
+        });
+
+
+        //鼠标经过图片放大效果
+        $(function () {
+            $('.cj_gonggao ul li.cj_gg1').hover(function () {
+                $(this).find('img').stop().animate({ width: 70, marginTop: 80, marginLeft: 80 }, 600);
+                $(this).css({ "background": "#a29213" });
+            }, function () {
+                $(this).find('img').stop().animate({ width: 60, marginTop: 90, marginLeft: 90 }, 500);
+                $(this).css({ "background": "#bdb121" });
+            });
+
+            $('.cj_gonggao ul li.cj_gg2').hover(function () {
+                $(this).find('img').stop().animate({ width: 70, marginTop: 80, marginLeft: 80 }, 600);
+                $(this).css({ "background": "#d5955e" });
+            }, function () {
+                $(this).find('img').stop().animate({ width: 60, marginTop: 90, marginLeft: 90 }, 500);
+                $(this).css({ "background": "#de9f69" });
+            });
+
+            $('.cj_gonggao ul li.cj_gg3').hover(function () {
+                $(this).find('img').stop().animate({ width: 70, marginTop: 80, marginLeft: 80 }, 600);
+                $(this).css({ "background": "#117762" });
+            }, function () {
+                $(this).find('img').stop().animate({ width: 60, marginTop: 90, marginLeft: 90 }, 500);
+                $(this).css({ "background": "#1d9b87" });
+            });
+
+            $('.cj_gonggao ul li.cj_gg4').hover(function () {
+                $(this).find('img').stop().animate({ width: 70, marginTop: 80, marginLeft: 80 }, 600);
+                $(this).css({ "background": "#757171" });
+            }, function () {
+                $(this).find('img').stop().animate({ width: 60, marginTop: 87, marginLeft: 90 }, 500);
+                $(this).css({ "background": "#808080" });
+            });
+
+
+            $('.cj_mt_ldzc  dd').hover(function () {
+                $(this).find('img').stop().animate({ width: 70, marginTop: 80 }, 600);
+            }, function () {
+                $(this).find('img').stop().animate({ width: 60, marginTop: 90 }, 500);
+            });
+
+
+
+            // $('.cj_mt_zhengji a').hover(function(){
+            //  $(this).find('img').stop().animate({width:505, height:389, top:-15, left:-15},600);
+            // },function(){
+            //  $(this).find('img').stop().animate({width:451, height:347, top:0, left:0},500);
+            // });
+
+            // $('.cj_mt_dangjian a').hover(function(){
+            //     $(this).find('img').stop().animate({width:270, height:174, marginTop:-10, marginLeft:-10},600);
+            // },function(){
+            //     $(this).find('img').stop().animate({width:258, height:166, marginTop:0, marginLeft:0},500);
+            // });
+
+        });
+        $("#mtslider").click(function () {
+            $("#mtlayer").show();
+        });
+        $("#mtclose").click(function () {
+            $("#mtlayer").hide();
+        });
+    </script>
+    <div class="cj_big_mga" id="zjlayer" style="display:none;">
+        <div class="cj_juju">
+            <span class="cj_bm_close" id="zjclose"><img alt="关闭"
+                    src="http://www.chnmuseum.cn/images/cj_close.png" /></span>
+            <div class="cj_bm_nei">
+                <div class="cj_mt_wai">
+                    <div class="cj_zj_cangping">
+                        <a href="http://www.chnmuseum.cn/zp/zpml/">
+                            <img src="http://www.chnmuseum.cn/images/cj_zj_pic1.jpg" alt="藏品" />
+                            <span>藏品</span>
+                        </a>
+                    </div>
+
+                    <div class="cj_zj_right">
+                        <div class="cj_zj_waiwei2">
+                            <div class="cj_zt_zhengji">
+                                <a href="http://www.chnmuseum.cn/zj/" title="征集">
+                                    <img alt="征集" src="http://www.chnmuseum.cn/images/cj_zj_pic2.jpg" />
+                                    <span>征集</span>
+                                </a>
+                            </div>
+
+                            <!-- <div class="cj_zt_zhengji2">
+                                <a href="" title="文保">
+                                    <img alt="文保" src="../../images/cj_zj_pic7.jpg" />
+                                    <span>文保</span>
+                                </a>
+                            </div> -->
+                            <div class="cj_mt_zhengji cj_jintinjia">
+                                <dl class="cj_guobonews_list">
+                                    <dt>学术论文<a href="http://www.chnmuseum.cn/yj/xscg/xslw/">更多</a></dt>
+                                    <dd>
+                                        <ul>
+
+                                            <li><a href="http://www.chnmuseum.cn/yj/xscg/xslw/201909/t20190920_153495.shtml"
+                                                    title="《南都繁会景物图卷》所绘城市空间解析">《南都繁会景物图卷》所绘城市空间解析</a></li>
+
+                                            <li><a href="http://www.chnmuseum.cn/yj/xscg/xslw/201909/t20190920_153494.shtml"
+                                                    title="两宋金银舍利容器知见录">两宋金银舍利容器知见录</a></li>
+
+                                            <li><a href="http://www.chnmuseum.cn/yj/xscg/xslw/201909/t20190920_153493.shtml"
+                                                    title="随州周家寨墓地M9、M22发掘简报">随州周家寨墓地M9、M22发掘简报</a></li>
+
+                                            <li><a href="http://www.chnmuseum.cn/yj/xscg/xslw/201909/t20190918_152907.shtml"
+                                                    title="国博藏传清太祖太宗手书文书考">国博藏传清太祖太宗手书文书考</a></li>
+
+                                            <li><a href="http://www.chnmuseum.cn/yj/xscg/xslw/201909/t20190918_152906.shtml"
+                                                    title="“琉璃之路”与朝鲜半岛、日本出土的玻璃器">“琉璃之路”与朝鲜半岛、日本出土的玻璃器</a></li>
+
+                                            <li><a href="http://www.chnmuseum.cn/yj/xscg/xslw/201909/t20190918_152904.shtml"
+                                                    title="“襜褕”考">“襜褕”考</a></li>
+
+                                            <li><a href="http://www.chnmuseum.cn/yj/xscg/xslw/201908/t20190814_142454.shtml"
+                                                    title="海岱地区盖豆类器物的渊源及命名问题辨正">海岱地区盖豆类器物的渊源及命名问题辨正</a></li>
+
+                                        </ul>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="cj_zj_waiwei">
+                            <div style="width: 394px; float: left;">
+                                <div class="cj_gonggao2">
+                                    <ul>
+                                        <li class="cj_gg11">
+                                            <a href="http://www.chnmuseum.cn/yj/zjxz/" title="专家学者">
+                                                <img src="http://www.chnmuseum.cn/images/cj_zj_p1.png" alt="" />
+                                                <span>专家学者</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="cj_mt_zhengji cj_jintinjia2">
+                                    <dl class="cj_guobonews_list">
+                                        <dt style="cursor:pointer;" onclick="window.open('','');">学术专著</dt>
+
+                                        <dd>
+                                            <ul>
+
+                                            </ul>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                            <div class="cj_zj_gonggao">
+                                <ul>
+                                    <li class="cj_zj_jiezhe1">
+                                        <a href="http://yuyue.chnmuseum.cn/lecture/" title="国博讲堂">
+                                            <img src="http://www.chnmuseum.cn/images/cj_zj_pic3.jpg" alt="" />
+                                            <span>国博讲堂</span>
+                                        </a>
+                                    </li>
+                                    <li class="cj_zj_jiezhe2">
+                                        <a href="http://www.chnmuseum.cn/zx/xydt/" title="行业动态">
+                                            <img src="http://www.chnmuseum.cn/images/cj_zj_pic4.jpg" alt="" />
+                                            <span>行业动态</span>
+                                        </a>
+                                    </li>
+                                    <li class="cc_teshude">
+                                        <a href="" title="馆刊">
+                                            <img src="http://www.chnmuseum.cn/images/cc_bbtan2.png" alt="" />
+                                            <span>馆刊</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="" title="科研课题">
+                                            <img src="http://www.chnmuseum.cn/images/cj_zj_pic6.jpg" alt="" />
+                                            <span>科研课题</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+
+        //鼠标经过图片放大效果
+        $(function () {
+            $('.cj_zj_cangping a').hover(function () {
+                $(this).find('img').stop().animate({ width: 400, height: 727, marginTop: -10, marginLeft: -10 }, 600);
+            }, function () {
+                $(this).find('img').stop().animate({ width: 382, height: 694, marginTop: 0, marginLeft: 0 }, 500);
+            });
+
+            $('.cj_zt_zhengji a').hover(function () {
+                $(this).find('img').stop().animate({ width: 412, height: 359, marginTop: -10, marginLeft: -10 }, 600);
+            }, function () {
+                $(this).find('img').stop().animate({ width: 394, height: 343, marginTop: 0, marginLeft: 0 }, 500);
+            });
+
+            $('.cj_zj_gonggao ul li').hover(function () {
+                $(this).find('img').stop().animate({ width: 210, height: 186, marginTop: -10, marginLeft: -10 }, 600);
+            }, function () {
+                $(this).find('img').stop().animate({ width: 190, height: 168, marginTop: 0, marginLeft: 0 }, 500);
+            });
+
+            $('.cj_zt_zhengji2 a').hover(function () {
+                $(this).find('img').stop().animate({ width: 412, height: 365, marginTop: -10, marginLeft: -10 }, 600);
+            }, function () {
+                $(this).find('img').stop().animate({ width: 387, height: 343, marginTop: 0, marginLeft: 0 }, 500);
+            });
+
+            $('.cj_gonggao2 ul li ').hover(function () {
+                $(this).find('img').stop().animate({ width: 100, height: 86, bottom: 15, right: 15 }, 600);
+                $(this).css({ "backgroundColor": "#8d77a4" });
+            }, function () {
+                $(this).find('img').stop().animate({ width: 86, height: 74, bottom: 15, right: 15 }, 500);
+                $(this).css({ "backgroundColor": "#a794ba" });
+            });
+
+        })
+        $("#zjslider").click(function () {
+            $("#zjlayer").show();
+        });
+        $("#zjclose").click(function () {
+            $("#zjlayer").hide();
+        });
+    </script>
+    <script src="http://www.chnmuseum.cn/images/posterTvGrid.js"></script>
+    <script src="http://www.chnmuseum.cn/images/posterTvGrid0403.js"></script>
+    <script type="text/javascript">
+
+        var posterTvGrid86805 = new posterTvGrid2('posterTvGrid86805', { className: "posterTvGrid", height: 510, speed: 500 }, [
+
+
+            { "img": "http://www.chnmuseum.cn/zl/ztzl/201910/W020191030386811092413.png", "title": "", "url": "http://www.chnmuseum.cn/portals/0/web/zt/20191030xytm/" },
+
+            { "img": "http://www.chnmuseum.cn/zl/ztzl/201910/W020191009534009142049.jpg", "title": "", "url": "http://www.chnmuseum.cn/zl/ztzl/201910/W020191009534009142049.jpg" },
+
+            { "img": "http://www.chnmuseum.cn/zl/ztzl/201910/W020191030386811092413.png", "title": "", "url": "/portals/0/web/zt/20190917hgzl" },
+
+
+            { "img": "http://www.chnmuseum.cn/zl/ztzl/201910/W020191030386811092413.png", "title": "", "url": "/zl/zzzc/201909/t20190919_153181.shtml" }
+
+
+
+        ]
+
+        );
+
+
+        var posterTvGrid86804 = new posterTvGrid2('posterTvGrid86804', { className: "posterTvGrid", height: 510, speed: 500 }, [
+
+
+            { "img": "http://www.chnmuseum.cn/zl/ztzl/201909/W020190917476773830352.jpg", "title": "", "url": "http://www.chnmuseum.cn/portals/0/web/zt/gudai/default.html" },
+
+            { "img": "http://www.chnmuseum.cn/zl/ztzl/201909/W020190917476773830352.jpg", "title": "", "url": "http://old.chnmuseum.cn/portals/0/web/zt/fuxing/" },
+
+            { "img": "http://www.chnmuseum.cn/zl/ztzl/201909/W020190917476773830352.jpg", "title": "", "url": "http://old.chnmuseum.cn/Portals/0/web/zt/2018dlfj/" },
+
+
+            { "img": "http://www.chnmuseum.cn/zl/ztzl/201909/W020190917476773830352.jpg", "title": "", "url": "http://old.chnmuseum.cn/portals/0/web/zt/fuxing/" }
+
+
+
+        ]
+
+        );
+
+        var posterTvGrid86802 = new posterTvGrid('posterTvGrid86802', { className: "posterTvGrid" }, [
+
+
+            { "img": "http://www.chnmuseum.cn/zl/zzzc/201812/P020190324805026804347.jpg", "title": "/portals/0/web/zt/20191022jiagu/", "url": "./zl/lszl/lswhxl/201909/t20190919_153106.shtml" },
+
+            { "img": "http://www.chnmuseum.cn/zl/zzzc/201812/P020190324804045996913.jpg", "title": "", "url": "./zl/lszl/201909/t20190919_153178.shtml" },
+
+            { "img": "http://www.chnmuseum.cn/zl/zzzc/201812/P020190324804045996913.jpg", "title": "/portals/0/web/zt/20190806hhgs/", "url": "./zl/lszl/201907/t20190731_138319.shtml" },
+
+
+
+            { "img": "http://www.chnmuseum.cn/zl/zzzc/201812/P020190324804045996913.jpg", "title": "/portals/0/web/zt/20190806hhgs/", "url": "./zl/lszl/201907/t20190731_138319.shtml" },
+
+
+
+            { "img": "http://www.chnmuseum.cn/zl/zzzc/201812/P020190117667830734896.jpg", "title": "/portals/0/web/zt/20191022jiagu/", "url": "./zl/lszl/lswhxl/201909/t20190919_153106.shtml" }
+
+
+        ]
+
+        );
+
+        var posterTvGrid86803 = new posterTvGrid('posterTvGrid86803', { className: "posterTvGrid" }, [
+
+
+            { "img": "http://www.chnmuseum.cn/zl/zzzc/201812/P020190117667830734896.jpg", "title": "", "url": "http://www.chnmuseum.cn/zl/zzzc/201812/P020190117667830734896.jpg" },
+
+            { "img": "http://www.chnmuseum.cn/zl/zzzc/201812/P020190117667830734896.jpg", "title": "", "url": "./zl/zzzc/201812/t20181220_32170.shtml" },
+
+            { "img": "http://www.chnmuseum.cn/zl/zzzc/201812/P020190117667830734896.jpg", "title": "", "url": "./zl/zzzc/201812/t20181220_32175.shtml" },
+
+            { "img": "http://www.chnmuseum.cn/zl/zzzc/201812/P020190117667830734896.jpg", "title": "", "url": "./zl/zzzc/201812/t20181220_32178.shtml" },
+
+            { "img": "http://www.chnmuseum.cn/zl/zzzc/201812/P020190117667436568061.jpg", "title": "", "url": "./zl/zzzc/201812/t20181220_32176.shtml" },
+
+            { "img": "http://www.chnmuseum.cn/zl/zzzc/201812/P020190117667436568061.jpg", "title": "", "url": "./zl/zzzc/201812/t20181220_32180.shtml" },
+
+            { "img": "./zl/zzzc/201812/P020190403841585497512.jpg", "title": "", "url": "./zl/zzzc/201812/t20181220_32177.shtml" },
+
+            { "img": "http://www.chnmuseum.cn/zl/zzzc/201812/P020190117667436568061.jpg", "title": "", "url": "./zl/ztcl/201812/t20181220_32171.shtml" },
+
+
+
+            { "img": "http://www.chnmuseum.cn/zl/zzzc/201812/P020190324805026804347.jpg", "title": "", "url": "./zl/zzzc/201812/t20181220_32179.shtml" }
+
+
+        ]
+
+        );
+        var posterTvGrid86801 = new posterTvGrid('posterTvGrid86801', { className: "posterTvGrid" }, [
+
+
+            { "img": "http://www.chnmuseum.cn/zl/zzzc/201812/P020190324805026804347.jpg", "title": "", "url": "./zl/lszl/jdmszpxl/201909/t20190919_153180.shtml" },
+
+
+
+            { "img": "http://www.chnmuseum.cn/zl/zzzc/201812/P020190324805026804347.jpg", "title": "", "url": "./zl/lszl/jdmszpxl/201909/t20190919_153180.shtml" }
+
+
+        ]
+
+        );
+
+
+
+
+        $(".cj_shipin_qie li").click(function () {
+            $(".cj_shipin_qie li").eq($(this).index()).addClass("cj_cur_r").siblings().removeClass('cj_cur_r');
+            $(".cjlist_dv").hide().eq($(this).index()).show();
+            //另一种方法: $(".cjlist_dv").eq($(".cj_shipin_qie li").index(this)).addClass("cj_on_r").siblings().removeClass('cj_on_r'); 
+
+        });
+
+
+        $(function () {
+
+            //党建学习鼠标经过图片放大效果
+            /*  $('.home-djxx .scaleImg').hover(function(){
+                    imgwd=$(this).width();
+                    imght=$(this).height();
+                    $(this).stop().animate({width:(imgwd*1.2),height:(imght*1.2),marginTop:-40, marginLeft:-66},600);
+                },function(){
+                    
+                    $(this).stop().animate({width:imgwd,height:imght, marginTop:0, marginLeft:0},500);
+                });*/
+            $(".home-djxx-pannel").slide({ mainCell: ".djxx_slide ul", autoPlay: true, effect: "fold", interTime: 5000 });
+        });
+
+        //顶部banner轮播图
+        jQuery("#slideBox").slide({ titCell: ".hd li", mainCell: ".bd ul", effect: "fold", autoPlay: true, delayTime: 1500, interTime: 5000 });
+        // var imgwidth=$(window).width();
+        // var imgheight=$(window).height();
+        /*if(imgwidth<1660){
+           var imgheight=$(window).height()-120;
+        }else{
+           var imgheight=$(window).height()-144;
+        }*/
+
+        // $(".home-banner").css("width",imgwidth);
+        // $("#slideBox .bd ul li,#slideBox .bd ul li a,.home-banner,#slideBox").css("height",imgheight);
+        // if(imgwidth<1200){
+        //    $(".home-banner").css("width","1200px");
+        //   }else{
+        //    $(".home-banner").css("width","100%");
+        //   }
+        $(window).resize(function () {
+            // var imgwidth=$(window).width();
+            // var imgheight=$(window).height();
+            /*if(imgwidth<1660){
+               var imgheight=$(window).height()-120;
+            }else{
+               var imgheight=$(window).height()-144;
+            }*/
+            // $("#slideBox .bd ul li,#slideBox .bd ul li a,.home-banner,#slideBox").css("height",imgheight);
+            // if(imgwidth<1200){
+            //  $(".home-banner").css("width","1200px");
+            // }else{
+            //  $(".home-banner").css("width","100%");
+            // }
+
+        });
+
+
+        $(function () {
+            $(".lunbotudejius .contentHolderUnit").each(function () {
+                var reurl = $(this).find("img").attr("alt");
+                if (reurl != "") {
+                    $(this).find("a.elementLink").attr("href", reurl);
+                }
+
+            })
+
+            $("#div li").each(function () {
+                var reurl4 = $(this).find("a.recurl").attr("ztzlurl");
+                if (reurl4 != "") {
+                    $(this).find("a.recurl").attr("href", reurl4);
+                }
+            })
+        })
+
+
+        //国博新闻鼠标滑过效果
+        $(".home-gbxw-list ul li").hover(function () {
+            $(this).addClass("hover");
+        }, function () {
+            $(this).removeClass("hover");
+        })
+        //公告滚动
+        jQuery("#slidergg").slide({ mainCell: ".bd ul", autoPlay: true, effect: "leftMarquee", vis: 3, interTime: 50, trigger: "click" });
+        //大图文字滚动
+        jQuery("#sliderggbb").slide({ mainCell: ".bd ul", autoPlay: true, effect: "leftMarquee", vis: 3, interTime: 20, trigger: "click" });
+        //国博新闻图片轮播
+        jQuery("#slideBoxgbxw").slide({ titCell: ".hd li", mainCell: ".bd ul", effect: "left", autoPlay: true, delayTime: 1000, interTime: 3000 });
+        if ($(document.body).outerWidth(true) == "1660") {
+            jQuery("#slideBoxgbxw").slide({ titCell: ".hd li", mainCell: ".bd ul", effect: "left", autoPlay: true, delayTime: 1000, interTime: 3000 });
+        }
+
+        //国博新闻下方轮播图
+        jQuery("#slideBox2").slide({ titCell: ".hd li", mainCell: ".bd ul", effect: "fold", autoPlay: true, delayTime: 1000, interTime: 3000 });
+
+        //首页展品滚动
+        //jQuery("#slideBox4").slide({mainCell:".bd ul",autoPlay:true,effect:"leftMarquee",vis:5,interTime:50,trigger:"click"});
+        // $('.home-zp-focus .bd ul').css("width","8835px");
+        // $('.tempWrap').css("width","1440px");
+        // $('.home-zp-focus .bd ul li').css("width","255px");
+
+        //国博服务js效果
+        $(function () {
+            $(".home-gbfw ul  li").hover(function () {
+                $(this).addClass("hover");
+            }, function () {
+                $(this).removeClass("hover");
+            });
+        })
+        //国博视频js效果
+        $(".home-gbsp ul  li").hover(function () {
+            $(this).addClass("hover");
+        }, function () {
+            $(this).removeClass("hover");
+        });
+        //国博视频下方轮播效果
+        jQuery("#slideBox5").slide({ titCell: ".hd li", mainCell: ".bd ul", effect: "fade", autoPlay: true, triggerTime: 800 });
+
+        $('.yanjiukeke ul').last().css("border", "0");
+        $('.yanjiukeke2 ul').last().css("border", "0");
+
+        $(".yanjiukeke ul").each(function () {
+            $(this).find('li').first().css("marginLeft", "0");
+        })
+
+        $(".yanjiukeke2 ul").each(function () {
+            $(this).find('li').first().css("marginLeft", "0");
+        })
+        //侧边栏效果
+        $("#sidebar ul li").hover(function () {
+            $(this).addClass("hover");
+        }, function () {
+            $(this).removeClass("hover");
+        });
+        $(function () {
+            var $sidebar = $("#sidebar"),
+                $window = $(window),
+                offset = $sidebar.offset(),
+                topPadding = 15;
+
+            $window.scroll(function () {
+                if ($window.scrollTop() > 700) {
+                    $sidebar.show();
+                } else {
+                    $sidebar.hide();
+                }
+            });
+
+        });
+
+
+
+
+
+        function getWeather() {
+            // 通过ajax向天气接口发送请求
+            // $.get('url', '请求成功之后的回调函数');
+            // $.post('url', 'POST参数',  '请求成功之后的回调函数');
+            $.ajax({
+                // 请求地址
+                // val()获取输入框中的内容。
+                url: '/weather/weather.json',
+
+
+                // 请求类型：GET/POST
+                type: 'GET',
+
+                // 请求参数，是一个字符串。
+                // data: '',
+
+                // 指定服务器返回的数据类型
+                dataType: 'json',
+
+                // 指定请求失败的回调函数
+                error: function (data, status) {
+                    //console.log('请求失败：', status, data);
+                },
+
+                // 请求成功的回调函数
+                success: function (data, status) {
+                    // 请求成功，得到json数据，解析json数据，将数据展示到页面中。
+                    //console.log('请求成功：', data);
+                    var shijian = data['data'];
+
+                    var result = data['results'][0];
+
+                    var xinqi = result['weather_data'][0]['date'];
+                    var time1 = xinqi.substring(3, 9).replace('月', '-').replace('日', ' ')
+                    xinqi = xinqi.substring(0, 2)
+                    //xinqi = xinqi.replace('周', '星期')
+                    var xinqi2 = result['weather_data'][1]['date'];
+                    //xinqi2 = xinqi2.replace('周', '星期')
+
+                    var xinqi3 = result['weather_data'][2]['date'];
+                    //xinqi3 = xinqi3.replace('周', '星期')
+
+                    var thisData = new Date();
+                    var thisSjc = thisData.getTime()
+                    var thisSjc2 = thisSjc + 86400000;
+                    var thisSjc3 = thisSjc + 86400000 * 2
+                    var time2 = getNowFormatDate(thisSjc2);
+                    var time3 = getNowFormatDate(thisSjc3);
+                    var weather = result['weather_data'][0]['dayPictureUrl'];
+                    var weather2 = result['weather_data'][1]['dayPictureUrl'];
+                    var weather3 = result['weather_data'][2]['dayPictureUrl'];
+                    //var wind = weather_data['wind'];
+                    var tem = result['weather_data'][0]['temperature'];
+                    var tem2 = result['weather_data'][1]['temperature'];
+                    var tem3 = result['weather_data'][2]['temperature'];
+
+                    var temu = result['weather_data'][0]['weather'];
+                    var temu2 = result['weather_data'][1]['weather'];
+                    var temu3 = result['weather_data'][2]['weather'];
+
+                    // 通过js给p标签赋值
+                    $('.cj_tqtime1 span').text(time1 + xinqi);
+                    $('.cj_tqtime1 strong').text(temu);
+                    $('.cj_dushu1').text(tem);
+                    $('.cj_tqimg1').attr('src', weather);
+
+                    $('.cj_tqtime2 span').text(time2 + xinqi2);
+                    $('.cj_tqtime2 strong').text(temu2);
+                    $('.cj_dushu2').text(tem2);
+                    $('.cj_tqimg2').attr('src', weather2);
+
+                    $('.cj_tqtime3 span').text(time3 + xinqi3);
+                    $('.cj_tqtime3 strong').text(temu3);
+                    $('.cj_dushu3').text(tem3);
+                    $('.cj_tqimg3').attr('src', weather3);
+
+                    //$('.wind').text(wind);
+                    //$('.temperature').text(tem);
+                },
+
+                // 发起请求的方式：同步(false)还是异步(true)
+                async: true
+            });
+
+
+
+        }
+
+        function getNowFormatDate(time) {
+            var date = new Date(time);
+            var seperator1 = "-";
+            var year = date.getFullYear();
+            var month = date.getMonth() + 1;
+            var strDate = date.getDate();
+            if (month >= 1 && month <= 9) {
+                month = "0" + month;
+            }
+            if (strDate >= 0 && strDate <= 9) {
+                strDate = "0" + strDate;
+            }
+            var currentdate = month + '-' + strDate;
+            return currentdate;
+        }
+
+
+        getWeather();
+
+
+
+    </script>
+    <audio src="./1.mp3"></audio>
